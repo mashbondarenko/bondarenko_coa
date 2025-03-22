@@ -1,0 +1,35 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Auth Service",
+      "type": "shell",
+      "command": "mkdir -p build && cd build && cmake .. && make",
+      "options": {
+        "cwd": "${workspaceFolder}/authmanager"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Build API Gateway",
+      "type": "shell",
+      "command": "mkdir -p build && cd build && cmake .. && make",
+      "options": {
+        "cwd": "${workspaceFolder}/gateway"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Build All",
+      "dependsOn": [
+        "Build Auth Service",
+        "Build API Gateway"
+      ],
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}

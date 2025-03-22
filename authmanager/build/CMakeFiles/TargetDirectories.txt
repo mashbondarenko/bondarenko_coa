@@ -1,0 +1,3 @@
+/Users/maria/Documents/GitHub/bondarenko_coa/authmanager/build/CMakeFiles/authmanager.dir
+/Users/maria/Documents/GitHub/bondarenko_coa/authmanager/build/CMakeFiles/edit_cache.dir
+/Users/maria/Documents/GitHub/bondarenko_coa/authmanager/build/CMakeFiles/rebuild_cache.dir

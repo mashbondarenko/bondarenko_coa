@@ -3,8 +3,6 @@ project(gateway_tests)
 
 set(CMAKE_CXX_STANDARD 17)
 
-find_package(gRPC REQUIRED)
-find_package(Protobuf REQUIRED)
 find_package(GTest REQUIRED)
 
 include_directories(${CMAKE_SOURCE_DIR}/../proto/generated)

@@ -1,0 +1,6 @@
+/Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/CMakeFiles/gateway.dir
+/Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/CMakeFiles/edit_cache.dir
+/Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/CMakeFiles/rebuild_cache.dir
+/Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/tests/CMakeFiles/gatewaytest.dir
+/Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/tests/CMakeFiles/edit_cache.dir
+/Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/tests/CMakeFiles/rebuild_cache.dir

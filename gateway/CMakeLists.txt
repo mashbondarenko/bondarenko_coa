@@ -3,7 +3,6 @@ project(gateway)
 
 set(CMAKE_CXX_STANDARD 17)
 
-find_package(Protobuf REQUIRED)
 find_package(Threads REQUIRED)
 find_package(absl REQUIRED)
 find_package(gRPC CONFIG REQUIRED)
@@ -24,9 +23,7 @@ add_executable(gateway ${SOURCES})
 add_subdirectory(tests)
 
 target_link_libraries(gateway
-gRPC::grpc++
-    grpc           
-    gpr              
+gRPC::grpc++            
     protobuf::libprotobuf
     Threads::Threads
     absl::synchronization
