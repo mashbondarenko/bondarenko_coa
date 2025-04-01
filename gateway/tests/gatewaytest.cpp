@@ -15,7 +15,7 @@ protected:
 
 TEST_F(AuthServiceTest, RegisterUserTest) {
     auth::RegisterUserRequest request;
-    request.set_login("testuser");
+    request.set_login("masha");
     request.set_password("testpass");
     request.set_email("test@example.com");
 
@@ -33,7 +33,7 @@ TEST_F(AuthServiceTest, RegisterUserTest) {
 
 TEST_F(AuthServiceTest, LoginTest) {
     auth::LoginRequest request;
-    request.set_login("testuser");
+    request.set_login("masha");
     request.set_password("testpass");
 
     auth::LoginResponse response;
@@ -42,13 +42,13 @@ TEST_F(AuthServiceTest, LoginTest) {
 
     EXPECT_TRUE(status.ok()) << "Login failed: " << status.error_message();
     EXPECT_FALSE(response.token().empty());
-    EXPECT_EQ(response.user().login(), "testuser");
+    EXPECT_EQ(response.user().login(), "masha");
     EXPECT_EQ(response.user().email(), "test@example.com");
 }
 
 TEST_F(AuthServiceTest, UpdateProfileTest) {
     auth::UpdateProfileRequest request;
-    request.set_token("testuser");
+    request.set_token("masha");
     request.set_first_name("Test");
     request.set_last_name("User");
     request.set_birth_date("1990-01-01");
@@ -76,7 +76,7 @@ TEST_F(AuthServiceTest, GetProfileTest) {
     grpc::Status status = stub->GetProfile(&context, request, &response);
 
     EXPECT_TRUE(status.ok()) << "GetProfile failed: " << status.error_message();
-    EXPECT_EQ(response.login(), "testuser");
+    EXPECT_EQ(response.login(), "masha");
     EXPECT_EQ(response.email(), "newemail@example.com");
     EXPECT_EQ(response.first_name(), "Test");
     EXPECT_EQ(response.last_name(), "User");

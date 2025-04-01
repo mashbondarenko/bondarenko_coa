@@ -1406,4 +1406,7 @@ CMakeFiles/gateway.dir/src/main.cpp.o: \
   /opt/homebrew/include/grpcpp/support/proto_buffer_writer.h \
   /opt/homebrew/include/grpcpp/support/stub_options.h \
   /opt/homebrew/include/grpcpp/ports_def.inc \
-  /opt/homebrew/include/grpcpp/ports_undef.inc
+  /opt/homebrew/include/grpcpp/ports_undef.inc \
+  /Users/maria/Documents/GitHub/bondarenko_coa/gateway/src/PromoServiceProxyImpl.h \
+  /Users/maria/Documents/GitHub/bondarenko_coa/gateway/../proto/generated/promo.grpc.pb.h \
+  /Users/maria/Documents/GitHub/bondarenko_coa/gateway/../proto/generated/promo.pb.h

@@ -1,0 +1,6 @@
+/Users/maria/Documents/GitHub/bondarenko_coa/promoservice/build/CMakeFiles/promoservice.dir
+/Users/maria/Documents/GitHub/bondarenko_coa/promoservice/build/CMakeFiles/edit_cache.dir
+/Users/maria/Documents/GitHub/bondarenko_coa/promoservice/build/CMakeFiles/rebuild_cache.dir
+/Users/maria/Documents/GitHub/bondarenko_coa/promoservice/build/tests/CMakeFiles/promoservice_tests.dir
+/Users/maria/Documents/GitHub/bondarenko_coa/promoservice/build/tests/CMakeFiles/edit_cache.dir
+/Users/maria/Documents/GitHub/bondarenko_coa/promoservice/build/tests/CMakeFiles/rebuild_cache.dir

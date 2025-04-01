@@ -1,0 +1,70 @@
+syntax = "proto3";
+
+package promo;
+
+// Модель промокода
+message PromoCode {
+    int64 id = 1;
+    string title = 2;
+    string description = 3;
+    int64 creator_id = 4;
+    double discount = 5;
+    string code = 6;
+    string created_at = 7;
+    string updated_at = 8;
+}
+
+// Запрос на создание промокода
+message CreatePromoCodeRequest {
+    string token = 1;
+    string title = 2;
+    string description = 3;
+    double discount = 4;
+    string code = 5;
+}
+
+// Ответ при создании/обновлении - возвращаем сам промокод
+message UpdatePromoCodeRequest {
+    string token = 1;
+    int64 promo_id = 2;
+    string title = 3;
+    string description = 4;
+    double discount = 5;
+    string code = 6;
+}
+
+// Запрос на удаление
+message DeletePromoCodeRequest {
+    string token = 1;
+    int64 promo_id = 2;
+}
+
+// Запрос на получение по ID
+message GetPromoCodeRequest {
+    string token = 1;
+    int64 promo_id = 2;
+}
+
+// Запрос на получение списка с пагинацией
+message ListPromoCodesRequest {
+    string token = 1;
+    int32 page = 2;
+    int32 page_size = 3;
+}
+
+// Ответ на список промокодов
+message ListPromoCodesResponse {
+    repeated PromoCode promo_codes = 1;
+    int32 total_count = 2;
+    int32 page = 3;
+    int32 page_size = 4;
+}
+
+// Определение сервиса для промокодов
+service PromoService {
+    rpc CreatePromoCode (CreatePromoCodeRequest) returns (PromoCode);
+    rpc UpdatePromoCode (UpdatePromoCodeRequest) returns (PromoCode);
+    rpc DeletePromoCode (DeletePromoCodeRequest) returns (PromoCode);
+    rpc GetPromoCodeById (GetPromoCodeRequest) returns (PromoCode);
+    rpc ListPromoCodes (ListPromoCodesRequest) returns (ListPromoCodesResponse);
+}

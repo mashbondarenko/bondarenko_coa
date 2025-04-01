@@ -1,0 +1,171 @@
+openapi: 3.0.3
+info:
+  title: Promo Code API
+  version: 1.0.0
+  description: API для управления промокодами
+servers:
+  - url: https://api.example.com
+
+paths:
+  /promocodes:
+    get:
+      summary: Получение списка промокодов
+      operationId: listPromoCodes
+      parameters:
+        - name: token
+          in: header
+          required: true
+          schema:
+            type: string
+        - name: page
+          in: query
+          required: false
+          schema:
+            type: integer
+            default: 1
+        - name: page_size
+          in: query
+          required: false
+          schema:
+            type: integer
+            default: 10
+      responses:
+        "200":
+          description: Список промокодов
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  promo_codes:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/PromoCode'
+                  total_count:
+                    type: integer
+                  page:
+                    type: integer
+                  page_size:
+                    type: integer
+    post:
+      summary: Создание промокода
+      operationId: createPromoCode
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreatePromoCodeRequest'
+      responses:
+        "201":
+          description: Промокод создан
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PromoCode'
+
+  /promocodes/{promo_id}:
+    get:
+      summary: Получение промокода по ID
+      operationId: getPromoCodeById
+      parameters:
+        - name: token
+          in: header
+          required: true
+          schema:
+            type: string
+        - name: promo_id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Информация о промокоде
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PromoCode'
+    put:
+      summary: Обновление промокода
+      operationId: updatePromoCode
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdatePromoCodeRequest'
+      responses:
+        "200":
+          description: Промокод обновлен
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PromoCode'
+    delete:
+      summary: Удаление промокода
+      operationId: deletePromoCode
+      parameters:
+        - name: token
+          in: header
+          required: true
+          schema:
+            type: string
+        - name: promo_id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Промокод удален
+
+components:
+  schemas:
+    PromoCode:
+      type: object
+      properties:
+        id:
+          type: integer
+        title:
+          type: string
+        description:
+          type: string
+        creator_id:
+          type: integer
+        discount:
+          type: number
+        code:
+          type: string
+        created_at:
+          type: string
+        updated_at:
+          type: string
+    CreatePromoCodeRequest:
+      type: object
+      properties:
+        token:
+          type: string
+        title:
+          type: string
+        description:
+          type: string
+        discount:
+          type: number
+        code:
+          type: string
+    UpdatePromoCodeRequest:
+      type: object
+      properties:
+        token:
+          type: string
+        promo_id:
+          type: integer
+        title:
+          type: string
+        description:
+          type: string
+        discount:
+          type: number
+        code:
+          type: string

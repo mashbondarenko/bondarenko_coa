@@ -190,6 +190,54 @@ Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.pb.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.pb.cc.s
 .PHONY : Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.pb.cc.s
 
+Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.o: Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.cc.o
+.PHONY : Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.o
+
+# target to build an object file
+Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.cc.o
+.PHONY : Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.cc.o
+
+Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.i: Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.cc.i
+.PHONY : Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.i
+
+# target to preprocess a source file
+Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.cc.i
+.PHONY : Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.cc.i
+
+Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.s: Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.cc.s
+.PHONY : Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.s
+
+# target to generate assembly for a file
+Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.cc.s
+.PHONY : Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.cc.s
+
+Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.o: Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.cc.o
+.PHONY : Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.o
+
+# target to build an object file
+Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.cc.o
+.PHONY : Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.cc.o
+
+Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.i: Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.cc.i
+.PHONY : Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.i
+
+# target to preprocess a source file
+Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.cc.i
+.PHONY : Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.cc.i
+
+Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.s: Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.cc.s
+.PHONY : Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.s
+
+# target to generate assembly for a file
+Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.cc.s
+.PHONY : Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.cc.s
+
 src/AuthServiceProxyImpl.o: src/AuthServiceProxyImpl.cpp.o
 .PHONY : src/AuthServiceProxyImpl.o
 
@@ -213,6 +261,30 @@ src/AuthServiceProxyImpl.s: src/AuthServiceProxyImpl.cpp.s
 src/AuthServiceProxyImpl.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/src/AuthServiceProxyImpl.cpp.s
 .PHONY : src/AuthServiceProxyImpl.cpp.s
+
+src/PromoServiceProxyImpl.o: src/PromoServiceProxyImpl.cpp.o
+.PHONY : src/PromoServiceProxyImpl.o
+
+# target to build an object file
+src/PromoServiceProxyImpl.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/src/PromoServiceProxyImpl.cpp.o
+.PHONY : src/PromoServiceProxyImpl.cpp.o
+
+src/PromoServiceProxyImpl.i: src/PromoServiceProxyImpl.cpp.i
+.PHONY : src/PromoServiceProxyImpl.i
+
+# target to preprocess a source file
+src/PromoServiceProxyImpl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/src/PromoServiceProxyImpl.cpp.i
+.PHONY : src/PromoServiceProxyImpl.cpp.i
+
+src/PromoServiceProxyImpl.s: src/PromoServiceProxyImpl.cpp.s
+.PHONY : src/PromoServiceProxyImpl.s
+
+# target to generate assembly for a file
+src/PromoServiceProxyImpl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/src/PromoServiceProxyImpl.cpp.s
+.PHONY : src/PromoServiceProxyImpl.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -254,9 +326,18 @@ help:
 	@echo "... Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.pb.o"
 	@echo "... Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.pb.i"
 	@echo "... Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.pb.s"
+	@echo "... Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.o"
+	@echo "... Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.i"
+	@echo "... Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.s"
+	@echo "... Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.o"
+	@echo "... Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.i"
+	@echo "... Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.s"
 	@echo "... src/AuthServiceProxyImpl.o"
 	@echo "... src/AuthServiceProxyImpl.i"
 	@echo "... src/AuthServiceProxyImpl.s"
+	@echo "... src/PromoServiceProxyImpl.o"
+	@echo "... src/PromoServiceProxyImpl.i"
+	@echo "... src/PromoServiceProxyImpl.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
