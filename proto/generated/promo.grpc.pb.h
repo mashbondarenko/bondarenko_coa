@@ -72,6 +72,20 @@ class PromoService final {
     std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::promo::ListPromoCodesResponse>> PrepareAsyncListPromoCodes(::grpc::ClientContext* context, const ::promo::ListPromoCodesRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::promo::ListPromoCodesResponse>>(PrepareAsyncListPromoCodesRaw(context, request, cq));
     }
+    virtual ::grpc::Status ClickPromoCode(::grpc::ClientContext* context, const ::promo::ClickPromoCodeRequest& request, ::promo::PromoCode* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::promo::PromoCode>> AsyncClickPromoCode(::grpc::ClientContext* context, const ::promo::ClickPromoCodeRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::promo::PromoCode>>(AsyncClickPromoCodeRaw(context, request, cq));
+    }
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::promo::PromoCode>> PrepareAsyncClickPromoCode(::grpc::ClientContext* context, const ::promo::ClickPromoCodeRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::promo::PromoCode>>(PrepareAsyncClickPromoCodeRaw(context, request, cq));
+    }
+    virtual ::grpc::Status CommentPromoCode(::grpc::ClientContext* context, const ::promo::CommentPromoCodeRequest& request, ::promo::PromoCode* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::promo::PromoCode>> AsyncCommentPromoCode(::grpc::ClientContext* context, const ::promo::CommentPromoCodeRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::promo::PromoCode>>(AsyncCommentPromoCodeRaw(context, request, cq));
+    }
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::promo::PromoCode>> PrepareAsyncCommentPromoCode(::grpc::ClientContext* context, const ::promo::CommentPromoCodeRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::promo::PromoCode>>(PrepareAsyncCommentPromoCodeRaw(context, request, cq));
+    }
     class async_interface {
      public:
       virtual ~async_interface() {}
@@ -85,6 +99,10 @@ class PromoService final {
       virtual void GetPromoCodeById(::grpc::ClientContext* context, const ::promo::GetPromoCodeRequest* request, ::promo::PromoCode* response, ::grpc::ClientUnaryReactor* reactor) = 0;
       virtual void ListPromoCodes(::grpc::ClientContext* context, const ::promo::ListPromoCodesRequest* request, ::promo::ListPromoCodesResponse* response, std::function<void(::grpc::Status)>) = 0;
       virtual void ListPromoCodes(::grpc::ClientContext* context, const ::promo::ListPromoCodesRequest* request, ::promo::ListPromoCodesResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void ClickPromoCode(::grpc::ClientContext* context, const ::promo::ClickPromoCodeRequest* request, ::promo::PromoCode* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void ClickPromoCode(::grpc::ClientContext* context, const ::promo::ClickPromoCodeRequest* request, ::promo::PromoCode* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void CommentPromoCode(::grpc::ClientContext* context, const ::promo::CommentPromoCodeRequest* request, ::promo::PromoCode* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void CommentPromoCode(::grpc::ClientContext* context, const ::promo::CommentPromoCodeRequest* request, ::promo::PromoCode* response, ::grpc::ClientUnaryReactor* reactor) = 0;
     };
     typedef class async_interface experimental_async_interface;
     virtual class async_interface* async() { return nullptr; }
@@ -100,6 +118,10 @@ class PromoService final {
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::promo::PromoCode>* PrepareAsyncGetPromoCodeByIdRaw(::grpc::ClientContext* context, const ::promo::GetPromoCodeRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::promo::ListPromoCodesResponse>* AsyncListPromoCodesRaw(::grpc::ClientContext* context, const ::promo::ListPromoCodesRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::promo::ListPromoCodesResponse>* PrepareAsyncListPromoCodesRaw(::grpc::ClientContext* context, const ::promo::ListPromoCodesRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::promo::PromoCode>* AsyncClickPromoCodeRaw(::grpc::ClientContext* context, const ::promo::ClickPromoCodeRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::promo::PromoCode>* PrepareAsyncClickPromoCodeRaw(::grpc::ClientContext* context, const ::promo::ClickPromoCodeRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::promo::PromoCode>* AsyncCommentPromoCodeRaw(::grpc::ClientContext* context, const ::promo::CommentPromoCodeRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::promo::PromoCode>* PrepareAsyncCommentPromoCodeRaw(::grpc::ClientContext* context, const ::promo::CommentPromoCodeRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
   class Stub final : public StubInterface {
    public:
@@ -139,6 +161,20 @@ class PromoService final {
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::promo::ListPromoCodesResponse>> PrepareAsyncListPromoCodes(::grpc::ClientContext* context, const ::promo::ListPromoCodesRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::promo::ListPromoCodesResponse>>(PrepareAsyncListPromoCodesRaw(context, request, cq));
     }
+    ::grpc::Status ClickPromoCode(::grpc::ClientContext* context, const ::promo::ClickPromoCodeRequest& request, ::promo::PromoCode* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::promo::PromoCode>> AsyncClickPromoCode(::grpc::ClientContext* context, const ::promo::ClickPromoCodeRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::promo::PromoCode>>(AsyncClickPromoCodeRaw(context, request, cq));
+    }
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::promo::PromoCode>> PrepareAsyncClickPromoCode(::grpc::ClientContext* context, const ::promo::ClickPromoCodeRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::promo::PromoCode>>(PrepareAsyncClickPromoCodeRaw(context, request, cq));
+    }
+    ::grpc::Status CommentPromoCode(::grpc::ClientContext* context, const ::promo::CommentPromoCodeRequest& request, ::promo::PromoCode* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::promo::PromoCode>> AsyncCommentPromoCode(::grpc::ClientContext* context, const ::promo::CommentPromoCodeRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::promo::PromoCode>>(AsyncCommentPromoCodeRaw(context, request, cq));
+    }
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::promo::PromoCode>> PrepareAsyncCommentPromoCode(::grpc::ClientContext* context, const ::promo::CommentPromoCodeRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::promo::PromoCode>>(PrepareAsyncCommentPromoCodeRaw(context, request, cq));
+    }
     class async final :
       public StubInterface::async_interface {
      public:
@@ -152,6 +188,10 @@ class PromoService final {
       void GetPromoCodeById(::grpc::ClientContext* context, const ::promo::GetPromoCodeRequest* request, ::promo::PromoCode* response, ::grpc::ClientUnaryReactor* reactor) override;
       void ListPromoCodes(::grpc::ClientContext* context, const ::promo::ListPromoCodesRequest* request, ::promo::ListPromoCodesResponse* response, std::function<void(::grpc::Status)>) override;
       void ListPromoCodes(::grpc::ClientContext* context, const ::promo::ListPromoCodesRequest* request, ::promo::ListPromoCodesResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void ClickPromoCode(::grpc::ClientContext* context, const ::promo::ClickPromoCodeRequest* request, ::promo::PromoCode* response, std::function<void(::grpc::Status)>) override;
+      void ClickPromoCode(::grpc::ClientContext* context, const ::promo::ClickPromoCodeRequest* request, ::promo::PromoCode* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void CommentPromoCode(::grpc::ClientContext* context, const ::promo::CommentPromoCodeRequest* request, ::promo::PromoCode* response, std::function<void(::grpc::Status)>) override;
+      void CommentPromoCode(::grpc::ClientContext* context, const ::promo::CommentPromoCodeRequest* request, ::promo::PromoCode* response, ::grpc::ClientUnaryReactor* reactor) override;
      private:
       friend class Stub;
       explicit async(Stub* stub): stub_(stub) { }
@@ -173,11 +213,17 @@ class PromoService final {
     ::grpc::ClientAsyncResponseReader< ::promo::PromoCode>* PrepareAsyncGetPromoCodeByIdRaw(::grpc::ClientContext* context, const ::promo::GetPromoCodeRequest& request, ::grpc::CompletionQueue* cq) override;
     ::grpc::ClientAsyncResponseReader< ::promo::ListPromoCodesResponse>* AsyncListPromoCodesRaw(::grpc::ClientContext* context, const ::promo::ListPromoCodesRequest& request, ::grpc::CompletionQueue* cq) override;
     ::grpc::ClientAsyncResponseReader< ::promo::ListPromoCodesResponse>* PrepareAsyncListPromoCodesRaw(::grpc::ClientContext* context, const ::promo::ListPromoCodesRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::promo::PromoCode>* AsyncClickPromoCodeRaw(::grpc::ClientContext* context, const ::promo::ClickPromoCodeRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::promo::PromoCode>* PrepareAsyncClickPromoCodeRaw(::grpc::ClientContext* context, const ::promo::ClickPromoCodeRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::promo::PromoCode>* AsyncCommentPromoCodeRaw(::grpc::ClientContext* context, const ::promo::CommentPromoCodeRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::promo::PromoCode>* PrepareAsyncCommentPromoCodeRaw(::grpc::ClientContext* context, const ::promo::CommentPromoCodeRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::internal::RpcMethod rpcmethod_CreatePromoCode_;
     const ::grpc::internal::RpcMethod rpcmethod_UpdatePromoCode_;
     const ::grpc::internal::RpcMethod rpcmethod_DeletePromoCode_;
     const ::grpc::internal::RpcMethod rpcmethod_GetPromoCodeById_;
     const ::grpc::internal::RpcMethod rpcmethod_ListPromoCodes_;
+    const ::grpc::internal::RpcMethod rpcmethod_ClickPromoCode_;
+    const ::grpc::internal::RpcMethod rpcmethod_CommentPromoCode_;
   };
   static std::unique_ptr<Stub> NewStub(const std::shared_ptr< ::grpc::ChannelInterface>& channel, const ::grpc::StubOptions& options = ::grpc::StubOptions());
 
@@ -190,6 +236,8 @@ class PromoService final {
     virtual ::grpc::Status DeletePromoCode(::grpc::ServerContext* context, const ::promo::DeletePromoCodeRequest* request, ::promo::PromoCode* response);
     virtual ::grpc::Status GetPromoCodeById(::grpc::ServerContext* context, const ::promo::GetPromoCodeRequest* request, ::promo::PromoCode* response);
     virtual ::grpc::Status ListPromoCodes(::grpc::ServerContext* context, const ::promo::ListPromoCodesRequest* request, ::promo::ListPromoCodesResponse* response);
+    virtual ::grpc::Status ClickPromoCode(::grpc::ServerContext* context, const ::promo::ClickPromoCodeRequest* request, ::promo::PromoCode* response);
+    virtual ::grpc::Status CommentPromoCode(::grpc::ServerContext* context, const ::promo::CommentPromoCodeRequest* request, ::promo::PromoCode* response);
   };
   template <class BaseClass>
   class WithAsyncMethod_CreatePromoCode : public BaseClass {
@@ -291,7 +339,47 @@ class PromoService final {
       ::grpc::Service::RequestAsyncUnary(4, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
-  typedef WithAsyncMethod_CreatePromoCode<WithAsyncMethod_UpdatePromoCode<WithAsyncMethod_DeletePromoCode<WithAsyncMethod_GetPromoCodeById<WithAsyncMethod_ListPromoCodes<Service > > > > > AsyncService;
+  template <class BaseClass>
+  class WithAsyncMethod_ClickPromoCode : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithAsyncMethod_ClickPromoCode() {
+      ::grpc::Service::MarkMethodAsync(5);
+    }
+    ~WithAsyncMethod_ClickPromoCode() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ClickPromoCode(::grpc::ServerContext* /*context*/, const ::promo::ClickPromoCodeRequest* /*request*/, ::promo::PromoCode* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    void RequestClickPromoCode(::grpc::ServerContext* context, ::promo::ClickPromoCodeRequest* request, ::grpc::ServerAsyncResponseWriter< ::promo::PromoCode>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+      ::grpc::Service::RequestAsyncUnary(5, context, request, response, new_call_cq, notification_cq, tag);
+    }
+  };
+  template <class BaseClass>
+  class WithAsyncMethod_CommentPromoCode : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithAsyncMethod_CommentPromoCode() {
+      ::grpc::Service::MarkMethodAsync(6);
+    }
+    ~WithAsyncMethod_CommentPromoCode() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status CommentPromoCode(::grpc::ServerContext* /*context*/, const ::promo::CommentPromoCodeRequest* /*request*/, ::promo::PromoCode* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    void RequestCommentPromoCode(::grpc::ServerContext* context, ::promo::CommentPromoCodeRequest* request, ::grpc::ServerAsyncResponseWriter< ::promo::PromoCode>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+      ::grpc::Service::RequestAsyncUnary(6, context, request, response, new_call_cq, notification_cq, tag);
+    }
+  };
+  typedef WithAsyncMethod_CreatePromoCode<WithAsyncMethod_UpdatePromoCode<WithAsyncMethod_DeletePromoCode<WithAsyncMethod_GetPromoCodeById<WithAsyncMethod_ListPromoCodes<WithAsyncMethod_ClickPromoCode<WithAsyncMethod_CommentPromoCode<Service > > > > > > > AsyncService;
   template <class BaseClass>
   class WithCallbackMethod_CreatePromoCode : public BaseClass {
    private:
@@ -427,7 +515,61 @@ class PromoService final {
     virtual ::grpc::ServerUnaryReactor* ListPromoCodes(
       ::grpc::CallbackServerContext* /*context*/, const ::promo::ListPromoCodesRequest* /*request*/, ::promo::ListPromoCodesResponse* /*response*/)  { return nullptr; }
   };
-  typedef WithCallbackMethod_CreatePromoCode<WithCallbackMethod_UpdatePromoCode<WithCallbackMethod_DeletePromoCode<WithCallbackMethod_GetPromoCodeById<WithCallbackMethod_ListPromoCodes<Service > > > > > CallbackService;
+  template <class BaseClass>
+  class WithCallbackMethod_ClickPromoCode : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithCallbackMethod_ClickPromoCode() {
+      ::grpc::Service::MarkMethodCallback(5,
+          new ::grpc::internal::CallbackUnaryHandler< ::promo::ClickPromoCodeRequest, ::promo::PromoCode>(
+            [this](
+                   ::grpc::CallbackServerContext* context, const ::promo::ClickPromoCodeRequest* request, ::promo::PromoCode* response) { return this->ClickPromoCode(context, request, response); }));}
+    void SetMessageAllocatorFor_ClickPromoCode(
+        ::grpc::MessageAllocator< ::promo::ClickPromoCodeRequest, ::promo::PromoCode>* allocator) {
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(5);
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::promo::ClickPromoCodeRequest, ::promo::PromoCode>*>(handler)
+              ->SetMessageAllocator(allocator);
+    }
+    ~WithCallbackMethod_ClickPromoCode() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ClickPromoCode(::grpc::ServerContext* /*context*/, const ::promo::ClickPromoCodeRequest* /*request*/, ::promo::PromoCode* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    virtual ::grpc::ServerUnaryReactor* ClickPromoCode(
+      ::grpc::CallbackServerContext* /*context*/, const ::promo::ClickPromoCodeRequest* /*request*/, ::promo::PromoCode* /*response*/)  { return nullptr; }
+  };
+  template <class BaseClass>
+  class WithCallbackMethod_CommentPromoCode : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithCallbackMethod_CommentPromoCode() {
+      ::grpc::Service::MarkMethodCallback(6,
+          new ::grpc::internal::CallbackUnaryHandler< ::promo::CommentPromoCodeRequest, ::promo::PromoCode>(
+            [this](
+                   ::grpc::CallbackServerContext* context, const ::promo::CommentPromoCodeRequest* request, ::promo::PromoCode* response) { return this->CommentPromoCode(context, request, response); }));}
+    void SetMessageAllocatorFor_CommentPromoCode(
+        ::grpc::MessageAllocator< ::promo::CommentPromoCodeRequest, ::promo::PromoCode>* allocator) {
+      ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(6);
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::promo::CommentPromoCodeRequest, ::promo::PromoCode>*>(handler)
+              ->SetMessageAllocator(allocator);
+    }
+    ~WithCallbackMethod_CommentPromoCode() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status CommentPromoCode(::grpc::ServerContext* /*context*/, const ::promo::CommentPromoCodeRequest* /*request*/, ::promo::PromoCode* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    virtual ::grpc::ServerUnaryReactor* CommentPromoCode(
+      ::grpc::CallbackServerContext* /*context*/, const ::promo::CommentPromoCodeRequest* /*request*/, ::promo::PromoCode* /*response*/)  { return nullptr; }
+  };
+  typedef WithCallbackMethod_CreatePromoCode<WithCallbackMethod_UpdatePromoCode<WithCallbackMethod_DeletePromoCode<WithCallbackMethod_GetPromoCodeById<WithCallbackMethod_ListPromoCodes<WithCallbackMethod_ClickPromoCode<WithCallbackMethod_CommentPromoCode<Service > > > > > > > CallbackService;
   typedef CallbackService ExperimentalCallbackService;
   template <class BaseClass>
   class WithGenericMethod_CreatePromoCode : public BaseClass {
@@ -510,6 +652,40 @@ class PromoService final {
     }
     // disable synchronous version of this method
     ::grpc::Status ListPromoCodes(::grpc::ServerContext* /*context*/, const ::promo::ListPromoCodesRequest* /*request*/, ::promo::ListPromoCodesResponse* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+  };
+  template <class BaseClass>
+  class WithGenericMethod_ClickPromoCode : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithGenericMethod_ClickPromoCode() {
+      ::grpc::Service::MarkMethodGeneric(5);
+    }
+    ~WithGenericMethod_ClickPromoCode() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ClickPromoCode(::grpc::ServerContext* /*context*/, const ::promo::ClickPromoCodeRequest* /*request*/, ::promo::PromoCode* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+  };
+  template <class BaseClass>
+  class WithGenericMethod_CommentPromoCode : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithGenericMethod_CommentPromoCode() {
+      ::grpc::Service::MarkMethodGeneric(6);
+    }
+    ~WithGenericMethod_CommentPromoCode() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status CommentPromoCode(::grpc::ServerContext* /*context*/, const ::promo::CommentPromoCodeRequest* /*request*/, ::promo::PromoCode* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -612,6 +788,46 @@ class PromoService final {
     }
     void RequestListPromoCodes(::grpc::ServerContext* context, ::grpc::ByteBuffer* request, ::grpc::ServerAsyncResponseWriter< ::grpc::ByteBuffer>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
       ::grpc::Service::RequestAsyncUnary(4, context, request, response, new_call_cq, notification_cq, tag);
+    }
+  };
+  template <class BaseClass>
+  class WithRawMethod_ClickPromoCode : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithRawMethod_ClickPromoCode() {
+      ::grpc::Service::MarkMethodRaw(5);
+    }
+    ~WithRawMethod_ClickPromoCode() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ClickPromoCode(::grpc::ServerContext* /*context*/, const ::promo::ClickPromoCodeRequest* /*request*/, ::promo::PromoCode* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    void RequestClickPromoCode(::grpc::ServerContext* context, ::grpc::ByteBuffer* request, ::grpc::ServerAsyncResponseWriter< ::grpc::ByteBuffer>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+      ::grpc::Service::RequestAsyncUnary(5, context, request, response, new_call_cq, notification_cq, tag);
+    }
+  };
+  template <class BaseClass>
+  class WithRawMethod_CommentPromoCode : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithRawMethod_CommentPromoCode() {
+      ::grpc::Service::MarkMethodRaw(6);
+    }
+    ~WithRawMethod_CommentPromoCode() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status CommentPromoCode(::grpc::ServerContext* /*context*/, const ::promo::CommentPromoCodeRequest* /*request*/, ::promo::PromoCode* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    void RequestCommentPromoCode(::grpc::ServerContext* context, ::grpc::ByteBuffer* request, ::grpc::ServerAsyncResponseWriter< ::grpc::ByteBuffer>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+      ::grpc::Service::RequestAsyncUnary(6, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
   template <class BaseClass>
@@ -722,6 +938,50 @@ class PromoService final {
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     virtual ::grpc::ServerUnaryReactor* ListPromoCodes(
+      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)  { return nullptr; }
+  };
+  template <class BaseClass>
+  class WithRawCallbackMethod_ClickPromoCode : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithRawCallbackMethod_ClickPromoCode() {
+      ::grpc::Service::MarkMethodRawCallback(5,
+          new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+            [this](
+                   ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->ClickPromoCode(context, request, response); }));
+    }
+    ~WithRawCallbackMethod_ClickPromoCode() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status ClickPromoCode(::grpc::ServerContext* /*context*/, const ::promo::ClickPromoCodeRequest* /*request*/, ::promo::PromoCode* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    virtual ::grpc::ServerUnaryReactor* ClickPromoCode(
+      ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)  { return nullptr; }
+  };
+  template <class BaseClass>
+  class WithRawCallbackMethod_CommentPromoCode : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithRawCallbackMethod_CommentPromoCode() {
+      ::grpc::Service::MarkMethodRawCallback(6,
+          new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+            [this](
+                   ::grpc::CallbackServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response) { return this->CommentPromoCode(context, request, response); }));
+    }
+    ~WithRawCallbackMethod_CommentPromoCode() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status CommentPromoCode(::grpc::ServerContext* /*context*/, const ::promo::CommentPromoCodeRequest* /*request*/, ::promo::PromoCode* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    virtual ::grpc::ServerUnaryReactor* CommentPromoCode(
       ::grpc::CallbackServerContext* /*context*/, const ::grpc::ByteBuffer* /*request*/, ::grpc::ByteBuffer* /*response*/)  { return nullptr; }
   };
   template <class BaseClass>
@@ -859,9 +1119,63 @@ class PromoService final {
     // replace default version of method with streamed unary
     virtual ::grpc::Status StreamedListPromoCodes(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::promo::ListPromoCodesRequest,::promo::ListPromoCodesResponse>* server_unary_streamer) = 0;
   };
-  typedef WithStreamedUnaryMethod_CreatePromoCode<WithStreamedUnaryMethod_UpdatePromoCode<WithStreamedUnaryMethod_DeletePromoCode<WithStreamedUnaryMethod_GetPromoCodeById<WithStreamedUnaryMethod_ListPromoCodes<Service > > > > > StreamedUnaryService;
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_ClickPromoCode : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithStreamedUnaryMethod_ClickPromoCode() {
+      ::grpc::Service::MarkMethodStreamed(5,
+        new ::grpc::internal::StreamedUnaryHandler<
+          ::promo::ClickPromoCodeRequest, ::promo::PromoCode>(
+            [this](::grpc::ServerContext* context,
+                   ::grpc::ServerUnaryStreamer<
+                     ::promo::ClickPromoCodeRequest, ::promo::PromoCode>* streamer) {
+                       return this->StreamedClickPromoCode(context,
+                         streamer);
+                  }));
+    }
+    ~WithStreamedUnaryMethod_ClickPromoCode() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status ClickPromoCode(::grpc::ServerContext* /*context*/, const ::promo::ClickPromoCodeRequest* /*request*/, ::promo::PromoCode* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedClickPromoCode(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::promo::ClickPromoCodeRequest,::promo::PromoCode>* server_unary_streamer) = 0;
+  };
+  template <class BaseClass>
+  class WithStreamedUnaryMethod_CommentPromoCode : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service* /*service*/) {}
+   public:
+    WithStreamedUnaryMethod_CommentPromoCode() {
+      ::grpc::Service::MarkMethodStreamed(6,
+        new ::grpc::internal::StreamedUnaryHandler<
+          ::promo::CommentPromoCodeRequest, ::promo::PromoCode>(
+            [this](::grpc::ServerContext* context,
+                   ::grpc::ServerUnaryStreamer<
+                     ::promo::CommentPromoCodeRequest, ::promo::PromoCode>* streamer) {
+                       return this->StreamedCommentPromoCode(context,
+                         streamer);
+                  }));
+    }
+    ~WithStreamedUnaryMethod_CommentPromoCode() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable regular version of this method
+    ::grpc::Status CommentPromoCode(::grpc::ServerContext* /*context*/, const ::promo::CommentPromoCodeRequest* /*request*/, ::promo::PromoCode* /*response*/) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    // replace default version of method with streamed unary
+    virtual ::grpc::Status StreamedCommentPromoCode(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::promo::CommentPromoCodeRequest,::promo::PromoCode>* server_unary_streamer) = 0;
+  };
+  typedef WithStreamedUnaryMethod_CreatePromoCode<WithStreamedUnaryMethod_UpdatePromoCode<WithStreamedUnaryMethod_DeletePromoCode<WithStreamedUnaryMethod_GetPromoCodeById<WithStreamedUnaryMethod_ListPromoCodes<WithStreamedUnaryMethod_ClickPromoCode<WithStreamedUnaryMethod_CommentPromoCode<Service > > > > > > > StreamedUnaryService;
   typedef Service SplitStreamedService;
-  typedef WithStreamedUnaryMethod_CreatePromoCode<WithStreamedUnaryMethod_UpdatePromoCode<WithStreamedUnaryMethod_DeletePromoCode<WithStreamedUnaryMethod_GetPromoCodeById<WithStreamedUnaryMethod_ListPromoCodes<Service > > > > > StreamedService;
+  typedef WithStreamedUnaryMethod_CreatePromoCode<WithStreamedUnaryMethod_UpdatePromoCode<WithStreamedUnaryMethod_DeletePromoCode<WithStreamedUnaryMethod_GetPromoCodeById<WithStreamedUnaryMethod_ListPromoCodes<WithStreamedUnaryMethod_ClickPromoCode<WithStreamedUnaryMethod_CommentPromoCode<Service > > > > > > > StreamedService;
 };
 
 }  // namespace promo

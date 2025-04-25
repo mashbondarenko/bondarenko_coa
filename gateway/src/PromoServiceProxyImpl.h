@@ -5,6 +5,7 @@
 #include <grpcpp/grpcpp.h>
 #include "promo.grpc.pb.h"
 #include "auth.grpc.pb.h"
+#include "KafkaProducer.h"
 
 namespace gateway {
 
@@ -32,6 +33,14 @@ public:
     grpc::Status ListPromoCodes(grpc::ServerContext* context,
                                 const promo::ListPromoCodesRequest* request,
                                 promo::ListPromoCodesResponse* response) override;
+
+    grpc::Status ClickPromoCode(grpc::ServerContext* context,
+                                const promo::ClickPromoCodeRequest* request,
+                                promo::PromoCode* response) override;
+
+    grpc::Status CommentPromoCode(grpc::ServerContext* context,
+                                  const promo::CommentPromoCodeRequest* request,
+                                  promo::PromoCode* response) override;
 
 private:
     std::unique_ptr<promo::PromoService::Stub> promo_stub_;

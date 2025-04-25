@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+service CommentService {
+    rpc GetAllComments(GetAllCommentsRequest) returns (GetAllCommentsResponse);
+}
+
+message GetAllCommentsRequest {
+    string promo_id = 1;
+    int32 page = 2;
+    int32 page_size = 3;
+}
+
+message GetAllCommentsResponse {
+    repeated string comments = 1;
+    int32 total_comments = 2;
+}

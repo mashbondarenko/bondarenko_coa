@@ -61,7 +61,14 @@ grpc::Status PromoServiceProxyImpl::GetPromoCodeById(grpc::ServerContext* contex
         return tokenStatus;
     }
     grpc::ClientContext client_context;
-    return promo_stub_->GetPromoCodeById(&client_context, *request, response);
+    grpc::Status status = promo_stub_->GetPromoCodeById(&client_context, *request, response);
+    if (status.ok()) {
+        KafkaProducer kafkaProducer("localhost:9092", "promo-view");
+        std::string message = "User " + request->token() + " viewed promo " + std::to_string(request->promo_id()) + " at " + std::to_string(time(nullptr));
+        kafkaProducer.SendMessage(message);
+    }
+
+    return status;
 }
 
 grpc::Status PromoServiceProxyImpl::ListPromoCodes(grpc::ServerContext* context,
@@ -73,6 +80,22 @@ grpc::Status PromoServiceProxyImpl::ListPromoCodes(grpc::ServerContext* context,
     }
     grpc::ClientContext client_context;
     return promo_stub_->ListPromoCodes(&client_context, *request, response);
+}
+
+grpc::Status PromoServiceProxyImpl::ClickPromoCode(grpc::ServerContext* context,
+    const promo::ClickPromoCodeRequest* request, promo::PromoCode* response) {
+    KafkaProducer kafkaProducer("localhost:9092", "promo-click");
+    std::string message = "User " + request->user_id() + " clicked promo " + std::to_string(request->promo_id()) + " at " + std::to_string(time(nullptr));
+    kafkaProducer.SendMessage(message);
+   return grpc::Status::OK;
+}
+
+grpc::Status PromoServiceProxyImpl::CommentPromoCode(grpc::ServerContext* context,
+    const promo::CommentPromoCodeRequest* request, promo::PromoCode* response) {
+    KafkaProducer kafkaProducer("localhost:9092", "promo-comment");
+    std::string message = "User " + request->user_id() + " commented on promo " + std::to_string(request->promo_id()) + ": " + request->comment() + " at " + std::to_string(time(nullptr));
+    kafkaProducer.SendMessage(message);
+    return grpc::Status::OK;
 }
 
 } // namespace gateway

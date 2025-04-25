@@ -228,6 +228,71 @@ struct CreatePromoCodeRequestDefaultTypeInternal {
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CreatePromoCodeRequestDefaultTypeInternal _CreatePromoCodeRequest_default_instance_;
 
+inline constexpr CommentPromoCodeRequest::Impl_::Impl_(
+    ::_pbi::ConstantInitialized) noexcept
+      : token_(
+            &::google::protobuf::internal::fixed_address_empty_string,
+            ::_pbi::ConstantInitialized()),
+        user_id_(
+            &::google::protobuf::internal::fixed_address_empty_string,
+            ::_pbi::ConstantInitialized()),
+        comment_(
+            &::google::protobuf::internal::fixed_address_empty_string,
+            ::_pbi::ConstantInitialized()),
+        promo_id_{::int64_t{0}},
+        _cached_size_{0} {}
+
+template <typename>
+PROTOBUF_CONSTEXPR CommentPromoCodeRequest::CommentPromoCodeRequest(::_pbi::ConstantInitialized)
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+    : ::google::protobuf::Message(_class_data_.base()),
+#else   // PROTOBUF_CUSTOM_VTABLE
+    : ::google::protobuf::Message(),
+#endif  // PROTOBUF_CUSTOM_VTABLE
+      _impl_(::_pbi::ConstantInitialized()) {
+}
+struct CommentPromoCodeRequestDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR CommentPromoCodeRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~CommentPromoCodeRequestDefaultTypeInternal() {}
+  union {
+    CommentPromoCodeRequest _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CommentPromoCodeRequestDefaultTypeInternal _CommentPromoCodeRequest_default_instance_;
+
+inline constexpr ClickPromoCodeRequest::Impl_::Impl_(
+    ::_pbi::ConstantInitialized) noexcept
+      : token_(
+            &::google::protobuf::internal::fixed_address_empty_string,
+            ::_pbi::ConstantInitialized()),
+        user_id_(
+            &::google::protobuf::internal::fixed_address_empty_string,
+            ::_pbi::ConstantInitialized()),
+        promo_id_{::int64_t{0}},
+        _cached_size_{0} {}
+
+template <typename>
+PROTOBUF_CONSTEXPR ClickPromoCodeRequest::ClickPromoCodeRequest(::_pbi::ConstantInitialized)
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+    : ::google::protobuf::Message(_class_data_.base()),
+#else   // PROTOBUF_CUSTOM_VTABLE
+    : ::google::protobuf::Message(),
+#endif  // PROTOBUF_CUSTOM_VTABLE
+      _impl_(::_pbi::ConstantInitialized()) {
+}
+struct ClickPromoCodeRequestDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR ClickPromoCodeRequestDefaultTypeInternal() : _instance(::_pbi::ConstantInitialized{}) {}
+  ~ClickPromoCodeRequestDefaultTypeInternal() {}
+  union {
+    ClickPromoCodeRequest _instance;
+  };
+};
+
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
+    PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ClickPromoCodeRequestDefaultTypeInternal _ClickPromoCodeRequest_default_instance_;
+
 inline constexpr ListPromoCodesResponse::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
       : promo_codes_{},
@@ -349,6 +414,29 @@ const ::uint32_t
         PROTOBUF_FIELD_OFFSET(::promo::ListPromoCodesResponse, _impl_.total_count_),
         PROTOBUF_FIELD_OFFSET(::promo::ListPromoCodesResponse, _impl_.page_),
         PROTOBUF_FIELD_OFFSET(::promo::ListPromoCodesResponse, _impl_.page_size_),
+        ~0u,  // no _has_bits_
+        PROTOBUF_FIELD_OFFSET(::promo::ClickPromoCodeRequest, _internal_metadata_),
+        ~0u,  // no _extensions_
+        ~0u,  // no _oneof_case_
+        ~0u,  // no _weak_field_map_
+        ~0u,  // no _inlined_string_donated_
+        ~0u,  // no _split_
+        ~0u,  // no sizeof(Split)
+        PROTOBUF_FIELD_OFFSET(::promo::ClickPromoCodeRequest, _impl_.token_),
+        PROTOBUF_FIELD_OFFSET(::promo::ClickPromoCodeRequest, _impl_.promo_id_),
+        PROTOBUF_FIELD_OFFSET(::promo::ClickPromoCodeRequest, _impl_.user_id_),
+        ~0u,  // no _has_bits_
+        PROTOBUF_FIELD_OFFSET(::promo::CommentPromoCodeRequest, _internal_metadata_),
+        ~0u,  // no _extensions_
+        ~0u,  // no _oneof_case_
+        ~0u,  // no _weak_field_map_
+        ~0u,  // no _inlined_string_donated_
+        ~0u,  // no _split_
+        ~0u,  // no sizeof(Split)
+        PROTOBUF_FIELD_OFFSET(::promo::CommentPromoCodeRequest, _impl_.token_),
+        PROTOBUF_FIELD_OFFSET(::promo::CommentPromoCodeRequest, _impl_.promo_id_),
+        PROTOBUF_FIELD_OFFSET(::promo::CommentPromoCodeRequest, _impl_.user_id_),
+        PROTOBUF_FIELD_OFFSET(::promo::CommentPromoCodeRequest, _impl_.comment_),
 };
 
 static const ::_pbi::MigrationSchema
@@ -360,6 +448,8 @@ static const ::_pbi::MigrationSchema
         {53, -1, -1, sizeof(::promo::GetPromoCodeRequest)},
         {63, -1, -1, sizeof(::promo::ListPromoCodesRequest)},
         {74, -1, -1, sizeof(::promo::ListPromoCodesResponse)},
+        {86, -1, -1, sizeof(::promo::ClickPromoCodeRequest)},
+        {97, -1, -1, sizeof(::promo::CommentPromoCodeRequest)},
 };
 static const ::_pb::Message* const file_default_instances[] = {
     &::promo::_PromoCode_default_instance_._instance,
@@ -369,6 +459,8 @@ static const ::_pb::Message* const file_default_instances[] = {
     &::promo::_GetPromoCodeRequest_default_instance_._instance,
     &::promo::_ListPromoCodesRequest_default_instance_._instance,
     &::promo::_ListPromoCodesResponse_default_instance_._instance,
+    &::promo::_ClickPromoCodeRequest_default_instance_._instance,
+    &::promo::_CommentPromoCodeRequest_default_instance_._instance,
 };
 const char descriptor_table_protodef_promo_2eproto[] ABSL_ATTRIBUTE_SECTION_VARIABLE(
     protodesc_cold) = {
@@ -389,29 +481,36 @@ const char descriptor_table_protodef_promo_2eproto[] ABSL_ATTRIBUTE_SECTION_VARI
     "\001 \001(\t\022\014\n\004page\030\002 \001(\005\022\021\n\tpage_size\030\003 \001(\005\"u"
     "\n\026ListPromoCodesResponse\022%\n\013promo_codes\030"
     "\001 \003(\0132\020.promo.PromoCode\022\023\n\013total_count\030\002"
-    " \001(\005\022\014\n\004page\030\003 \001(\005\022\021\n\tpage_size\030\004 \001(\0052\353\002"
-    "\n\014PromoService\022B\n\017CreatePromoCode\022\035.prom"
-    "o.CreatePromoCodeRequest\032\020.promo.PromoCo"
-    "de\022B\n\017UpdatePromoCode\022\035.promo.UpdateProm"
-    "oCodeRequest\032\020.promo.PromoCode\022B\n\017Delete"
-    "PromoCode\022\035.promo.DeletePromoCodeRequest"
-    "\032\020.promo.PromoCode\022@\n\020GetPromoCodeById\022\032"
-    ".promo.GetPromoCodeRequest\032\020.promo.Promo"
-    "Code\022M\n\016ListPromoCodes\022\034.promo.ListPromo"
-    "CodesRequest\032\035.promo.ListPromoCodesRespo"
-    "nseb\006proto3"
+    " \001(\005\022\014\n\004page\030\003 \001(\005\022\021\n\tpage_size\030\004 \001(\005\"I\n"
+    "\025ClickPromoCodeRequest\022\r\n\005token\030\001 \001(\t\022\020\n"
+    "\010promo_id\030\002 \001(\003\022\017\n\007user_id\030\003 \001(\t\"\\\n\027Comm"
+    "entPromoCodeRequest\022\r\n\005token\030\001 \001(\t\022\020\n\010pr"
+    "omo_id\030\002 \001(\003\022\017\n\007user_id\030\003 \001(\t\022\017\n\007comment"
+    "\030\004 \001(\t2\363\003\n\014PromoService\022B\n\017CreatePromoCo"
+    "de\022\035.promo.CreatePromoCodeRequest\032\020.prom"
+    "o.PromoCode\022B\n\017UpdatePromoCode\022\035.promo.U"
+    "pdatePromoCodeRequest\032\020.promo.PromoCode\022"
+    "B\n\017DeletePromoCode\022\035.promo.DeletePromoCo"
+    "deRequest\032\020.promo.PromoCode\022@\n\020GetPromoC"
+    "odeById\022\032.promo.GetPromoCodeRequest\032\020.pr"
+    "omo.PromoCode\022M\n\016ListPromoCodes\022\034.promo."
+    "ListPromoCodesRequest\032\035.promo.ListPromoC"
+    "odesResponse\022@\n\016ClickPromoCode\022\034.promo.C"
+    "lickPromoCodeRequest\032\020.promo.PromoCode\022D"
+    "\n\020CommentPromoCode\022\036.promo.CommentPromoC"
+    "odeRequest\032\020.promo.PromoCodeb\006proto3"
 };
 static ::absl::once_flag descriptor_table_promo_2eproto_once;
 PROTOBUF_CONSTINIT const ::_pbi::DescriptorTable descriptor_table_promo_2eproto = {
     false,
     false,
-    1091,
+    1396,
     descriptor_table_protodef_promo_2eproto,
     "promo.proto",
     &descriptor_table_promo_2eproto_once,
     nullptr,
     0,
-    7,
+    9,
     schemas,
     file_default_instances,
     TableStruct_promo_2eproto::offsets,
@@ -2709,6 +2808,605 @@ void ListPromoCodesResponse::InternalSwap(ListPromoCodesResponse* PROTOBUF_RESTR
 }
 
 ::google::protobuf::Metadata ListPromoCodesResponse::GetMetadata() const {
+  return ::google::protobuf::Message::GetMetadataImpl(GetClassData()->full());
+}
+// ===================================================================
+
+class ClickPromoCodeRequest::_Internal {
+ public:
+};
+
+ClickPromoCodeRequest::ClickPromoCodeRequest(::google::protobuf::Arena* arena)
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+    : ::google::protobuf::Message(arena, _class_data_.base()) {
+#else   // PROTOBUF_CUSTOM_VTABLE
+    : ::google::protobuf::Message(arena) {
+#endif  // PROTOBUF_CUSTOM_VTABLE
+  SharedCtor(arena);
+  // @@protoc_insertion_point(arena_constructor:promo.ClickPromoCodeRequest)
+}
+inline PROTOBUF_NDEBUG_INLINE ClickPromoCodeRequest::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
+    const Impl_& from, const ::promo::ClickPromoCodeRequest& from_msg)
+      : token_(arena, from.token_),
+        user_id_(arena, from.user_id_),
+        _cached_size_{0} {}
+
+ClickPromoCodeRequest::ClickPromoCodeRequest(
+    ::google::protobuf::Arena* arena,
+    const ClickPromoCodeRequest& from)
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+    : ::google::protobuf::Message(arena, _class_data_.base()) {
+#else   // PROTOBUF_CUSTOM_VTABLE
+    : ::google::protobuf::Message(arena) {
+#endif  // PROTOBUF_CUSTOM_VTABLE
+  ClickPromoCodeRequest* const _this = this;
+  (void)_this;
+  _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
+      from._internal_metadata_);
+  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
+  _impl_.promo_id_ = from._impl_.promo_id_;
+
+  // @@protoc_insertion_point(copy_constructor:promo.ClickPromoCodeRequest)
+}
+inline PROTOBUF_NDEBUG_INLINE ClickPromoCodeRequest::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility,
+    ::google::protobuf::Arena* arena)
+      : token_(arena),
+        user_id_(arena),
+        _cached_size_{0} {}
+
+inline void ClickPromoCodeRequest::SharedCtor(::_pb::Arena* arena) {
+  new (&_impl_) Impl_(internal_visibility(), arena);
+  _impl_.promo_id_ = {};
+}
+ClickPromoCodeRequest::~ClickPromoCodeRequest() {
+  // @@protoc_insertion_point(destructor:promo.ClickPromoCodeRequest)
+  SharedDtor(*this);
+}
+inline void ClickPromoCodeRequest::SharedDtor(MessageLite& self) {
+  ClickPromoCodeRequest& this_ = static_cast<ClickPromoCodeRequest&>(self);
+  this_._internal_metadata_.Delete<::google::protobuf::UnknownFieldSet>();
+  ABSL_DCHECK(this_.GetArena() == nullptr);
+  this_._impl_.token_.Destroy();
+  this_._impl_.user_id_.Destroy();
+  this_._impl_.~Impl_();
+}
+
+inline void* ClickPromoCodeRequest::PlacementNew_(const void*, void* mem,
+                                        ::google::protobuf::Arena* arena) {
+  return ::new (mem) ClickPromoCodeRequest(arena);
+}
+constexpr auto ClickPromoCodeRequest::InternalNewImpl_() {
+  return ::google::protobuf::internal::MessageCreator::CopyInit(sizeof(ClickPromoCodeRequest),
+                                            alignof(ClickPromoCodeRequest));
+}
+PROTOBUF_CONSTINIT
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::google::protobuf::internal::ClassDataFull ClickPromoCodeRequest::_class_data_ = {
+    ::google::protobuf::internal::ClassData{
+        &_ClickPromoCodeRequest_default_instance_._instance,
+        &_table_.header,
+        nullptr,  // OnDemandRegisterArenaDtor
+        nullptr,  // IsInitialized
+        &ClickPromoCodeRequest::MergeImpl,
+        ::google::protobuf::Message::GetNewImpl<ClickPromoCodeRequest>(),
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+        &ClickPromoCodeRequest::SharedDtor,
+        ::google::protobuf::Message::GetClearImpl<ClickPromoCodeRequest>(), &ClickPromoCodeRequest::ByteSizeLong,
+            &ClickPromoCodeRequest::_InternalSerialize,
+#endif  // PROTOBUF_CUSTOM_VTABLE
+        PROTOBUF_FIELD_OFFSET(ClickPromoCodeRequest, _impl_._cached_size_),
+        false,
+    },
+    &ClickPromoCodeRequest::kDescriptorMethods,
+    &descriptor_table_promo_2eproto,
+    nullptr,  // tracker
+};
+const ::google::protobuf::internal::ClassData* ClickPromoCodeRequest::GetClassData() const {
+  ::google::protobuf::internal::PrefetchToLocalCache(&_class_data_);
+  ::google::protobuf::internal::PrefetchToLocalCache(_class_data_.tc_table);
+  return _class_data_.base();
+}
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<2, 3, 0, 48, 2> ClickPromoCodeRequest::_table_ = {
+  {
+    0,  // no _has_bits_
+    0, // no _extensions_
+    3, 24,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967288,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    3,  // num_field_entries
+    0,  // num_aux_entries
+    offsetof(decltype(_table_), field_names),  // no aux_entries
+    _class_data_.base(),
+    nullptr,  // post_loop_handler
+    ::_pbi::TcParser::GenericFallback,  // fallback
+    #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
+    ::_pbi::TcParser::GetTable<::promo::ClickPromoCodeRequest>(),  // to_prefetch
+    #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
+  }, {{
+    {::_pbi::TcParser::MiniParse, {}},
+    // string token = 1;
+    {::_pbi::TcParser::FastUS1,
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(ClickPromoCodeRequest, _impl_.token_)}},
+    // int64 promo_id = 2;
+    {::_pbi::TcParser::SingularVarintNoZag1<::uint64_t, offsetof(ClickPromoCodeRequest, _impl_.promo_id_), 63>(),
+     {16, 63, 0, PROTOBUF_FIELD_OFFSET(ClickPromoCodeRequest, _impl_.promo_id_)}},
+    // string user_id = 3;
+    {::_pbi::TcParser::FastUS1,
+     {26, 63, 0, PROTOBUF_FIELD_OFFSET(ClickPromoCodeRequest, _impl_.user_id_)}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // string token = 1;
+    {PROTOBUF_FIELD_OFFSET(ClickPromoCodeRequest, _impl_.token_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
+    // int64 promo_id = 2;
+    {PROTOBUF_FIELD_OFFSET(ClickPromoCodeRequest, _impl_.promo_id_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt64)},
+    // string user_id = 3;
+    {PROTOBUF_FIELD_OFFSET(ClickPromoCodeRequest, _impl_.user_id_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
+  }},
+  // no aux_entries
+  {{
+    "\33\5\0\7\0\0\0\0"
+    "promo.ClickPromoCodeRequest"
+    "token"
+    "user_id"
+  }},
+};
+
+PROTOBUF_NOINLINE void ClickPromoCodeRequest::Clear() {
+// @@protoc_insertion_point(message_clear_start:promo.ClickPromoCodeRequest)
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  ::uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _impl_.token_.ClearToEmpty();
+  _impl_.user_id_.ClearToEmpty();
+  _impl_.promo_id_ = ::int64_t{0};
+  _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
+}
+
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+        ::uint8_t* ClickPromoCodeRequest::_InternalSerialize(
+            const MessageLite& base, ::uint8_t* target,
+            ::google::protobuf::io::EpsCopyOutputStream* stream) {
+          const ClickPromoCodeRequest& this_ = static_cast<const ClickPromoCodeRequest&>(base);
+#else   // PROTOBUF_CUSTOM_VTABLE
+        ::uint8_t* ClickPromoCodeRequest::_InternalSerialize(
+            ::uint8_t* target,
+            ::google::protobuf::io::EpsCopyOutputStream* stream) const {
+          const ClickPromoCodeRequest& this_ = *this;
+#endif  // PROTOBUF_CUSTOM_VTABLE
+          // @@protoc_insertion_point(serialize_to_array_start:promo.ClickPromoCodeRequest)
+          ::uint32_t cached_has_bits = 0;
+          (void)cached_has_bits;
+
+          // string token = 1;
+          if (!this_._internal_token().empty()) {
+            const std::string& _s = this_._internal_token();
+            ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+                _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "promo.ClickPromoCodeRequest.token");
+            target = stream->WriteStringMaybeAliased(1, _s, target);
+          }
+
+          // int64 promo_id = 2;
+          if (this_._internal_promo_id() != 0) {
+            target = ::google::protobuf::internal::WireFormatLite::
+                WriteInt64ToArrayWithField<2>(
+                    stream, this_._internal_promo_id(), target);
+          }
+
+          // string user_id = 3;
+          if (!this_._internal_user_id().empty()) {
+            const std::string& _s = this_._internal_user_id();
+            ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+                _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "promo.ClickPromoCodeRequest.user_id");
+            target = stream->WriteStringMaybeAliased(3, _s, target);
+          }
+
+          if (PROTOBUF_PREDICT_FALSE(this_._internal_metadata_.have_unknown_fields())) {
+            target =
+                ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+                    this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
+          }
+          // @@protoc_insertion_point(serialize_to_array_end:promo.ClickPromoCodeRequest)
+          return target;
+        }
+
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+        ::size_t ClickPromoCodeRequest::ByteSizeLong(const MessageLite& base) {
+          const ClickPromoCodeRequest& this_ = static_cast<const ClickPromoCodeRequest&>(base);
+#else   // PROTOBUF_CUSTOM_VTABLE
+        ::size_t ClickPromoCodeRequest::ByteSizeLong() const {
+          const ClickPromoCodeRequest& this_ = *this;
+#endif  // PROTOBUF_CUSTOM_VTABLE
+          // @@protoc_insertion_point(message_byte_size_start:promo.ClickPromoCodeRequest)
+          ::size_t total_size = 0;
+
+          ::uint32_t cached_has_bits = 0;
+          // Prevent compiler warnings about cached_has_bits being unused
+          (void)cached_has_bits;
+
+          ::_pbi::Prefetch5LinesFrom7Lines(&this_);
+           {
+            // string token = 1;
+            if (!this_._internal_token().empty()) {
+              total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
+                                              this_._internal_token());
+            }
+            // string user_id = 3;
+            if (!this_._internal_user_id().empty()) {
+              total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
+                                              this_._internal_user_id());
+            }
+            // int64 promo_id = 2;
+            if (this_._internal_promo_id() != 0) {
+              total_size += ::_pbi::WireFormatLite::Int64SizePlusOne(
+                  this_._internal_promo_id());
+            }
+          }
+          return this_.MaybeComputeUnknownFieldsSize(total_size,
+                                                     &this_._impl_._cached_size_);
+        }
+
+void ClickPromoCodeRequest::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
+  auto* const _this = static_cast<ClickPromoCodeRequest*>(&to_msg);
+  auto& from = static_cast<const ClickPromoCodeRequest&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:promo.ClickPromoCodeRequest)
+  ABSL_DCHECK_NE(&from, _this);
+  ::uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (!from._internal_token().empty()) {
+    _this->_internal_set_token(from._internal_token());
+  }
+  if (!from._internal_user_id().empty()) {
+    _this->_internal_set_user_id(from._internal_user_id());
+  }
+  if (from._internal_promo_id() != 0) {
+    _this->_impl_.promo_id_ = from._impl_.promo_id_;
+  }
+  _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void ClickPromoCodeRequest::CopyFrom(const ClickPromoCodeRequest& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:promo.ClickPromoCodeRequest)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+
+void ClickPromoCodeRequest::InternalSwap(ClickPromoCodeRequest* PROTOBUF_RESTRICT other) {
+  using std::swap;
+  auto* arena = GetArena();
+  ABSL_DCHECK_EQ(arena, other->GetArena());
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.token_, &other->_impl_.token_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.user_id_, &other->_impl_.user_id_, arena);
+        swap(_impl_.promo_id_, other->_impl_.promo_id_);
+}
+
+::google::protobuf::Metadata ClickPromoCodeRequest::GetMetadata() const {
+  return ::google::protobuf::Message::GetMetadataImpl(GetClassData()->full());
+}
+// ===================================================================
+
+class CommentPromoCodeRequest::_Internal {
+ public:
+};
+
+CommentPromoCodeRequest::CommentPromoCodeRequest(::google::protobuf::Arena* arena)
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+    : ::google::protobuf::Message(arena, _class_data_.base()) {
+#else   // PROTOBUF_CUSTOM_VTABLE
+    : ::google::protobuf::Message(arena) {
+#endif  // PROTOBUF_CUSTOM_VTABLE
+  SharedCtor(arena);
+  // @@protoc_insertion_point(arena_constructor:promo.CommentPromoCodeRequest)
+}
+inline PROTOBUF_NDEBUG_INLINE CommentPromoCodeRequest::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
+    const Impl_& from, const ::promo::CommentPromoCodeRequest& from_msg)
+      : token_(arena, from.token_),
+        user_id_(arena, from.user_id_),
+        comment_(arena, from.comment_),
+        _cached_size_{0} {}
+
+CommentPromoCodeRequest::CommentPromoCodeRequest(
+    ::google::protobuf::Arena* arena,
+    const CommentPromoCodeRequest& from)
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+    : ::google::protobuf::Message(arena, _class_data_.base()) {
+#else   // PROTOBUF_CUSTOM_VTABLE
+    : ::google::protobuf::Message(arena) {
+#endif  // PROTOBUF_CUSTOM_VTABLE
+  CommentPromoCodeRequest* const _this = this;
+  (void)_this;
+  _internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(
+      from._internal_metadata_);
+  new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
+  _impl_.promo_id_ = from._impl_.promo_id_;
+
+  // @@protoc_insertion_point(copy_constructor:promo.CommentPromoCodeRequest)
+}
+inline PROTOBUF_NDEBUG_INLINE CommentPromoCodeRequest::Impl_::Impl_(
+    ::google::protobuf::internal::InternalVisibility visibility,
+    ::google::protobuf::Arena* arena)
+      : token_(arena),
+        user_id_(arena),
+        comment_(arena),
+        _cached_size_{0} {}
+
+inline void CommentPromoCodeRequest::SharedCtor(::_pb::Arena* arena) {
+  new (&_impl_) Impl_(internal_visibility(), arena);
+  _impl_.promo_id_ = {};
+}
+CommentPromoCodeRequest::~CommentPromoCodeRequest() {
+  // @@protoc_insertion_point(destructor:promo.CommentPromoCodeRequest)
+  SharedDtor(*this);
+}
+inline void CommentPromoCodeRequest::SharedDtor(MessageLite& self) {
+  CommentPromoCodeRequest& this_ = static_cast<CommentPromoCodeRequest&>(self);
+  this_._internal_metadata_.Delete<::google::protobuf::UnknownFieldSet>();
+  ABSL_DCHECK(this_.GetArena() == nullptr);
+  this_._impl_.token_.Destroy();
+  this_._impl_.user_id_.Destroy();
+  this_._impl_.comment_.Destroy();
+  this_._impl_.~Impl_();
+}
+
+inline void* CommentPromoCodeRequest::PlacementNew_(const void*, void* mem,
+                                        ::google::protobuf::Arena* arena) {
+  return ::new (mem) CommentPromoCodeRequest(arena);
+}
+constexpr auto CommentPromoCodeRequest::InternalNewImpl_() {
+  return ::google::protobuf::internal::MessageCreator::CopyInit(sizeof(CommentPromoCodeRequest),
+                                            alignof(CommentPromoCodeRequest));
+}
+PROTOBUF_CONSTINIT
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::google::protobuf::internal::ClassDataFull CommentPromoCodeRequest::_class_data_ = {
+    ::google::protobuf::internal::ClassData{
+        &_CommentPromoCodeRequest_default_instance_._instance,
+        &_table_.header,
+        nullptr,  // OnDemandRegisterArenaDtor
+        nullptr,  // IsInitialized
+        &CommentPromoCodeRequest::MergeImpl,
+        ::google::protobuf::Message::GetNewImpl<CommentPromoCodeRequest>(),
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+        &CommentPromoCodeRequest::SharedDtor,
+        ::google::protobuf::Message::GetClearImpl<CommentPromoCodeRequest>(), &CommentPromoCodeRequest::ByteSizeLong,
+            &CommentPromoCodeRequest::_InternalSerialize,
+#endif  // PROTOBUF_CUSTOM_VTABLE
+        PROTOBUF_FIELD_OFFSET(CommentPromoCodeRequest, _impl_._cached_size_),
+        false,
+    },
+    &CommentPromoCodeRequest::kDescriptorMethods,
+    &descriptor_table_promo_2eproto,
+    nullptr,  // tracker
+};
+const ::google::protobuf::internal::ClassData* CommentPromoCodeRequest::GetClassData() const {
+  ::google::protobuf::internal::PrefetchToLocalCache(&_class_data_);
+  ::google::protobuf::internal::PrefetchToLocalCache(_class_data_.tc_table);
+  return _class_data_.base();
+}
+PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
+const ::_pbi::TcParseTable<2, 4, 0, 57, 2> CommentPromoCodeRequest::_table_ = {
+  {
+    0,  // no _has_bits_
+    0, // no _extensions_
+    4, 24,  // max_field_number, fast_idx_mask
+    offsetof(decltype(_table_), field_lookup_table),
+    4294967280,  // skipmap
+    offsetof(decltype(_table_), field_entries),
+    4,  // num_field_entries
+    0,  // num_aux_entries
+    offsetof(decltype(_table_), field_names),  // no aux_entries
+    _class_data_.base(),
+    nullptr,  // post_loop_handler
+    ::_pbi::TcParser::GenericFallback,  // fallback
+    #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
+    ::_pbi::TcParser::GetTable<::promo::CommentPromoCodeRequest>(),  // to_prefetch
+    #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
+  }, {{
+    // string comment = 4;
+    {::_pbi::TcParser::FastUS1,
+     {34, 63, 0, PROTOBUF_FIELD_OFFSET(CommentPromoCodeRequest, _impl_.comment_)}},
+    // string token = 1;
+    {::_pbi::TcParser::FastUS1,
+     {10, 63, 0, PROTOBUF_FIELD_OFFSET(CommentPromoCodeRequest, _impl_.token_)}},
+    // int64 promo_id = 2;
+    {::_pbi::TcParser::SingularVarintNoZag1<::uint64_t, offsetof(CommentPromoCodeRequest, _impl_.promo_id_), 63>(),
+     {16, 63, 0, PROTOBUF_FIELD_OFFSET(CommentPromoCodeRequest, _impl_.promo_id_)}},
+    // string user_id = 3;
+    {::_pbi::TcParser::FastUS1,
+     {26, 63, 0, PROTOBUF_FIELD_OFFSET(CommentPromoCodeRequest, _impl_.user_id_)}},
+  }}, {{
+    65535, 65535
+  }}, {{
+    // string token = 1;
+    {PROTOBUF_FIELD_OFFSET(CommentPromoCodeRequest, _impl_.token_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
+    // int64 promo_id = 2;
+    {PROTOBUF_FIELD_OFFSET(CommentPromoCodeRequest, _impl_.promo_id_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kInt64)},
+    // string user_id = 3;
+    {PROTOBUF_FIELD_OFFSET(CommentPromoCodeRequest, _impl_.user_id_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
+    // string comment = 4;
+    {PROTOBUF_FIELD_OFFSET(CommentPromoCodeRequest, _impl_.comment_), 0, 0,
+    (0 | ::_fl::kFcSingular | ::_fl::kUtf8String | ::_fl::kRepAString)},
+  }},
+  // no aux_entries
+  {{
+    "\35\5\0\7\7\0\0\0"
+    "promo.CommentPromoCodeRequest"
+    "token"
+    "user_id"
+    "comment"
+  }},
+};
+
+PROTOBUF_NOINLINE void CommentPromoCodeRequest::Clear() {
+// @@protoc_insertion_point(message_clear_start:promo.CommentPromoCodeRequest)
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  ::uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _impl_.token_.ClearToEmpty();
+  _impl_.user_id_.ClearToEmpty();
+  _impl_.comment_.ClearToEmpty();
+  _impl_.promo_id_ = ::int64_t{0};
+  _internal_metadata_.Clear<::google::protobuf::UnknownFieldSet>();
+}
+
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+        ::uint8_t* CommentPromoCodeRequest::_InternalSerialize(
+            const MessageLite& base, ::uint8_t* target,
+            ::google::protobuf::io::EpsCopyOutputStream* stream) {
+          const CommentPromoCodeRequest& this_ = static_cast<const CommentPromoCodeRequest&>(base);
+#else   // PROTOBUF_CUSTOM_VTABLE
+        ::uint8_t* CommentPromoCodeRequest::_InternalSerialize(
+            ::uint8_t* target,
+            ::google::protobuf::io::EpsCopyOutputStream* stream) const {
+          const CommentPromoCodeRequest& this_ = *this;
+#endif  // PROTOBUF_CUSTOM_VTABLE
+          // @@protoc_insertion_point(serialize_to_array_start:promo.CommentPromoCodeRequest)
+          ::uint32_t cached_has_bits = 0;
+          (void)cached_has_bits;
+
+          // string token = 1;
+          if (!this_._internal_token().empty()) {
+            const std::string& _s = this_._internal_token();
+            ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+                _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "promo.CommentPromoCodeRequest.token");
+            target = stream->WriteStringMaybeAliased(1, _s, target);
+          }
+
+          // int64 promo_id = 2;
+          if (this_._internal_promo_id() != 0) {
+            target = ::google::protobuf::internal::WireFormatLite::
+                WriteInt64ToArrayWithField<2>(
+                    stream, this_._internal_promo_id(), target);
+          }
+
+          // string user_id = 3;
+          if (!this_._internal_user_id().empty()) {
+            const std::string& _s = this_._internal_user_id();
+            ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+                _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "promo.CommentPromoCodeRequest.user_id");
+            target = stream->WriteStringMaybeAliased(3, _s, target);
+          }
+
+          // string comment = 4;
+          if (!this_._internal_comment().empty()) {
+            const std::string& _s = this_._internal_comment();
+            ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
+                _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "promo.CommentPromoCodeRequest.comment");
+            target = stream->WriteStringMaybeAliased(4, _s, target);
+          }
+
+          if (PROTOBUF_PREDICT_FALSE(this_._internal_metadata_.have_unknown_fields())) {
+            target =
+                ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+                    this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
+          }
+          // @@protoc_insertion_point(serialize_to_array_end:promo.CommentPromoCodeRequest)
+          return target;
+        }
+
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+        ::size_t CommentPromoCodeRequest::ByteSizeLong(const MessageLite& base) {
+          const CommentPromoCodeRequest& this_ = static_cast<const CommentPromoCodeRequest&>(base);
+#else   // PROTOBUF_CUSTOM_VTABLE
+        ::size_t CommentPromoCodeRequest::ByteSizeLong() const {
+          const CommentPromoCodeRequest& this_ = *this;
+#endif  // PROTOBUF_CUSTOM_VTABLE
+          // @@protoc_insertion_point(message_byte_size_start:promo.CommentPromoCodeRequest)
+          ::size_t total_size = 0;
+
+          ::uint32_t cached_has_bits = 0;
+          // Prevent compiler warnings about cached_has_bits being unused
+          (void)cached_has_bits;
+
+          ::_pbi::Prefetch5LinesFrom7Lines(&this_);
+           {
+            // string token = 1;
+            if (!this_._internal_token().empty()) {
+              total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
+                                              this_._internal_token());
+            }
+            // string user_id = 3;
+            if (!this_._internal_user_id().empty()) {
+              total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
+                                              this_._internal_user_id());
+            }
+            // string comment = 4;
+            if (!this_._internal_comment().empty()) {
+              total_size += 1 + ::google::protobuf::internal::WireFormatLite::StringSize(
+                                              this_._internal_comment());
+            }
+            // int64 promo_id = 2;
+            if (this_._internal_promo_id() != 0) {
+              total_size += ::_pbi::WireFormatLite::Int64SizePlusOne(
+                  this_._internal_promo_id());
+            }
+          }
+          return this_.MaybeComputeUnknownFieldsSize(total_size,
+                                                     &this_._impl_._cached_size_);
+        }
+
+void CommentPromoCodeRequest::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
+  auto* const _this = static_cast<CommentPromoCodeRequest*>(&to_msg);
+  auto& from = static_cast<const CommentPromoCodeRequest&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:promo.CommentPromoCodeRequest)
+  ABSL_DCHECK_NE(&from, _this);
+  ::uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  if (!from._internal_token().empty()) {
+    _this->_internal_set_token(from._internal_token());
+  }
+  if (!from._internal_user_id().empty()) {
+    _this->_internal_set_user_id(from._internal_user_id());
+  }
+  if (!from._internal_comment().empty()) {
+    _this->_internal_set_comment(from._internal_comment());
+  }
+  if (from._internal_promo_id() != 0) {
+    _this->_impl_.promo_id_ = from._impl_.promo_id_;
+  }
+  _this->_internal_metadata_.MergeFrom<::google::protobuf::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void CommentPromoCodeRequest::CopyFrom(const CommentPromoCodeRequest& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:promo.CommentPromoCodeRequest)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+
+void CommentPromoCodeRequest::InternalSwap(CommentPromoCodeRequest* PROTOBUF_RESTRICT other) {
+  using std::swap;
+  auto* arena = GetArena();
+  ABSL_DCHECK_EQ(arena, other->GetArena());
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.token_, &other->_impl_.token_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.user_id_, &other->_impl_.user_id_, arena);
+  ::_pbi::ArenaStringPtr::InternalSwap(&_impl_.comment_, &other->_impl_.comment_, arena);
+        swap(_impl_.promo_id_, other->_impl_.promo_id_);
+}
+
+::google::protobuf::Metadata CommentPromoCodeRequest::GetMetadata() const {
   return ::google::protobuf::Message::GetMetadataImpl(GetClassData()->full());
 }
 // @@protoc_insertion_point(namespace_scope)

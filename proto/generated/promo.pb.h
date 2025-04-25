@@ -52,6 +52,12 @@ struct TableStruct_promo_2eproto {
 extern const ::google::protobuf::internal::DescriptorTable
     descriptor_table_promo_2eproto;
 namespace promo {
+class ClickPromoCodeRequest;
+struct ClickPromoCodeRequestDefaultTypeInternal;
+extern ClickPromoCodeRequestDefaultTypeInternal _ClickPromoCodeRequest_default_instance_;
+class CommentPromoCodeRequest;
+struct CommentPromoCodeRequestDefaultTypeInternal;
+extern CommentPromoCodeRequestDefaultTypeInternal _CommentPromoCodeRequest_default_instance_;
 class CreatePromoCodeRequest;
 struct CreatePromoCodeRequestDefaultTypeInternal;
 extern CreatePromoCodeRequestDefaultTypeInternal _CreatePromoCodeRequest_default_instance_;
@@ -1562,6 +1568,476 @@ class CreatePromoCodeRequest final : public ::google::protobuf::Message
 };
 // -------------------------------------------------------------------
 
+class CommentPromoCodeRequest final : public ::google::protobuf::Message
+/* @@protoc_insertion_point(class_definition:promo.CommentPromoCodeRequest) */ {
+ public:
+  inline CommentPromoCodeRequest() : CommentPromoCodeRequest(nullptr) {}
+  ~CommentPromoCodeRequest() PROTOBUF_FINAL;
+
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+  void operator delete(CommentPromoCodeRequest* msg, std::destroying_delete_t) {
+    SharedDtor(*msg);
+    ::google::protobuf::internal::SizedDelete(msg, sizeof(CommentPromoCodeRequest));
+  }
+#endif
+
+  template <typename = void>
+  explicit PROTOBUF_CONSTEXPR CommentPromoCodeRequest(
+      ::google::protobuf::internal::ConstantInitialized);
+
+  inline CommentPromoCodeRequest(const CommentPromoCodeRequest& from) : CommentPromoCodeRequest(nullptr, from) {}
+  inline CommentPromoCodeRequest(CommentPromoCodeRequest&& from) noexcept
+      : CommentPromoCodeRequest(nullptr, std::move(from)) {}
+  inline CommentPromoCodeRequest& operator=(const CommentPromoCodeRequest& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline CommentPromoCodeRequest& operator=(CommentPromoCodeRequest&& from) noexcept {
+    if (this == &from) return *this;
+    if (::google::protobuf::internal::CanMoveWithInternalSwap(GetArena(), from.GetArena())) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const
+      ABSL_ATTRIBUTE_LIFETIME_BOUND {
+    return _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance);
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields()
+      ABSL_ATTRIBUTE_LIFETIME_BOUND {
+    return _internal_metadata_.mutable_unknown_fields<::google::protobuf::UnknownFieldSet>();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::google::protobuf::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::google::protobuf::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const CommentPromoCodeRequest& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const CommentPromoCodeRequest* internal_default_instance() {
+    return reinterpret_cast<const CommentPromoCodeRequest*>(
+        &_CommentPromoCodeRequest_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages = 8;
+  friend void swap(CommentPromoCodeRequest& a, CommentPromoCodeRequest& b) { a.Swap(&b); }
+  inline void Swap(CommentPromoCodeRequest* other) {
+    if (other == this) return;
+    if (::google::protobuf::internal::CanUseInternalSwap(GetArena(), other->GetArena())) {
+      InternalSwap(other);
+    } else {
+      ::google::protobuf::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(CommentPromoCodeRequest* other) {
+    if (other == this) return;
+    ABSL_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  CommentPromoCodeRequest* New(::google::protobuf::Arena* arena = nullptr) const {
+    return ::google::protobuf::Message::DefaultConstruct<CommentPromoCodeRequest>(arena);
+  }
+  using ::google::protobuf::Message::CopyFrom;
+  void CopyFrom(const CommentPromoCodeRequest& from);
+  using ::google::protobuf::Message::MergeFrom;
+  void MergeFrom(const CommentPromoCodeRequest& from) { CommentPromoCodeRequest::MergeImpl(*this, from); }
+
+  private:
+  static void MergeImpl(
+      ::google::protobuf::MessageLite& to_msg,
+      const ::google::protobuf::MessageLite& from_msg);
+
+  public:
+  bool IsInitialized() const {
+    return true;
+  }
+  ABSL_ATTRIBUTE_REINITIALIZES void Clear() PROTOBUF_FINAL;
+  #if defined(PROTOBUF_CUSTOM_VTABLE)
+  private:
+  static ::size_t ByteSizeLong(const ::google::protobuf::MessageLite& msg);
+  static ::uint8_t* _InternalSerialize(
+      const MessageLite& msg, ::uint8_t* target,
+      ::google::protobuf::io::EpsCopyOutputStream* stream);
+
+  public:
+  ::size_t ByteSizeLong() const { return ByteSizeLong(*this); }
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target,
+      ::google::protobuf::io::EpsCopyOutputStream* stream) const {
+    return _InternalSerialize(*this, target, stream);
+  }
+  #else   // PROTOBUF_CUSTOM_VTABLE
+  ::size_t ByteSizeLong() const final;
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target,
+      ::google::protobuf::io::EpsCopyOutputStream* stream) const final;
+  #endif  // PROTOBUF_CUSTOM_VTABLE
+  int GetCachedSize() const { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::google::protobuf::Arena* arena);
+  static void SharedDtor(MessageLite& self);
+  void InternalSwap(CommentPromoCodeRequest* other);
+ private:
+  template <typename T>
+  friend ::absl::string_view(
+      ::google::protobuf::internal::GetAnyMessageName)();
+  static ::absl::string_view FullMessageName() { return "promo.CommentPromoCodeRequest"; }
+
+ protected:
+  explicit CommentPromoCodeRequest(::google::protobuf::Arena* arena);
+  CommentPromoCodeRequest(::google::protobuf::Arena* arena, const CommentPromoCodeRequest& from);
+  CommentPromoCodeRequest(::google::protobuf::Arena* arena, CommentPromoCodeRequest&& from) noexcept
+      : CommentPromoCodeRequest(arena) {
+    *this = ::std::move(from);
+  }
+  const ::google::protobuf::internal::ClassData* GetClassData() const PROTOBUF_FINAL;
+  static void* PlacementNew_(const void*, void* mem,
+                             ::google::protobuf::Arena* arena);
+  static constexpr auto InternalNewImpl_();
+  static const ::google::protobuf::internal::ClassDataFull _class_data_;
+
+ public:
+  ::google::protobuf::Metadata GetMetadata() const;
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+  enum : int {
+    kTokenFieldNumber = 1,
+    kUserIdFieldNumber = 3,
+    kCommentFieldNumber = 4,
+    kPromoIdFieldNumber = 2,
+  };
+  // string token = 1;
+  void clear_token() ;
+  const std::string& token() const;
+  template <typename Arg_ = const std::string&, typename... Args_>
+  void set_token(Arg_&& arg, Args_... args);
+  std::string* mutable_token();
+  PROTOBUF_NODISCARD std::string* release_token();
+  void set_allocated_token(std::string* value);
+
+  private:
+  const std::string& _internal_token() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_token(
+      const std::string& value);
+  std::string* _internal_mutable_token();
+
+  public:
+  // string user_id = 3;
+  void clear_user_id() ;
+  const std::string& user_id() const;
+  template <typename Arg_ = const std::string&, typename... Args_>
+  void set_user_id(Arg_&& arg, Args_... args);
+  std::string* mutable_user_id();
+  PROTOBUF_NODISCARD std::string* release_user_id();
+  void set_allocated_user_id(std::string* value);
+
+  private:
+  const std::string& _internal_user_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_user_id(
+      const std::string& value);
+  std::string* _internal_mutable_user_id();
+
+  public:
+  // string comment = 4;
+  void clear_comment() ;
+  const std::string& comment() const;
+  template <typename Arg_ = const std::string&, typename... Args_>
+  void set_comment(Arg_&& arg, Args_... args);
+  std::string* mutable_comment();
+  PROTOBUF_NODISCARD std::string* release_comment();
+  void set_allocated_comment(std::string* value);
+
+  private:
+  const std::string& _internal_comment() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_comment(
+      const std::string& value);
+  std::string* _internal_mutable_comment();
+
+  public:
+  // int64 promo_id = 2;
+  void clear_promo_id() ;
+  ::int64_t promo_id() const;
+  void set_promo_id(::int64_t value);
+
+  private:
+  ::int64_t _internal_promo_id() const;
+  void _internal_set_promo_id(::int64_t value);
+
+  public:
+  // @@protoc_insertion_point(class_scope:promo.CommentPromoCodeRequest)
+ private:
+  class _Internal;
+  friend class ::google::protobuf::internal::TcParser;
+  static const ::google::protobuf::internal::TcParseTable<
+      2, 4, 0,
+      57, 2>
+      _table_;
+
+  friend class ::google::protobuf::MessageLite;
+  friend class ::google::protobuf::Arena;
+  template <typename T>
+  friend class ::google::protobuf::Arena::InternalHelper;
+  using InternalArenaConstructable_ = void;
+  using DestructorSkippable_ = void;
+  struct Impl_ {
+    inline explicit constexpr Impl_(
+        ::google::protobuf::internal::ConstantInitialized) noexcept;
+    inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
+                          ::google::protobuf::Arena* arena);
+    inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
+                          ::google::protobuf::Arena* arena, const Impl_& from,
+                          const CommentPromoCodeRequest& from_msg);
+    ::google::protobuf::internal::ArenaStringPtr token_;
+    ::google::protobuf::internal::ArenaStringPtr user_id_;
+    ::google::protobuf::internal::ArenaStringPtr comment_;
+    ::int64_t promo_id_;
+    ::google::protobuf::internal::CachedSize _cached_size_;
+    PROTOBUF_TSAN_DECLARE_MEMBER
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_promo_2eproto;
+};
+// -------------------------------------------------------------------
+
+class ClickPromoCodeRequest final : public ::google::protobuf::Message
+/* @@protoc_insertion_point(class_definition:promo.ClickPromoCodeRequest) */ {
+ public:
+  inline ClickPromoCodeRequest() : ClickPromoCodeRequest(nullptr) {}
+  ~ClickPromoCodeRequest() PROTOBUF_FINAL;
+
+#if defined(PROTOBUF_CUSTOM_VTABLE)
+  void operator delete(ClickPromoCodeRequest* msg, std::destroying_delete_t) {
+    SharedDtor(*msg);
+    ::google::protobuf::internal::SizedDelete(msg, sizeof(ClickPromoCodeRequest));
+  }
+#endif
+
+  template <typename = void>
+  explicit PROTOBUF_CONSTEXPR ClickPromoCodeRequest(
+      ::google::protobuf::internal::ConstantInitialized);
+
+  inline ClickPromoCodeRequest(const ClickPromoCodeRequest& from) : ClickPromoCodeRequest(nullptr, from) {}
+  inline ClickPromoCodeRequest(ClickPromoCodeRequest&& from) noexcept
+      : ClickPromoCodeRequest(nullptr, std::move(from)) {}
+  inline ClickPromoCodeRequest& operator=(const ClickPromoCodeRequest& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline ClickPromoCodeRequest& operator=(ClickPromoCodeRequest&& from) noexcept {
+    if (this == &from) return *this;
+    if (::google::protobuf::internal::CanMoveWithInternalSwap(GetArena(), from.GetArena())) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const
+      ABSL_ATTRIBUTE_LIFETIME_BOUND {
+    return _internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance);
+  }
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields()
+      ABSL_ATTRIBUTE_LIFETIME_BOUND {
+    return _internal_metadata_.mutable_unknown_fields<::google::protobuf::UnknownFieldSet>();
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::google::protobuf::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::google::protobuf::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const ClickPromoCodeRequest& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const ClickPromoCodeRequest* internal_default_instance() {
+    return reinterpret_cast<const ClickPromoCodeRequest*>(
+        &_ClickPromoCodeRequest_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages = 7;
+  friend void swap(ClickPromoCodeRequest& a, ClickPromoCodeRequest& b) { a.Swap(&b); }
+  inline void Swap(ClickPromoCodeRequest* other) {
+    if (other == this) return;
+    if (::google::protobuf::internal::CanUseInternalSwap(GetArena(), other->GetArena())) {
+      InternalSwap(other);
+    } else {
+      ::google::protobuf::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(ClickPromoCodeRequest* other) {
+    if (other == this) return;
+    ABSL_DCHECK(GetArena() == other->GetArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  ClickPromoCodeRequest* New(::google::protobuf::Arena* arena = nullptr) const {
+    return ::google::protobuf::Message::DefaultConstruct<ClickPromoCodeRequest>(arena);
+  }
+  using ::google::protobuf::Message::CopyFrom;
+  void CopyFrom(const ClickPromoCodeRequest& from);
+  using ::google::protobuf::Message::MergeFrom;
+  void MergeFrom(const ClickPromoCodeRequest& from) { ClickPromoCodeRequest::MergeImpl(*this, from); }
+
+  private:
+  static void MergeImpl(
+      ::google::protobuf::MessageLite& to_msg,
+      const ::google::protobuf::MessageLite& from_msg);
+
+  public:
+  bool IsInitialized() const {
+    return true;
+  }
+  ABSL_ATTRIBUTE_REINITIALIZES void Clear() PROTOBUF_FINAL;
+  #if defined(PROTOBUF_CUSTOM_VTABLE)
+  private:
+  static ::size_t ByteSizeLong(const ::google::protobuf::MessageLite& msg);
+  static ::uint8_t* _InternalSerialize(
+      const MessageLite& msg, ::uint8_t* target,
+      ::google::protobuf::io::EpsCopyOutputStream* stream);
+
+  public:
+  ::size_t ByteSizeLong() const { return ByteSizeLong(*this); }
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target,
+      ::google::protobuf::io::EpsCopyOutputStream* stream) const {
+    return _InternalSerialize(*this, target, stream);
+  }
+  #else   // PROTOBUF_CUSTOM_VTABLE
+  ::size_t ByteSizeLong() const final;
+  ::uint8_t* _InternalSerialize(
+      ::uint8_t* target,
+      ::google::protobuf::io::EpsCopyOutputStream* stream) const final;
+  #endif  // PROTOBUF_CUSTOM_VTABLE
+  int GetCachedSize() const { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::google::protobuf::Arena* arena);
+  static void SharedDtor(MessageLite& self);
+  void InternalSwap(ClickPromoCodeRequest* other);
+ private:
+  template <typename T>
+  friend ::absl::string_view(
+      ::google::protobuf::internal::GetAnyMessageName)();
+  static ::absl::string_view FullMessageName() { return "promo.ClickPromoCodeRequest"; }
+
+ protected:
+  explicit ClickPromoCodeRequest(::google::protobuf::Arena* arena);
+  ClickPromoCodeRequest(::google::protobuf::Arena* arena, const ClickPromoCodeRequest& from);
+  ClickPromoCodeRequest(::google::protobuf::Arena* arena, ClickPromoCodeRequest&& from) noexcept
+      : ClickPromoCodeRequest(arena) {
+    *this = ::std::move(from);
+  }
+  const ::google::protobuf::internal::ClassData* GetClassData() const PROTOBUF_FINAL;
+  static void* PlacementNew_(const void*, void* mem,
+                             ::google::protobuf::Arena* arena);
+  static constexpr auto InternalNewImpl_();
+  static const ::google::protobuf::internal::ClassDataFull _class_data_;
+
+ public:
+  ::google::protobuf::Metadata GetMetadata() const;
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+  enum : int {
+    kTokenFieldNumber = 1,
+    kUserIdFieldNumber = 3,
+    kPromoIdFieldNumber = 2,
+  };
+  // string token = 1;
+  void clear_token() ;
+  const std::string& token() const;
+  template <typename Arg_ = const std::string&, typename... Args_>
+  void set_token(Arg_&& arg, Args_... args);
+  std::string* mutable_token();
+  PROTOBUF_NODISCARD std::string* release_token();
+  void set_allocated_token(std::string* value);
+
+  private:
+  const std::string& _internal_token() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_token(
+      const std::string& value);
+  std::string* _internal_mutable_token();
+
+  public:
+  // string user_id = 3;
+  void clear_user_id() ;
+  const std::string& user_id() const;
+  template <typename Arg_ = const std::string&, typename... Args_>
+  void set_user_id(Arg_&& arg, Args_... args);
+  std::string* mutable_user_id();
+  PROTOBUF_NODISCARD std::string* release_user_id();
+  void set_allocated_user_id(std::string* value);
+
+  private:
+  const std::string& _internal_user_id() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_user_id(
+      const std::string& value);
+  std::string* _internal_mutable_user_id();
+
+  public:
+  // int64 promo_id = 2;
+  void clear_promo_id() ;
+  ::int64_t promo_id() const;
+  void set_promo_id(::int64_t value);
+
+  private:
+  ::int64_t _internal_promo_id() const;
+  void _internal_set_promo_id(::int64_t value);
+
+  public:
+  // @@protoc_insertion_point(class_scope:promo.ClickPromoCodeRequest)
+ private:
+  class _Internal;
+  friend class ::google::protobuf::internal::TcParser;
+  static const ::google::protobuf::internal::TcParseTable<
+      2, 3, 0,
+      48, 2>
+      _table_;
+
+  friend class ::google::protobuf::MessageLite;
+  friend class ::google::protobuf::Arena;
+  template <typename T>
+  friend class ::google::protobuf::Arena::InternalHelper;
+  using InternalArenaConstructable_ = void;
+  using DestructorSkippable_ = void;
+  struct Impl_ {
+    inline explicit constexpr Impl_(
+        ::google::protobuf::internal::ConstantInitialized) noexcept;
+    inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
+                          ::google::protobuf::Arena* arena);
+    inline explicit Impl_(::google::protobuf::internal::InternalVisibility visibility,
+                          ::google::protobuf::Arena* arena, const Impl_& from,
+                          const ClickPromoCodeRequest& from_msg);
+    ::google::protobuf::internal::ArenaStringPtr token_;
+    ::google::protobuf::internal::ArenaStringPtr user_id_;
+    ::int64_t promo_id_;
+    ::google::protobuf::internal::CachedSize _cached_size_;
+    PROTOBUF_TSAN_DECLARE_MEMBER
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_promo_2eproto;
+};
+// -------------------------------------------------------------------
+
 class ListPromoCodesResponse final : public ::google::protobuf::Message
 /* @@protoc_insertion_point(class_definition:promo.ListPromoCodesResponse) */ {
  public:
@@ -2935,6 +3411,298 @@ inline ::int32_t ListPromoCodesResponse::_internal_page_size() const {
 inline void ListPromoCodesResponse::_internal_set_page_size(::int32_t value) {
   ::google::protobuf::internal::TSanWrite(&_impl_);
   _impl_.page_size_ = value;
+}
+
+// -------------------------------------------------------------------
+
+// ClickPromoCodeRequest
+
+// string token = 1;
+inline void ClickPromoCodeRequest::clear_token() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  _impl_.token_.ClearToEmpty();
+}
+inline const std::string& ClickPromoCodeRequest::token() const
+    ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  // @@protoc_insertion_point(field_get:promo.ClickPromoCodeRequest.token)
+  return _internal_token();
+}
+template <typename Arg_, typename... Args_>
+inline PROTOBUF_ALWAYS_INLINE void ClickPromoCodeRequest::set_token(Arg_&& arg,
+                                                     Args_... args) {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  _impl_.token_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:promo.ClickPromoCodeRequest.token)
+}
+inline std::string* ClickPromoCodeRequest::mutable_token() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_token();
+  // @@protoc_insertion_point(field_mutable:promo.ClickPromoCodeRequest.token)
+  return _s;
+}
+inline const std::string& ClickPromoCodeRequest::_internal_token() const {
+  ::google::protobuf::internal::TSanRead(&_impl_);
+  return _impl_.token_.Get();
+}
+inline void ClickPromoCodeRequest::_internal_set_token(const std::string& value) {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  _impl_.token_.Set(value, GetArena());
+}
+inline std::string* ClickPromoCodeRequest::_internal_mutable_token() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  return _impl_.token_.Mutable( GetArena());
+}
+inline std::string* ClickPromoCodeRequest::release_token() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  // @@protoc_insertion_point(field_release:promo.ClickPromoCodeRequest.token)
+  return _impl_.token_.Release();
+}
+inline void ClickPromoCodeRequest::set_allocated_token(std::string* value) {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  _impl_.token_.SetAllocated(value, GetArena());
+  if (::google::protobuf::internal::DebugHardenForceCopyDefaultString() && _impl_.token_.IsDefault()) {
+    _impl_.token_.Set("", GetArena());
+  }
+  // @@protoc_insertion_point(field_set_allocated:promo.ClickPromoCodeRequest.token)
+}
+
+// int64 promo_id = 2;
+inline void ClickPromoCodeRequest::clear_promo_id() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  _impl_.promo_id_ = ::int64_t{0};
+}
+inline ::int64_t ClickPromoCodeRequest::promo_id() const {
+  // @@protoc_insertion_point(field_get:promo.ClickPromoCodeRequest.promo_id)
+  return _internal_promo_id();
+}
+inline void ClickPromoCodeRequest::set_promo_id(::int64_t value) {
+  _internal_set_promo_id(value);
+  // @@protoc_insertion_point(field_set:promo.ClickPromoCodeRequest.promo_id)
+}
+inline ::int64_t ClickPromoCodeRequest::_internal_promo_id() const {
+  ::google::protobuf::internal::TSanRead(&_impl_);
+  return _impl_.promo_id_;
+}
+inline void ClickPromoCodeRequest::_internal_set_promo_id(::int64_t value) {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  _impl_.promo_id_ = value;
+}
+
+// string user_id = 3;
+inline void ClickPromoCodeRequest::clear_user_id() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  _impl_.user_id_.ClearToEmpty();
+}
+inline const std::string& ClickPromoCodeRequest::user_id() const
+    ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  // @@protoc_insertion_point(field_get:promo.ClickPromoCodeRequest.user_id)
+  return _internal_user_id();
+}
+template <typename Arg_, typename... Args_>
+inline PROTOBUF_ALWAYS_INLINE void ClickPromoCodeRequest::set_user_id(Arg_&& arg,
+                                                     Args_... args) {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  _impl_.user_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:promo.ClickPromoCodeRequest.user_id)
+}
+inline std::string* ClickPromoCodeRequest::mutable_user_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_user_id();
+  // @@protoc_insertion_point(field_mutable:promo.ClickPromoCodeRequest.user_id)
+  return _s;
+}
+inline const std::string& ClickPromoCodeRequest::_internal_user_id() const {
+  ::google::protobuf::internal::TSanRead(&_impl_);
+  return _impl_.user_id_.Get();
+}
+inline void ClickPromoCodeRequest::_internal_set_user_id(const std::string& value) {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  _impl_.user_id_.Set(value, GetArena());
+}
+inline std::string* ClickPromoCodeRequest::_internal_mutable_user_id() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  return _impl_.user_id_.Mutable( GetArena());
+}
+inline std::string* ClickPromoCodeRequest::release_user_id() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  // @@protoc_insertion_point(field_release:promo.ClickPromoCodeRequest.user_id)
+  return _impl_.user_id_.Release();
+}
+inline void ClickPromoCodeRequest::set_allocated_user_id(std::string* value) {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  _impl_.user_id_.SetAllocated(value, GetArena());
+  if (::google::protobuf::internal::DebugHardenForceCopyDefaultString() && _impl_.user_id_.IsDefault()) {
+    _impl_.user_id_.Set("", GetArena());
+  }
+  // @@protoc_insertion_point(field_set_allocated:promo.ClickPromoCodeRequest.user_id)
+}
+
+// -------------------------------------------------------------------
+
+// CommentPromoCodeRequest
+
+// string token = 1;
+inline void CommentPromoCodeRequest::clear_token() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  _impl_.token_.ClearToEmpty();
+}
+inline const std::string& CommentPromoCodeRequest::token() const
+    ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  // @@protoc_insertion_point(field_get:promo.CommentPromoCodeRequest.token)
+  return _internal_token();
+}
+template <typename Arg_, typename... Args_>
+inline PROTOBUF_ALWAYS_INLINE void CommentPromoCodeRequest::set_token(Arg_&& arg,
+                                                     Args_... args) {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  _impl_.token_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:promo.CommentPromoCodeRequest.token)
+}
+inline std::string* CommentPromoCodeRequest::mutable_token() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_token();
+  // @@protoc_insertion_point(field_mutable:promo.CommentPromoCodeRequest.token)
+  return _s;
+}
+inline const std::string& CommentPromoCodeRequest::_internal_token() const {
+  ::google::protobuf::internal::TSanRead(&_impl_);
+  return _impl_.token_.Get();
+}
+inline void CommentPromoCodeRequest::_internal_set_token(const std::string& value) {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  _impl_.token_.Set(value, GetArena());
+}
+inline std::string* CommentPromoCodeRequest::_internal_mutable_token() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  return _impl_.token_.Mutable( GetArena());
+}
+inline std::string* CommentPromoCodeRequest::release_token() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  // @@protoc_insertion_point(field_release:promo.CommentPromoCodeRequest.token)
+  return _impl_.token_.Release();
+}
+inline void CommentPromoCodeRequest::set_allocated_token(std::string* value) {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  _impl_.token_.SetAllocated(value, GetArena());
+  if (::google::protobuf::internal::DebugHardenForceCopyDefaultString() && _impl_.token_.IsDefault()) {
+    _impl_.token_.Set("", GetArena());
+  }
+  // @@protoc_insertion_point(field_set_allocated:promo.CommentPromoCodeRequest.token)
+}
+
+// int64 promo_id = 2;
+inline void CommentPromoCodeRequest::clear_promo_id() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  _impl_.promo_id_ = ::int64_t{0};
+}
+inline ::int64_t CommentPromoCodeRequest::promo_id() const {
+  // @@protoc_insertion_point(field_get:promo.CommentPromoCodeRequest.promo_id)
+  return _internal_promo_id();
+}
+inline void CommentPromoCodeRequest::set_promo_id(::int64_t value) {
+  _internal_set_promo_id(value);
+  // @@protoc_insertion_point(field_set:promo.CommentPromoCodeRequest.promo_id)
+}
+inline ::int64_t CommentPromoCodeRequest::_internal_promo_id() const {
+  ::google::protobuf::internal::TSanRead(&_impl_);
+  return _impl_.promo_id_;
+}
+inline void CommentPromoCodeRequest::_internal_set_promo_id(::int64_t value) {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  _impl_.promo_id_ = value;
+}
+
+// string user_id = 3;
+inline void CommentPromoCodeRequest::clear_user_id() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  _impl_.user_id_.ClearToEmpty();
+}
+inline const std::string& CommentPromoCodeRequest::user_id() const
+    ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  // @@protoc_insertion_point(field_get:promo.CommentPromoCodeRequest.user_id)
+  return _internal_user_id();
+}
+template <typename Arg_, typename... Args_>
+inline PROTOBUF_ALWAYS_INLINE void CommentPromoCodeRequest::set_user_id(Arg_&& arg,
+                                                     Args_... args) {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  _impl_.user_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:promo.CommentPromoCodeRequest.user_id)
+}
+inline std::string* CommentPromoCodeRequest::mutable_user_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_user_id();
+  // @@protoc_insertion_point(field_mutable:promo.CommentPromoCodeRequest.user_id)
+  return _s;
+}
+inline const std::string& CommentPromoCodeRequest::_internal_user_id() const {
+  ::google::protobuf::internal::TSanRead(&_impl_);
+  return _impl_.user_id_.Get();
+}
+inline void CommentPromoCodeRequest::_internal_set_user_id(const std::string& value) {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  _impl_.user_id_.Set(value, GetArena());
+}
+inline std::string* CommentPromoCodeRequest::_internal_mutable_user_id() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  return _impl_.user_id_.Mutable( GetArena());
+}
+inline std::string* CommentPromoCodeRequest::release_user_id() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  // @@protoc_insertion_point(field_release:promo.CommentPromoCodeRequest.user_id)
+  return _impl_.user_id_.Release();
+}
+inline void CommentPromoCodeRequest::set_allocated_user_id(std::string* value) {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  _impl_.user_id_.SetAllocated(value, GetArena());
+  if (::google::protobuf::internal::DebugHardenForceCopyDefaultString() && _impl_.user_id_.IsDefault()) {
+    _impl_.user_id_.Set("", GetArena());
+  }
+  // @@protoc_insertion_point(field_set_allocated:promo.CommentPromoCodeRequest.user_id)
+}
+
+// string comment = 4;
+inline void CommentPromoCodeRequest::clear_comment() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  _impl_.comment_.ClearToEmpty();
+}
+inline const std::string& CommentPromoCodeRequest::comment() const
+    ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  // @@protoc_insertion_point(field_get:promo.CommentPromoCodeRequest.comment)
+  return _internal_comment();
+}
+template <typename Arg_, typename... Args_>
+inline PROTOBUF_ALWAYS_INLINE void CommentPromoCodeRequest::set_comment(Arg_&& arg,
+                                                     Args_... args) {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  _impl_.comment_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
+  // @@protoc_insertion_point(field_set:promo.CommentPromoCodeRequest.comment)
+}
+inline std::string* CommentPromoCodeRequest::mutable_comment() ABSL_ATTRIBUTE_LIFETIME_BOUND {
+  std::string* _s = _internal_mutable_comment();
+  // @@protoc_insertion_point(field_mutable:promo.CommentPromoCodeRequest.comment)
+  return _s;
+}
+inline const std::string& CommentPromoCodeRequest::_internal_comment() const {
+  ::google::protobuf::internal::TSanRead(&_impl_);
+  return _impl_.comment_.Get();
+}
+inline void CommentPromoCodeRequest::_internal_set_comment(const std::string& value) {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  _impl_.comment_.Set(value, GetArena());
+}
+inline std::string* CommentPromoCodeRequest::_internal_mutable_comment() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  return _impl_.comment_.Mutable( GetArena());
+}
+inline std::string* CommentPromoCodeRequest::release_comment() {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  // @@protoc_insertion_point(field_release:promo.CommentPromoCodeRequest.comment)
+  return _impl_.comment_.Release();
+}
+inline void CommentPromoCodeRequest::set_allocated_comment(std::string* value) {
+  ::google::protobuf::internal::TSanWrite(&_impl_);
+  _impl_.comment_.SetAllocated(value, GetArena());
+  if (::google::protobuf::internal::DebugHardenForceCopyDefaultString() && _impl_.comment_.IsDefault()) {
+    _impl_.comment_.Set("", GetArena());
+  }
+  // @@protoc_insertion_point(field_set_allocated:promo.CommentPromoCodeRequest.comment)
 }
 
 #ifdef __GNUC__

@@ -60,6 +60,21 @@ message ListPromoCodesResponse {
     int32 page_size = 4;
 }
 
+// Запрос на клик по промокоду
+message ClickPromoCodeRequest {
+    string token = 1;
+    int64 promo_id = 2;
+    string user_id = 3;
+}
+
+// Запрос на комментарий промокода
+message CommentPromoCodeRequest {
+    string token = 1;
+    int64 promo_id = 2;
+    string user_id = 3;
+    string comment = 4;
+}
+
 // Определение сервиса для промокодов
 service PromoService {
     rpc CreatePromoCode (CreatePromoCodeRequest) returns (PromoCode);
@@ -67,4 +82,6 @@ service PromoService {
     rpc DeletePromoCode (DeletePromoCodeRequest) returns (PromoCode);
     rpc GetPromoCodeById (GetPromoCodeRequest) returns (PromoCode);
     rpc ListPromoCodes (ListPromoCodesRequest) returns (ListPromoCodesResponse);
+    rpc ClickPromoCode (ClickPromoCodeRequest) returns (PromoCode);
+    rpc CommentPromoCode (CommentPromoCodeRequest) returns (PromoCode);
 }
