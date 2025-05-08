@@ -4,7 +4,7 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_DEFINES = -DPROTOBUF_USE_DLLS
 
-CXX_INCLUDES = -I/Users/maria/Documents/GitHub/bondarenko_coa/gateway/../proto/generated -isystem /opt/homebrew/include
+CXX_INCLUDES = -I/Users/maria/Documents/GitHub/bondarenko_coa/gateway/../proto/generated -I/opt/homebrew/opt/librdkafka/include -isystem /opt/homebrew/include -isystem /opt/homebrew/Cellar/openssl@3/3.5.0/include
 
 CXX_FLAGSarm64 = -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6
 

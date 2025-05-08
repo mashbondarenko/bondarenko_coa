@@ -1406,4 +1406,6 @@ CMakeFiles/gateway.dir/src/AuthServiceProxyImpl.cpp.o: \
   /opt/homebrew/include/grpcpp/support/proto_buffer_writer.h \
   /opt/homebrew/include/grpcpp/support/stub_options.h \
   /opt/homebrew/include/grpcpp/ports_def.inc \
-  /opt/homebrew/include/grpcpp/ports_undef.inc
+  /opt/homebrew/include/grpcpp/ports_undef.inc \
+  /Users/maria/Documents/GitHub/bondarenko_coa/gateway/src/KafkaProducer.h \
+  /opt/homebrew/opt/librdkafka/include/librdkafka/rdkafkacpp.h

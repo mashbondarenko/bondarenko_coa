@@ -51,17 +51,20 @@ struct TableStruct_stat_2eproto {
 };
 extern const ::google::protobuf::internal::DescriptorTable
     descriptor_table_stat_2eproto;
+namespace stat {
 class GetAllCommentsRequest;
 struct GetAllCommentsRequestDefaultTypeInternal;
 extern GetAllCommentsRequestDefaultTypeInternal _GetAllCommentsRequest_default_instance_;
 class GetAllCommentsResponse;
 struct GetAllCommentsResponseDefaultTypeInternal;
 extern GetAllCommentsResponseDefaultTypeInternal _GetAllCommentsResponse_default_instance_;
+}  // namespace stat
 namespace google {
 namespace protobuf {
 }  // namespace protobuf
 }  // namespace google
 
+namespace stat {
 
 // ===================================================================
 
@@ -69,7 +72,7 @@ namespace protobuf {
 // -------------------------------------------------------------------
 
 class GetAllCommentsResponse final : public ::google::protobuf::Message
-/* @@protoc_insertion_point(class_definition:GetAllCommentsResponse) */ {
+/* @@protoc_insertion_point(class_definition:stat.GetAllCommentsResponse) */ {
  public:
   inline GetAllCommentsResponse() : GetAllCommentsResponse(nullptr) {}
   ~GetAllCommentsResponse() PROTOBUF_FINAL;
@@ -193,7 +196,7 @@ class GetAllCommentsResponse final : public ::google::protobuf::Message
   template <typename T>
   friend ::absl::string_view(
       ::google::protobuf::internal::GetAnyMessageName)();
-  static ::absl::string_view FullMessageName() { return "GetAllCommentsResponse"; }
+  static ::absl::string_view FullMessageName() { return "stat.GetAllCommentsResponse"; }
 
  protected:
   explicit GetAllCommentsResponse(::google::protobuf::Arena* arena);
@@ -249,13 +252,13 @@ class GetAllCommentsResponse final : public ::google::protobuf::Message
   void _internal_set_total_comments(::int32_t value);
 
   public:
-  // @@protoc_insertion_point(class_scope:GetAllCommentsResponse)
+  // @@protoc_insertion_point(class_scope:stat.GetAllCommentsResponse)
  private:
   class _Internal;
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       1, 2, 0,
-      39, 2>
+      44, 2>
       _table_;
 
   friend class ::google::protobuf::MessageLite;
@@ -283,7 +286,7 @@ class GetAllCommentsResponse final : public ::google::protobuf::Message
 // -------------------------------------------------------------------
 
 class GetAllCommentsRequest final : public ::google::protobuf::Message
-/* @@protoc_insertion_point(class_definition:GetAllCommentsRequest) */ {
+/* @@protoc_insertion_point(class_definition:stat.GetAllCommentsRequest) */ {
  public:
   inline GetAllCommentsRequest() : GetAllCommentsRequest(nullptr) {}
   ~GetAllCommentsRequest() PROTOBUF_FINAL;
@@ -407,7 +410,7 @@ class GetAllCommentsRequest final : public ::google::protobuf::Message
   template <typename T>
   friend ::absl::string_view(
       ::google::protobuf::internal::GetAnyMessageName)();
-  static ::absl::string_view FullMessageName() { return "GetAllCommentsRequest"; }
+  static ::absl::string_view FullMessageName() { return "stat.GetAllCommentsRequest"; }
 
  protected:
   explicit GetAllCommentsRequest(::google::protobuf::Arena* arena);
@@ -468,13 +471,13 @@ class GetAllCommentsRequest final : public ::google::protobuf::Message
   void _internal_set_page_size(::int32_t value);
 
   public:
-  // @@protoc_insertion_point(class_scope:GetAllCommentsRequest)
+  // @@protoc_insertion_point(class_scope:stat.GetAllCommentsRequest)
  private:
   class _Internal;
   friend class ::google::protobuf::internal::TcParser;
   static const ::google::protobuf::internal::TcParseTable<
       2, 3, 0,
-      38, 2>
+      43, 2>
       _table_;
 
   friend class ::google::protobuf::MessageLite;
@@ -524,7 +527,7 @@ inline void GetAllCommentsRequest::clear_promo_id() {
 }
 inline const std::string& GetAllCommentsRequest::promo_id() const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:GetAllCommentsRequest.promo_id)
+  // @@protoc_insertion_point(field_get:stat.GetAllCommentsRequest.promo_id)
   return _internal_promo_id();
 }
 template <typename Arg_, typename... Args_>
@@ -532,11 +535,11 @@ inline PROTOBUF_ALWAYS_INLINE void GetAllCommentsRequest::set_promo_id(Arg_&& ar
                                                      Args_... args) {
   ::google::protobuf::internal::TSanWrite(&_impl_);
   _impl_.promo_id_.Set(static_cast<Arg_&&>(arg), args..., GetArena());
-  // @@protoc_insertion_point(field_set:GetAllCommentsRequest.promo_id)
+  // @@protoc_insertion_point(field_set:stat.GetAllCommentsRequest.promo_id)
 }
 inline std::string* GetAllCommentsRequest::mutable_promo_id() ABSL_ATTRIBUTE_LIFETIME_BOUND {
   std::string* _s = _internal_mutable_promo_id();
-  // @@protoc_insertion_point(field_mutable:GetAllCommentsRequest.promo_id)
+  // @@protoc_insertion_point(field_mutable:stat.GetAllCommentsRequest.promo_id)
   return _s;
 }
 inline const std::string& GetAllCommentsRequest::_internal_promo_id() const {
@@ -553,7 +556,7 @@ inline std::string* GetAllCommentsRequest::_internal_mutable_promo_id() {
 }
 inline std::string* GetAllCommentsRequest::release_promo_id() {
   ::google::protobuf::internal::TSanWrite(&_impl_);
-  // @@protoc_insertion_point(field_release:GetAllCommentsRequest.promo_id)
+  // @@protoc_insertion_point(field_release:stat.GetAllCommentsRequest.promo_id)
   return _impl_.promo_id_.Release();
 }
 inline void GetAllCommentsRequest::set_allocated_promo_id(std::string* value) {
@@ -562,7 +565,7 @@ inline void GetAllCommentsRequest::set_allocated_promo_id(std::string* value) {
   if (::google::protobuf::internal::DebugHardenForceCopyDefaultString() && _impl_.promo_id_.IsDefault()) {
     _impl_.promo_id_.Set("", GetArena());
   }
-  // @@protoc_insertion_point(field_set_allocated:GetAllCommentsRequest.promo_id)
+  // @@protoc_insertion_point(field_set_allocated:stat.GetAllCommentsRequest.promo_id)
 }
 
 // int32 page = 2;
@@ -571,12 +574,12 @@ inline void GetAllCommentsRequest::clear_page() {
   _impl_.page_ = 0;
 }
 inline ::int32_t GetAllCommentsRequest::page() const {
-  // @@protoc_insertion_point(field_get:GetAllCommentsRequest.page)
+  // @@protoc_insertion_point(field_get:stat.GetAllCommentsRequest.page)
   return _internal_page();
 }
 inline void GetAllCommentsRequest::set_page(::int32_t value) {
   _internal_set_page(value);
-  // @@protoc_insertion_point(field_set:GetAllCommentsRequest.page)
+  // @@protoc_insertion_point(field_set:stat.GetAllCommentsRequest.page)
 }
 inline ::int32_t GetAllCommentsRequest::_internal_page() const {
   ::google::protobuf::internal::TSanRead(&_impl_);
@@ -593,12 +596,12 @@ inline void GetAllCommentsRequest::clear_page_size() {
   _impl_.page_size_ = 0;
 }
 inline ::int32_t GetAllCommentsRequest::page_size() const {
-  // @@protoc_insertion_point(field_get:GetAllCommentsRequest.page_size)
+  // @@protoc_insertion_point(field_get:stat.GetAllCommentsRequest.page_size)
   return _internal_page_size();
 }
 inline void GetAllCommentsRequest::set_page_size(::int32_t value) {
   _internal_set_page_size(value);
-  // @@protoc_insertion_point(field_set:GetAllCommentsRequest.page_size)
+  // @@protoc_insertion_point(field_set:stat.GetAllCommentsRequest.page_size)
 }
 inline ::int32_t GetAllCommentsRequest::_internal_page_size() const {
   ::google::protobuf::internal::TSanRead(&_impl_);
@@ -627,17 +630,17 @@ inline void GetAllCommentsResponse::clear_comments() {
 inline std::string* GetAllCommentsResponse::add_comments() ABSL_ATTRIBUTE_LIFETIME_BOUND {
   ::google::protobuf::internal::TSanWrite(&_impl_);
   std::string* _s = _internal_mutable_comments()->Add();
-  // @@protoc_insertion_point(field_add_mutable:GetAllCommentsResponse.comments)
+  // @@protoc_insertion_point(field_add_mutable:stat.GetAllCommentsResponse.comments)
   return _s;
 }
 inline const std::string& GetAllCommentsResponse::comments(int index) const
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_get:GetAllCommentsResponse.comments)
+  // @@protoc_insertion_point(field_get:stat.GetAllCommentsResponse.comments)
   return _internal_comments().Get(index);
 }
 inline std::string* GetAllCommentsResponse::mutable_comments(int index)
     ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_mutable:GetAllCommentsResponse.comments)
+  // @@protoc_insertion_point(field_mutable:stat.GetAllCommentsResponse.comments)
   return _internal_mutable_comments()->Mutable(index);
 }
 template <typename Arg_, typename... Args_>
@@ -645,7 +648,7 @@ inline void GetAllCommentsResponse::set_comments(int index, Arg_&& value, Args_.
   ::google::protobuf::internal::AssignToString(
       *_internal_mutable_comments()->Mutable(index),
       std::forward<Arg_>(value), args... );
-  // @@protoc_insertion_point(field_set:GetAllCommentsResponse.comments)
+  // @@protoc_insertion_point(field_set:stat.GetAllCommentsResponse.comments)
 }
 template <typename Arg_, typename... Args_>
 inline void GetAllCommentsResponse::add_comments(Arg_&& value, Args_... args) {
@@ -653,16 +656,16 @@ inline void GetAllCommentsResponse::add_comments(Arg_&& value, Args_... args) {
   ::google::protobuf::internal::AddToRepeatedPtrField(*_internal_mutable_comments(),
                                std::forward<Arg_>(value),
                                args... );
-  // @@protoc_insertion_point(field_add:GetAllCommentsResponse.comments)
+  // @@protoc_insertion_point(field_add:stat.GetAllCommentsResponse.comments)
 }
 inline const ::google::protobuf::RepeatedPtrField<std::string>&
 GetAllCommentsResponse::comments() const ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_list:GetAllCommentsResponse.comments)
+  // @@protoc_insertion_point(field_list:stat.GetAllCommentsResponse.comments)
   return _internal_comments();
 }
 inline ::google::protobuf::RepeatedPtrField<std::string>*
 GetAllCommentsResponse::mutable_comments() ABSL_ATTRIBUTE_LIFETIME_BOUND {
-  // @@protoc_insertion_point(field_mutable_list:GetAllCommentsResponse.comments)
+  // @@protoc_insertion_point(field_mutable_list:stat.GetAllCommentsResponse.comments)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   return _internal_mutable_comments();
 }
@@ -683,12 +686,12 @@ inline void GetAllCommentsResponse::clear_total_comments() {
   _impl_.total_comments_ = 0;
 }
 inline ::int32_t GetAllCommentsResponse::total_comments() const {
-  // @@protoc_insertion_point(field_get:GetAllCommentsResponse.total_comments)
+  // @@protoc_insertion_point(field_get:stat.GetAllCommentsResponse.total_comments)
   return _internal_total_comments();
 }
 inline void GetAllCommentsResponse::set_total_comments(::int32_t value) {
   _internal_set_total_comments(value);
-  // @@protoc_insertion_point(field_set:GetAllCommentsResponse.total_comments)
+  // @@protoc_insertion_point(field_set:stat.GetAllCommentsResponse.total_comments)
 }
 inline ::int32_t GetAllCommentsResponse::_internal_total_comments() const {
   ::google::protobuf::internal::TSanRead(&_impl_);
@@ -704,6 +707,7 @@ inline void GetAllCommentsResponse::_internal_set_total_comments(::int32_t value
 #endif  // __GNUC__
 
 // @@protoc_insertion_point(namespace_scope)
+}  // namespace stat
 
 
 // @@protoc_insertion_point(global_scope)

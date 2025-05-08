@@ -130,6 +130,30 @@ gatewaytest/fast:
 	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/gatewaytest.dir/build.make tests/CMakeFiles/gatewaytest.dir/build
 .PHONY : gatewaytest/fast
 
+KafkaConsumer.o: KafkaConsumer.cpp.o
+.PHONY : KafkaConsumer.o
+
+# target to build an object file
+KafkaConsumer.cpp.o:
+	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/gatewaytest.dir/build.make tests/CMakeFiles/gatewaytest.dir/KafkaConsumer.cpp.o
+.PHONY : KafkaConsumer.cpp.o
+
+KafkaConsumer.i: KafkaConsumer.cpp.i
+.PHONY : KafkaConsumer.i
+
+# target to preprocess a source file
+KafkaConsumer.cpp.i:
+	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/gatewaytest.dir/build.make tests/CMakeFiles/gatewaytest.dir/KafkaConsumer.cpp.i
+.PHONY : KafkaConsumer.cpp.i
+
+KafkaConsumer.s: KafkaConsumer.cpp.s
+.PHONY : KafkaConsumer.s
+
+# target to generate assembly for a file
+KafkaConsumer.cpp.s:
+	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/gatewaytest.dir/build.make tests/CMakeFiles/gatewaytest.dir/KafkaConsumer.cpp.s
+.PHONY : KafkaConsumer.cpp.s
+
 Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.grpc.pb.o: Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.grpc.pb.cc.o
 .PHONY : Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.grpc.pb.o
 
@@ -178,6 +202,126 @@ Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.pb.cc.s:
 	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/gatewaytest.dir/build.make tests/CMakeFiles/gatewaytest.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.pb.cc.s
 .PHONY : Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.pb.cc.s
 
+Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.o: Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.cc.o
+.PHONY : Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.o
+
+# target to build an object file
+Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.cc.o:
+	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/gatewaytest.dir/build.make tests/CMakeFiles/gatewaytest.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.cc.o
+.PHONY : Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.cc.o
+
+Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.i: Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.cc.i
+.PHONY : Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.i
+
+# target to preprocess a source file
+Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.cc.i:
+	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/gatewaytest.dir/build.make tests/CMakeFiles/gatewaytest.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.cc.i
+.PHONY : Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.cc.i
+
+Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.s: Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.cc.s
+.PHONY : Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.s
+
+# target to generate assembly for a file
+Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.cc.s:
+	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/gatewaytest.dir/build.make tests/CMakeFiles/gatewaytest.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.cc.s
+.PHONY : Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.cc.s
+
+Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.o: Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.cc.o
+.PHONY : Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.o
+
+# target to build an object file
+Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.cc.o:
+	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/gatewaytest.dir/build.make tests/CMakeFiles/gatewaytest.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.cc.o
+.PHONY : Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.cc.o
+
+Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.i: Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.cc.i
+.PHONY : Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.i
+
+# target to preprocess a source file
+Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.cc.i:
+	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/gatewaytest.dir/build.make tests/CMakeFiles/gatewaytest.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.cc.i
+.PHONY : Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.cc.i
+
+Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.s: Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.cc.s
+.PHONY : Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.s
+
+# target to generate assembly for a file
+Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.cc.s:
+	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/gatewaytest.dir/build.make tests/CMakeFiles/gatewaytest.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.cc.s
+.PHONY : Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.cc.s
+
+__/src/AuthServiceProxyImpl.o: __/src/AuthServiceProxyImpl.cpp.o
+.PHONY : __/src/AuthServiceProxyImpl.o
+
+# target to build an object file
+__/src/AuthServiceProxyImpl.cpp.o:
+	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/gatewaytest.dir/build.make tests/CMakeFiles/gatewaytest.dir/__/src/AuthServiceProxyImpl.cpp.o
+.PHONY : __/src/AuthServiceProxyImpl.cpp.o
+
+__/src/AuthServiceProxyImpl.i: __/src/AuthServiceProxyImpl.cpp.i
+.PHONY : __/src/AuthServiceProxyImpl.i
+
+# target to preprocess a source file
+__/src/AuthServiceProxyImpl.cpp.i:
+	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/gatewaytest.dir/build.make tests/CMakeFiles/gatewaytest.dir/__/src/AuthServiceProxyImpl.cpp.i
+.PHONY : __/src/AuthServiceProxyImpl.cpp.i
+
+__/src/AuthServiceProxyImpl.s: __/src/AuthServiceProxyImpl.cpp.s
+.PHONY : __/src/AuthServiceProxyImpl.s
+
+# target to generate assembly for a file
+__/src/AuthServiceProxyImpl.cpp.s:
+	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/gatewaytest.dir/build.make tests/CMakeFiles/gatewaytest.dir/__/src/AuthServiceProxyImpl.cpp.s
+.PHONY : __/src/AuthServiceProxyImpl.cpp.s
+
+__/src/KafkaProducer.o: __/src/KafkaProducer.cpp.o
+.PHONY : __/src/KafkaProducer.o
+
+# target to build an object file
+__/src/KafkaProducer.cpp.o:
+	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/gatewaytest.dir/build.make tests/CMakeFiles/gatewaytest.dir/__/src/KafkaProducer.cpp.o
+.PHONY : __/src/KafkaProducer.cpp.o
+
+__/src/KafkaProducer.i: __/src/KafkaProducer.cpp.i
+.PHONY : __/src/KafkaProducer.i
+
+# target to preprocess a source file
+__/src/KafkaProducer.cpp.i:
+	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/gatewaytest.dir/build.make tests/CMakeFiles/gatewaytest.dir/__/src/KafkaProducer.cpp.i
+.PHONY : __/src/KafkaProducer.cpp.i
+
+__/src/KafkaProducer.s: __/src/KafkaProducer.cpp.s
+.PHONY : __/src/KafkaProducer.s
+
+# target to generate assembly for a file
+__/src/KafkaProducer.cpp.s:
+	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/gatewaytest.dir/build.make tests/CMakeFiles/gatewaytest.dir/__/src/KafkaProducer.cpp.s
+.PHONY : __/src/KafkaProducer.cpp.s
+
+__/src/PromoServiceProxyImpl.o: __/src/PromoServiceProxyImpl.cpp.o
+.PHONY : __/src/PromoServiceProxyImpl.o
+
+# target to build an object file
+__/src/PromoServiceProxyImpl.cpp.o:
+	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/gatewaytest.dir/build.make tests/CMakeFiles/gatewaytest.dir/__/src/PromoServiceProxyImpl.cpp.o
+.PHONY : __/src/PromoServiceProxyImpl.cpp.o
+
+__/src/PromoServiceProxyImpl.i: __/src/PromoServiceProxyImpl.cpp.i
+.PHONY : __/src/PromoServiceProxyImpl.i
+
+# target to preprocess a source file
+__/src/PromoServiceProxyImpl.cpp.i:
+	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/gatewaytest.dir/build.make tests/CMakeFiles/gatewaytest.dir/__/src/PromoServiceProxyImpl.cpp.i
+.PHONY : __/src/PromoServiceProxyImpl.cpp.i
+
+__/src/PromoServiceProxyImpl.s: __/src/PromoServiceProxyImpl.cpp.s
+.PHONY : __/src/PromoServiceProxyImpl.s
+
+# target to generate assembly for a file
+__/src/PromoServiceProxyImpl.cpp.s:
+	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/gatewaytest.dir/build.make tests/CMakeFiles/gatewaytest.dir/__/src/PromoServiceProxyImpl.cpp.s
+.PHONY : __/src/PromoServiceProxyImpl.cpp.s
+
 gatewaytest.o: gatewaytest.cpp.o
 .PHONY : gatewaytest.o
 
@@ -211,12 +355,30 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... gatewaytest"
+	@echo "... KafkaConsumer.o"
+	@echo "... KafkaConsumer.i"
+	@echo "... KafkaConsumer.s"
 	@echo "... Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.grpc.pb.o"
 	@echo "... Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.grpc.pb.i"
 	@echo "... Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.grpc.pb.s"
 	@echo "... Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.pb.o"
 	@echo "... Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.pb.i"
 	@echo "... Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.pb.s"
+	@echo "... Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.o"
+	@echo "... Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.i"
+	@echo "... Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.s"
+	@echo "... Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.o"
+	@echo "... Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.i"
+	@echo "... Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.s"
+	@echo "... __/src/AuthServiceProxyImpl.o"
+	@echo "... __/src/AuthServiceProxyImpl.i"
+	@echo "... __/src/AuthServiceProxyImpl.s"
+	@echo "... __/src/KafkaProducer.o"
+	@echo "... __/src/KafkaProducer.i"
+	@echo "... __/src/KafkaProducer.s"
+	@echo "... __/src/PromoServiceProxyImpl.o"
+	@echo "... __/src/PromoServiceProxyImpl.i"
+	@echo "... __/src/PromoServiceProxyImpl.s"
 	@echo "... gatewaytest.o"
 	@echo "... gatewaytest.i"
 	@echo "... gatewaytest.s"

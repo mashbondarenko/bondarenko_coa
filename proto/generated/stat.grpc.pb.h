@@ -26,49 +26,51 @@
 #include <grpcpp/support/sync_stream.h>
 #include <grpcpp/ports_def.inc>
 
+namespace stat {
+
 class CommentService final {
  public:
   static constexpr char const* service_full_name() {
-    return "CommentService";
+    return "stat.CommentService";
   }
   class StubInterface {
    public:
     virtual ~StubInterface() {}
-    virtual ::grpc::Status GetAllComments(::grpc::ClientContext* context, const ::GetAllCommentsRequest& request, ::GetAllCommentsResponse* response) = 0;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::GetAllCommentsResponse>> AsyncGetAllComments(::grpc::ClientContext* context, const ::GetAllCommentsRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::GetAllCommentsResponse>>(AsyncGetAllCommentsRaw(context, request, cq));
+    virtual ::grpc::Status GetAllComments(::grpc::ClientContext* context, const ::stat::GetAllCommentsRequest& request, ::stat::GetAllCommentsResponse* response) = 0;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::stat::GetAllCommentsResponse>> AsyncGetAllComments(::grpc::ClientContext* context, const ::stat::GetAllCommentsRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::stat::GetAllCommentsResponse>>(AsyncGetAllCommentsRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::GetAllCommentsResponse>> PrepareAsyncGetAllComments(::grpc::ClientContext* context, const ::GetAllCommentsRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::GetAllCommentsResponse>>(PrepareAsyncGetAllCommentsRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::stat::GetAllCommentsResponse>> PrepareAsyncGetAllComments(::grpc::ClientContext* context, const ::stat::GetAllCommentsRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::stat::GetAllCommentsResponse>>(PrepareAsyncGetAllCommentsRaw(context, request, cq));
     }
     class async_interface {
      public:
       virtual ~async_interface() {}
-      virtual void GetAllComments(::grpc::ClientContext* context, const ::GetAllCommentsRequest* request, ::GetAllCommentsResponse* response, std::function<void(::grpc::Status)>) = 0;
-      virtual void GetAllComments(::grpc::ClientContext* context, const ::GetAllCommentsRequest* request, ::GetAllCommentsResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
+      virtual void GetAllComments(::grpc::ClientContext* context, const ::stat::GetAllCommentsRequest* request, ::stat::GetAllCommentsResponse* response, std::function<void(::grpc::Status)>) = 0;
+      virtual void GetAllComments(::grpc::ClientContext* context, const ::stat::GetAllCommentsRequest* request, ::stat::GetAllCommentsResponse* response, ::grpc::ClientUnaryReactor* reactor) = 0;
     };
     typedef class async_interface experimental_async_interface;
     virtual class async_interface* async() { return nullptr; }
     class async_interface* experimental_async() { return async(); }
    private:
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::GetAllCommentsResponse>* AsyncGetAllCommentsRaw(::grpc::ClientContext* context, const ::GetAllCommentsRequest& request, ::grpc::CompletionQueue* cq) = 0;
-    virtual ::grpc::ClientAsyncResponseReaderInterface< ::GetAllCommentsResponse>* PrepareAsyncGetAllCommentsRaw(::grpc::ClientContext* context, const ::GetAllCommentsRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::stat::GetAllCommentsResponse>* AsyncGetAllCommentsRaw(::grpc::ClientContext* context, const ::stat::GetAllCommentsRequest& request, ::grpc::CompletionQueue* cq) = 0;
+    virtual ::grpc::ClientAsyncResponseReaderInterface< ::stat::GetAllCommentsResponse>* PrepareAsyncGetAllCommentsRaw(::grpc::ClientContext* context, const ::stat::GetAllCommentsRequest& request, ::grpc::CompletionQueue* cq) = 0;
   };
   class Stub final : public StubInterface {
    public:
     Stub(const std::shared_ptr< ::grpc::ChannelInterface>& channel, const ::grpc::StubOptions& options = ::grpc::StubOptions());
-    ::grpc::Status GetAllComments(::grpc::ClientContext* context, const ::GetAllCommentsRequest& request, ::GetAllCommentsResponse* response) override;
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::GetAllCommentsResponse>> AsyncGetAllComments(::grpc::ClientContext* context, const ::GetAllCommentsRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::GetAllCommentsResponse>>(AsyncGetAllCommentsRaw(context, request, cq));
+    ::grpc::Status GetAllComments(::grpc::ClientContext* context, const ::stat::GetAllCommentsRequest& request, ::stat::GetAllCommentsResponse* response) override;
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::stat::GetAllCommentsResponse>> AsyncGetAllComments(::grpc::ClientContext* context, const ::stat::GetAllCommentsRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::stat::GetAllCommentsResponse>>(AsyncGetAllCommentsRaw(context, request, cq));
     }
-    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::GetAllCommentsResponse>> PrepareAsyncGetAllComments(::grpc::ClientContext* context, const ::GetAllCommentsRequest& request, ::grpc::CompletionQueue* cq) {
-      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::GetAllCommentsResponse>>(PrepareAsyncGetAllCommentsRaw(context, request, cq));
+    std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::stat::GetAllCommentsResponse>> PrepareAsyncGetAllComments(::grpc::ClientContext* context, const ::stat::GetAllCommentsRequest& request, ::grpc::CompletionQueue* cq) {
+      return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::stat::GetAllCommentsResponse>>(PrepareAsyncGetAllCommentsRaw(context, request, cq));
     }
     class async final :
       public StubInterface::async_interface {
      public:
-      void GetAllComments(::grpc::ClientContext* context, const ::GetAllCommentsRequest* request, ::GetAllCommentsResponse* response, std::function<void(::grpc::Status)>) override;
-      void GetAllComments(::grpc::ClientContext* context, const ::GetAllCommentsRequest* request, ::GetAllCommentsResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
+      void GetAllComments(::grpc::ClientContext* context, const ::stat::GetAllCommentsRequest* request, ::stat::GetAllCommentsResponse* response, std::function<void(::grpc::Status)>) override;
+      void GetAllComments(::grpc::ClientContext* context, const ::stat::GetAllCommentsRequest* request, ::stat::GetAllCommentsResponse* response, ::grpc::ClientUnaryReactor* reactor) override;
      private:
       friend class Stub;
       explicit async(Stub* stub): stub_(stub) { }
@@ -80,8 +82,8 @@ class CommentService final {
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
     class async async_stub_{this};
-    ::grpc::ClientAsyncResponseReader< ::GetAllCommentsResponse>* AsyncGetAllCommentsRaw(::grpc::ClientContext* context, const ::GetAllCommentsRequest& request, ::grpc::CompletionQueue* cq) override;
-    ::grpc::ClientAsyncResponseReader< ::GetAllCommentsResponse>* PrepareAsyncGetAllCommentsRaw(::grpc::ClientContext* context, const ::GetAllCommentsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::stat::GetAllCommentsResponse>* AsyncGetAllCommentsRaw(::grpc::ClientContext* context, const ::stat::GetAllCommentsRequest& request, ::grpc::CompletionQueue* cq) override;
+    ::grpc::ClientAsyncResponseReader< ::stat::GetAllCommentsResponse>* PrepareAsyncGetAllCommentsRaw(::grpc::ClientContext* context, const ::stat::GetAllCommentsRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::internal::RpcMethod rpcmethod_GetAllComments_;
   };
   static std::unique_ptr<Stub> NewStub(const std::shared_ptr< ::grpc::ChannelInterface>& channel, const ::grpc::StubOptions& options = ::grpc::StubOptions());
@@ -90,7 +92,7 @@ class CommentService final {
    public:
     Service();
     virtual ~Service();
-    virtual ::grpc::Status GetAllComments(::grpc::ServerContext* context, const ::GetAllCommentsRequest* request, ::GetAllCommentsResponse* response);
+    virtual ::grpc::Status GetAllComments(::grpc::ServerContext* context, const ::stat::GetAllCommentsRequest* request, ::stat::GetAllCommentsResponse* response);
   };
   template <class BaseClass>
   class WithAsyncMethod_GetAllComments : public BaseClass {
@@ -104,11 +106,11 @@ class CommentService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetAllComments(::grpc::ServerContext* /*context*/, const ::GetAllCommentsRequest* /*request*/, ::GetAllCommentsResponse* /*response*/) override {
+    ::grpc::Status GetAllComments(::grpc::ServerContext* /*context*/, const ::stat::GetAllCommentsRequest* /*request*/, ::stat::GetAllCommentsResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
-    void RequestGetAllComments(::grpc::ServerContext* context, ::GetAllCommentsRequest* request, ::grpc::ServerAsyncResponseWriter< ::GetAllCommentsResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
+    void RequestGetAllComments(::grpc::ServerContext* context, ::stat::GetAllCommentsRequest* request, ::grpc::ServerAsyncResponseWriter< ::stat::GetAllCommentsResponse>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
       ::grpc::Service::RequestAsyncUnary(0, context, request, response, new_call_cq, notification_cq, tag);
     }
   };
@@ -120,25 +122,25 @@ class CommentService final {
    public:
     WithCallbackMethod_GetAllComments() {
       ::grpc::Service::MarkMethodCallback(0,
-          new ::grpc::internal::CallbackUnaryHandler< ::GetAllCommentsRequest, ::GetAllCommentsResponse>(
+          new ::grpc::internal::CallbackUnaryHandler< ::stat::GetAllCommentsRequest, ::stat::GetAllCommentsResponse>(
             [this](
-                   ::grpc::CallbackServerContext* context, const ::GetAllCommentsRequest* request, ::GetAllCommentsResponse* response) { return this->GetAllComments(context, request, response); }));}
+                   ::grpc::CallbackServerContext* context, const ::stat::GetAllCommentsRequest* request, ::stat::GetAllCommentsResponse* response) { return this->GetAllComments(context, request, response); }));}
     void SetMessageAllocatorFor_GetAllComments(
-        ::grpc::MessageAllocator< ::GetAllCommentsRequest, ::GetAllCommentsResponse>* allocator) {
+        ::grpc::MessageAllocator< ::stat::GetAllCommentsRequest, ::stat::GetAllCommentsResponse>* allocator) {
       ::grpc::internal::MethodHandler* const handler = ::grpc::Service::GetHandler(0);
-      static_cast<::grpc::internal::CallbackUnaryHandler< ::GetAllCommentsRequest, ::GetAllCommentsResponse>*>(handler)
+      static_cast<::grpc::internal::CallbackUnaryHandler< ::stat::GetAllCommentsRequest, ::stat::GetAllCommentsResponse>*>(handler)
               ->SetMessageAllocator(allocator);
     }
     ~WithCallbackMethod_GetAllComments() override {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetAllComments(::grpc::ServerContext* /*context*/, const ::GetAllCommentsRequest* /*request*/, ::GetAllCommentsResponse* /*response*/) override {
+    ::grpc::Status GetAllComments(::grpc::ServerContext* /*context*/, const ::stat::GetAllCommentsRequest* /*request*/, ::stat::GetAllCommentsResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     virtual ::grpc::ServerUnaryReactor* GetAllComments(
-      ::grpc::CallbackServerContext* /*context*/, const ::GetAllCommentsRequest* /*request*/, ::GetAllCommentsResponse* /*response*/)  { return nullptr; }
+      ::grpc::CallbackServerContext* /*context*/, const ::stat::GetAllCommentsRequest* /*request*/, ::stat::GetAllCommentsResponse* /*response*/)  { return nullptr; }
   };
   typedef WithCallbackMethod_GetAllComments<Service > CallbackService;
   typedef CallbackService ExperimentalCallbackService;
@@ -154,7 +156,7 @@ class CommentService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetAllComments(::grpc::ServerContext* /*context*/, const ::GetAllCommentsRequest* /*request*/, ::GetAllCommentsResponse* /*response*/) override {
+    ::grpc::Status GetAllComments(::grpc::ServerContext* /*context*/, const ::stat::GetAllCommentsRequest* /*request*/, ::stat::GetAllCommentsResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -171,7 +173,7 @@ class CommentService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetAllComments(::grpc::ServerContext* /*context*/, const ::GetAllCommentsRequest* /*request*/, ::GetAllCommentsResponse* /*response*/) override {
+    ::grpc::Status GetAllComments(::grpc::ServerContext* /*context*/, const ::stat::GetAllCommentsRequest* /*request*/, ::stat::GetAllCommentsResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -194,7 +196,7 @@ class CommentService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable synchronous version of this method
-    ::grpc::Status GetAllComments(::grpc::ServerContext* /*context*/, const ::GetAllCommentsRequest* /*request*/, ::GetAllCommentsResponse* /*response*/) override {
+    ::grpc::Status GetAllComments(::grpc::ServerContext* /*context*/, const ::stat::GetAllCommentsRequest* /*request*/, ::stat::GetAllCommentsResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
@@ -209,10 +211,10 @@ class CommentService final {
     WithStreamedUnaryMethod_GetAllComments() {
       ::grpc::Service::MarkMethodStreamed(0,
         new ::grpc::internal::StreamedUnaryHandler<
-          ::GetAllCommentsRequest, ::GetAllCommentsResponse>(
+          ::stat::GetAllCommentsRequest, ::stat::GetAllCommentsResponse>(
             [this](::grpc::ServerContext* context,
                    ::grpc::ServerUnaryStreamer<
-                     ::GetAllCommentsRequest, ::GetAllCommentsResponse>* streamer) {
+                     ::stat::GetAllCommentsRequest, ::stat::GetAllCommentsResponse>* streamer) {
                        return this->StreamedGetAllComments(context,
                          streamer);
                   }));
@@ -221,17 +223,19 @@ class CommentService final {
       BaseClassMustBeDerivedFromService(this);
     }
     // disable regular version of this method
-    ::grpc::Status GetAllComments(::grpc::ServerContext* /*context*/, const ::GetAllCommentsRequest* /*request*/, ::GetAllCommentsResponse* /*response*/) override {
+    ::grpc::Status GetAllComments(::grpc::ServerContext* /*context*/, const ::stat::GetAllCommentsRequest* /*request*/, ::stat::GetAllCommentsResponse* /*response*/) override {
       abort();
       return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
     }
     // replace default version of method with streamed unary
-    virtual ::grpc::Status StreamedGetAllComments(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::GetAllCommentsRequest,::GetAllCommentsResponse>* server_unary_streamer) = 0;
+    virtual ::grpc::Status StreamedGetAllComments(::grpc::ServerContext* context, ::grpc::ServerUnaryStreamer< ::stat::GetAllCommentsRequest,::stat::GetAllCommentsResponse>* server_unary_streamer) = 0;
   };
   typedef WithStreamedUnaryMethod_GetAllComments<Service > StreamedUnaryService;
   typedef Service SplitStreamedService;
   typedef WithStreamedUnaryMethod_GetAllComments<Service > StreamedService;
 };
+
+}  // namespace stat
 
 
 #include <grpcpp/ports_undef.inc>

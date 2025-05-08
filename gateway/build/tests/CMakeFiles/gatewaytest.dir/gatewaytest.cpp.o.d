@@ -1448,4 +1448,17 @@ tests/CMakeFiles/gatewaytest.dir/gatewaytest.cpp.o: \
   /opt/homebrew/include/grpcpp/support/proto_buffer_writer.h \
   /opt/homebrew/include/grpcpp/support/stub_options.h \
   /opt/homebrew/include/grpcpp/ports_def.inc \
-  /opt/homebrew/include/grpcpp/ports_undef.inc
+  /opt/homebrew/include/grpcpp/ports_undef.inc \
+  /Users/maria/Documents/GitHub/bondarenko_coa/gateway/tests/../src/AuthServiceProxyImpl.h \
+  /Users/maria/Documents/GitHub/bondarenko_coa/gateway/tests/../src/PromoServiceProxyImpl.h \
+  /Users/maria/Documents/GitHub/bondarenko_coa/gateway/../proto/generated/promo.grpc.pb.h \
+  /Users/maria/Documents/GitHub/bondarenko_coa/gateway/../proto/generated/promo.pb.h \
+  /Users/maria/Documents/GitHub/bondarenko_coa/gateway/tests/../src/KafkaProducer.h \
+  /opt/homebrew/opt/librdkafka/include/librdkafka/rdkafkacpp.h \
+  /Users/maria/Documents/GitHub/bondarenko_coa/gateway/tests/KafkaConsumer.cpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/thread \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__thread/formatter.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__thread/jthread.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__stop_token/stop_source.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__thread/thread.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__thread/this_thread.h

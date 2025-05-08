@@ -19,9 +19,10 @@
 #include <grpcpp/server_context.h>
 #include <grpcpp/impl/service_type.h>
 #include <grpcpp/support/sync_stream.h>
+namespace stat {
 
 static const char* CommentService_method_names[] = {
-  "/CommentService/GetAllComments",
+  "/stat.CommentService/GetAllComments",
 };
 
 std::unique_ptr< CommentService::Stub> CommentService::NewStub(const std::shared_ptr< ::grpc::ChannelInterface>& channel, const ::grpc::StubOptions& options) {
@@ -34,23 +35,23 @@ CommentService::Stub::Stub(const std::shared_ptr< ::grpc::ChannelInterface>& cha
   : channel_(channel), rpcmethod_GetAllComments_(CommentService_method_names[0], options.suffix_for_stats(),::grpc::internal::RpcMethod::NORMAL_RPC, channel)
   {}
 
-::grpc::Status CommentService::Stub::GetAllComments(::grpc::ClientContext* context, const ::GetAllCommentsRequest& request, ::GetAllCommentsResponse* response) {
-  return ::grpc::internal::BlockingUnaryCall< ::GetAllCommentsRequest, ::GetAllCommentsResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_GetAllComments_, context, request, response);
+::grpc::Status CommentService::Stub::GetAllComments(::grpc::ClientContext* context, const ::stat::GetAllCommentsRequest& request, ::stat::GetAllCommentsResponse* response) {
+  return ::grpc::internal::BlockingUnaryCall< ::stat::GetAllCommentsRequest, ::stat::GetAllCommentsResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), rpcmethod_GetAllComments_, context, request, response);
 }
 
-void CommentService::Stub::async::GetAllComments(::grpc::ClientContext* context, const ::GetAllCommentsRequest* request, ::GetAllCommentsResponse* response, std::function<void(::grpc::Status)> f) {
-  ::grpc::internal::CallbackUnaryCall< ::GetAllCommentsRequest, ::GetAllCommentsResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_GetAllComments_, context, request, response, std::move(f));
+void CommentService::Stub::async::GetAllComments(::grpc::ClientContext* context, const ::stat::GetAllCommentsRequest* request, ::stat::GetAllCommentsResponse* response, std::function<void(::grpc::Status)> f) {
+  ::grpc::internal::CallbackUnaryCall< ::stat::GetAllCommentsRequest, ::stat::GetAllCommentsResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_GetAllComments_, context, request, response, std::move(f));
 }
 
-void CommentService::Stub::async::GetAllComments(::grpc::ClientContext* context, const ::GetAllCommentsRequest* request, ::GetAllCommentsResponse* response, ::grpc::ClientUnaryReactor* reactor) {
+void CommentService::Stub::async::GetAllComments(::grpc::ClientContext* context, const ::stat::GetAllCommentsRequest* request, ::stat::GetAllCommentsResponse* response, ::grpc::ClientUnaryReactor* reactor) {
   ::grpc::internal::ClientCallbackUnaryFactory::Create< ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(stub_->channel_.get(), stub_->rpcmethod_GetAllComments_, context, request, response, reactor);
 }
 
-::grpc::ClientAsyncResponseReader< ::GetAllCommentsResponse>* CommentService::Stub::PrepareAsyncGetAllCommentsRaw(::grpc::ClientContext* context, const ::GetAllCommentsRequest& request, ::grpc::CompletionQueue* cq) {
-  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::GetAllCommentsResponse, ::GetAllCommentsRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_GetAllComments_, context, request);
+::grpc::ClientAsyncResponseReader< ::stat::GetAllCommentsResponse>* CommentService::Stub::PrepareAsyncGetAllCommentsRaw(::grpc::ClientContext* context, const ::stat::GetAllCommentsRequest& request, ::grpc::CompletionQueue* cq) {
+  return ::grpc::internal::ClientAsyncResponseReaderHelper::Create< ::stat::GetAllCommentsResponse, ::stat::GetAllCommentsRequest, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(channel_.get(), cq, rpcmethod_GetAllComments_, context, request);
 }
 
-::grpc::ClientAsyncResponseReader< ::GetAllCommentsResponse>* CommentService::Stub::AsyncGetAllCommentsRaw(::grpc::ClientContext* context, const ::GetAllCommentsRequest& request, ::grpc::CompletionQueue* cq) {
+::grpc::ClientAsyncResponseReader< ::stat::GetAllCommentsResponse>* CommentService::Stub::AsyncGetAllCommentsRaw(::grpc::ClientContext* context, const ::stat::GetAllCommentsRequest& request, ::grpc::CompletionQueue* cq) {
   auto* result =
     this->PrepareAsyncGetAllCommentsRaw(context, request, cq);
   result->StartCall();
@@ -61,11 +62,11 @@ CommentService::Service::Service() {
   AddMethod(new ::grpc::internal::RpcServiceMethod(
       CommentService_method_names[0],
       ::grpc::internal::RpcMethod::NORMAL_RPC,
-      new ::grpc::internal::RpcMethodHandler< CommentService::Service, ::GetAllCommentsRequest, ::GetAllCommentsResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
+      new ::grpc::internal::RpcMethodHandler< CommentService::Service, ::stat::GetAllCommentsRequest, ::stat::GetAllCommentsResponse, ::grpc::protobuf::MessageLite, ::grpc::protobuf::MessageLite>(
           [](CommentService::Service* service,
              ::grpc::ServerContext* ctx,
-             const ::GetAllCommentsRequest* req,
-             ::GetAllCommentsResponse* resp) {
+             const ::stat::GetAllCommentsRequest* req,
+             ::stat::GetAllCommentsResponse* resp) {
                return service->GetAllComments(ctx, req, resp);
              }, this)));
 }
@@ -73,11 +74,13 @@ CommentService::Service::Service() {
 CommentService::Service::~Service() {
 }
 
-::grpc::Status CommentService::Service::GetAllComments(::grpc::ServerContext* context, const ::GetAllCommentsRequest* request, ::GetAllCommentsResponse* response) {
+::grpc::Status CommentService::Service::GetAllComments(::grpc::ServerContext* context, const ::stat::GetAllCommentsRequest* request, ::stat::GetAllCommentsResponse* response) {
   (void) context;
   (void) request;
   (void) response;
   return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
 }
 
+
+}  // namespace stat
 

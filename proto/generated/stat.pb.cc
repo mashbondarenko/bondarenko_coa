@@ -24,6 +24,7 @@ PROTOBUF_PRAGMA_INIT_SEG
 namespace _pb = ::google::protobuf;
 namespace _pbi = ::google::protobuf::internal;
 namespace _fl = ::google::protobuf::internal::field_layout;
+namespace stat {
 
 inline constexpr GetAllCommentsResponse::Impl_::Impl_(
     ::_pbi::ConstantInitialized) noexcept
@@ -79,6 +80,7 @@ struct GetAllCommentsRequestDefaultTypeInternal {
 
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT
     PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 GetAllCommentsRequestDefaultTypeInternal _GetAllCommentsRequest_default_instance_;
+}  // namespace stat
 static constexpr const ::_pb::EnumDescriptor**
     file_level_enum_descriptors_stat_2eproto = nullptr;
 static constexpr const ::_pb::ServiceDescriptor**
@@ -87,52 +89,52 @@ const ::uint32_t
     TableStruct_stat_2eproto::offsets[] ABSL_ATTRIBUTE_SECTION_VARIABLE(
         protodesc_cold) = {
         ~0u,  // no _has_bits_
-        PROTOBUF_FIELD_OFFSET(::GetAllCommentsRequest, _internal_metadata_),
+        PROTOBUF_FIELD_OFFSET(::stat::GetAllCommentsRequest, _internal_metadata_),
         ~0u,  // no _extensions_
         ~0u,  // no _oneof_case_
         ~0u,  // no _weak_field_map_
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
-        PROTOBUF_FIELD_OFFSET(::GetAllCommentsRequest, _impl_.promo_id_),
-        PROTOBUF_FIELD_OFFSET(::GetAllCommentsRequest, _impl_.page_),
-        PROTOBUF_FIELD_OFFSET(::GetAllCommentsRequest, _impl_.page_size_),
+        PROTOBUF_FIELD_OFFSET(::stat::GetAllCommentsRequest, _impl_.promo_id_),
+        PROTOBUF_FIELD_OFFSET(::stat::GetAllCommentsRequest, _impl_.page_),
+        PROTOBUF_FIELD_OFFSET(::stat::GetAllCommentsRequest, _impl_.page_size_),
         ~0u,  // no _has_bits_
-        PROTOBUF_FIELD_OFFSET(::GetAllCommentsResponse, _internal_metadata_),
+        PROTOBUF_FIELD_OFFSET(::stat::GetAllCommentsResponse, _internal_metadata_),
         ~0u,  // no _extensions_
         ~0u,  // no _oneof_case_
         ~0u,  // no _weak_field_map_
         ~0u,  // no _inlined_string_donated_
         ~0u,  // no _split_
         ~0u,  // no sizeof(Split)
-        PROTOBUF_FIELD_OFFSET(::GetAllCommentsResponse, _impl_.comments_),
-        PROTOBUF_FIELD_OFFSET(::GetAllCommentsResponse, _impl_.total_comments_),
+        PROTOBUF_FIELD_OFFSET(::stat::GetAllCommentsResponse, _impl_.comments_),
+        PROTOBUF_FIELD_OFFSET(::stat::GetAllCommentsResponse, _impl_.total_comments_),
 };
 
 static const ::_pbi::MigrationSchema
     schemas[] ABSL_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-        {0, -1, -1, sizeof(::GetAllCommentsRequest)},
-        {11, -1, -1, sizeof(::GetAllCommentsResponse)},
+        {0, -1, -1, sizeof(::stat::GetAllCommentsRequest)},
+        {11, -1, -1, sizeof(::stat::GetAllCommentsResponse)},
 };
 static const ::_pb::Message* const file_default_instances[] = {
-    &::_GetAllCommentsRequest_default_instance_._instance,
-    &::_GetAllCommentsResponse_default_instance_._instance,
+    &::stat::_GetAllCommentsRequest_default_instance_._instance,
+    &::stat::_GetAllCommentsResponse_default_instance_._instance,
 };
 const char descriptor_table_protodef_stat_2eproto[] ABSL_ATTRIBUTE_SECTION_VARIABLE(
     protodesc_cold) = {
-    "\n\nstat.proto\"J\n\025GetAllCommentsRequest\022\020\n"
-    "\010promo_id\030\001 \001(\t\022\014\n\004page\030\002 \001(\005\022\021\n\tpage_si"
-    "ze\030\003 \001(\005\"B\n\026GetAllCommentsResponse\022\020\n\010co"
-    "mments\030\001 \003(\t\022\026\n\016total_comments\030\002 \001(\0052S\n\016"
-    "CommentService\022A\n\016GetAllComments\022\026.GetAl"
-    "lCommentsRequest\032\027.GetAllCommentsRespons"
-    "eb\006proto3"
+    "\n\nstat.proto\022\004stat\"J\n\025GetAllCommentsRequ"
+    "est\022\020\n\010promo_id\030\001 \001(\t\022\014\n\004page\030\002 \001(\005\022\021\n\tp"
+    "age_size\030\003 \001(\005\"B\n\026GetAllCommentsResponse"
+    "\022\020\n\010comments\030\001 \003(\t\022\026\n\016total_comments\030\002 \001"
+    "(\0052]\n\016CommentService\022K\n\016GetAllComments\022\033"
+    ".stat.GetAllCommentsRequest\032\034.stat.GetAl"
+    "lCommentsResponseb\006proto3"
 };
 static ::absl::once_flag descriptor_table_stat_2eproto_once;
 PROTOBUF_CONSTINIT const ::_pbi::DescriptorTable descriptor_table_stat_2eproto = {
     false,
     false,
-    249,
+    265,
     descriptor_table_protodef_stat_2eproto,
     "stat.proto",
     &descriptor_table_stat_2eproto_once,
@@ -145,6 +147,7 @@ PROTOBUF_CONSTINIT const ::_pbi::DescriptorTable descriptor_table_stat_2eproto =
     file_level_enum_descriptors_stat_2eproto,
     file_level_service_descriptors_stat_2eproto,
 };
+namespace stat {
 // ===================================================================
 
 class GetAllCommentsRequest::_Internal {
@@ -158,11 +161,11 @@ GetAllCommentsRequest::GetAllCommentsRequest(::google::protobuf::Arena* arena)
     : ::google::protobuf::Message(arena) {
 #endif  // PROTOBUF_CUSTOM_VTABLE
   SharedCtor(arena);
-  // @@protoc_insertion_point(arena_constructor:GetAllCommentsRequest)
+  // @@protoc_insertion_point(arena_constructor:stat.GetAllCommentsRequest)
 }
 inline PROTOBUF_NDEBUG_INLINE GetAllCommentsRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from, const ::GetAllCommentsRequest& from_msg)
+    const Impl_& from, const ::stat::GetAllCommentsRequest& from_msg)
       : promo_id_(arena, from.promo_id_),
         _cached_size_{0} {}
 
@@ -187,7 +190,7 @@ GetAllCommentsRequest::GetAllCommentsRequest(
                offsetof(Impl_, page_) +
                sizeof(Impl_::page_size_));
 
-  // @@protoc_insertion_point(copy_constructor:GetAllCommentsRequest)
+  // @@protoc_insertion_point(copy_constructor:stat.GetAllCommentsRequest)
 }
 inline PROTOBUF_NDEBUG_INLINE GetAllCommentsRequest::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
@@ -205,7 +208,7 @@ inline void GetAllCommentsRequest::SharedCtor(::_pb::Arena* arena) {
                sizeof(Impl_::page_size_));
 }
 GetAllCommentsRequest::~GetAllCommentsRequest() {
-  // @@protoc_insertion_point(destructor:GetAllCommentsRequest)
+  // @@protoc_insertion_point(destructor:stat.GetAllCommentsRequest)
   SharedDtor(*this);
 }
 inline void GetAllCommentsRequest::SharedDtor(MessageLite& self) {
@@ -252,7 +255,7 @@ const ::google::protobuf::internal::ClassData* GetAllCommentsRequest::GetClassDa
   return _class_data_.base();
 }
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<2, 3, 0, 38, 2> GetAllCommentsRequest::_table_ = {
+const ::_pbi::TcParseTable<2, 3, 0, 43, 2> GetAllCommentsRequest::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -267,7 +270,7 @@ const ::_pbi::TcParseTable<2, 3, 0, 38, 2> GetAllCommentsRequest::_table_ = {
     nullptr,  // post_loop_handler
     ::_pbi::TcParser::GenericFallback,  // fallback
     #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
-    ::_pbi::TcParser::GetTable<::GetAllCommentsRequest>(),  // to_prefetch
+    ::_pbi::TcParser::GetTable<::stat::GetAllCommentsRequest>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
     {::_pbi::TcParser::MiniParse, {}},
@@ -295,14 +298,14 @@ const ::_pbi::TcParseTable<2, 3, 0, 38, 2> GetAllCommentsRequest::_table_ = {
   }},
   // no aux_entries
   {{
-    "\25\10\0\0\0\0\0\0"
-    "GetAllCommentsRequest"
+    "\32\10\0\0\0\0\0\0"
+    "stat.GetAllCommentsRequest"
     "promo_id"
   }},
 };
 
 PROTOBUF_NOINLINE void GetAllCommentsRequest::Clear() {
-// @@protoc_insertion_point(message_clear_start:GetAllCommentsRequest)
+// @@protoc_insertion_point(message_clear_start:stat.GetAllCommentsRequest)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -326,7 +329,7 @@ PROTOBUF_NOINLINE void GetAllCommentsRequest::Clear() {
             ::google::protobuf::io::EpsCopyOutputStream* stream) const {
           const GetAllCommentsRequest& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(serialize_to_array_start:GetAllCommentsRequest)
+          // @@protoc_insertion_point(serialize_to_array_start:stat.GetAllCommentsRequest)
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
@@ -334,7 +337,7 @@ PROTOBUF_NOINLINE void GetAllCommentsRequest::Clear() {
           if (!this_._internal_promo_id().empty()) {
             const std::string& _s = this_._internal_promo_id();
             ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-                _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "GetAllCommentsRequest.promo_id");
+                _s.data(), static_cast<int>(_s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "stat.GetAllCommentsRequest.promo_id");
             target = stream->WriteStringMaybeAliased(1, _s, target);
           }
 
@@ -357,7 +360,7 @@ PROTOBUF_NOINLINE void GetAllCommentsRequest::Clear() {
                 ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
                     this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
           }
-          // @@protoc_insertion_point(serialize_to_array_end:GetAllCommentsRequest)
+          // @@protoc_insertion_point(serialize_to_array_end:stat.GetAllCommentsRequest)
           return target;
         }
 
@@ -368,7 +371,7 @@ PROTOBUF_NOINLINE void GetAllCommentsRequest::Clear() {
         ::size_t GetAllCommentsRequest::ByteSizeLong() const {
           const GetAllCommentsRequest& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(message_byte_size_start:GetAllCommentsRequest)
+          // @@protoc_insertion_point(message_byte_size_start:stat.GetAllCommentsRequest)
           ::size_t total_size = 0;
 
           ::uint32_t cached_has_bits = 0;
@@ -400,7 +403,7 @@ PROTOBUF_NOINLINE void GetAllCommentsRequest::Clear() {
 void GetAllCommentsRequest::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
   auto* const _this = static_cast<GetAllCommentsRequest*>(&to_msg);
   auto& from = static_cast<const GetAllCommentsRequest&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:GetAllCommentsRequest)
+  // @@protoc_insertion_point(class_specific_merge_from_start:stat.GetAllCommentsRequest)
   ABSL_DCHECK_NE(&from, _this);
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -418,7 +421,7 @@ void GetAllCommentsRequest::MergeImpl(::google::protobuf::MessageLite& to_msg, c
 }
 
 void GetAllCommentsRequest::CopyFrom(const GetAllCommentsRequest& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:GetAllCommentsRequest)
+// @@protoc_insertion_point(class_specific_copy_from_start:stat.GetAllCommentsRequest)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -455,11 +458,11 @@ GetAllCommentsResponse::GetAllCommentsResponse(::google::protobuf::Arena* arena)
     : ::google::protobuf::Message(arena) {
 #endif  // PROTOBUF_CUSTOM_VTABLE
   SharedCtor(arena);
-  // @@protoc_insertion_point(arena_constructor:GetAllCommentsResponse)
+  // @@protoc_insertion_point(arena_constructor:stat.GetAllCommentsResponse)
 }
 inline PROTOBUF_NDEBUG_INLINE GetAllCommentsResponse::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility, ::google::protobuf::Arena* arena,
-    const Impl_& from, const ::GetAllCommentsResponse& from_msg)
+    const Impl_& from, const ::stat::GetAllCommentsResponse& from_msg)
       : comments_{visibility, arena, from.comments_},
         _cached_size_{0} {}
 
@@ -478,7 +481,7 @@ GetAllCommentsResponse::GetAllCommentsResponse(
   new (&_impl_) Impl_(internal_visibility(), arena, from._impl_, from);
   _impl_.total_comments_ = from._impl_.total_comments_;
 
-  // @@protoc_insertion_point(copy_constructor:GetAllCommentsResponse)
+  // @@protoc_insertion_point(copy_constructor:stat.GetAllCommentsResponse)
 }
 inline PROTOBUF_NDEBUG_INLINE GetAllCommentsResponse::Impl_::Impl_(
     ::google::protobuf::internal::InternalVisibility visibility,
@@ -491,7 +494,7 @@ inline void GetAllCommentsResponse::SharedCtor(::_pb::Arena* arena) {
   _impl_.total_comments_ = {};
 }
 GetAllCommentsResponse::~GetAllCommentsResponse() {
-  // @@protoc_insertion_point(destructor:GetAllCommentsResponse)
+  // @@protoc_insertion_point(destructor:stat.GetAllCommentsResponse)
   SharedDtor(*this);
 }
 inline void GetAllCommentsResponse::SharedDtor(MessageLite& self) {
@@ -549,7 +552,7 @@ const ::google::protobuf::internal::ClassData* GetAllCommentsResponse::GetClassD
   return _class_data_.base();
 }
 PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1
-const ::_pbi::TcParseTable<1, 2, 0, 39, 2> GetAllCommentsResponse::_table_ = {
+const ::_pbi::TcParseTable<1, 2, 0, 44, 2> GetAllCommentsResponse::_table_ = {
   {
     0,  // no _has_bits_
     0, // no _extensions_
@@ -564,7 +567,7 @@ const ::_pbi::TcParseTable<1, 2, 0, 39, 2> GetAllCommentsResponse::_table_ = {
     nullptr,  // post_loop_handler
     ::_pbi::TcParser::GenericFallback,  // fallback
     #ifdef PROTOBUF_PREFETCH_PARSE_TABLE
-    ::_pbi::TcParser::GetTable<::GetAllCommentsResponse>(),  // to_prefetch
+    ::_pbi::TcParser::GetTable<::stat::GetAllCommentsResponse>(),  // to_prefetch
     #endif  // PROTOBUF_PREFETCH_PARSE_TABLE
   }, {{
     // int32 total_comments = 2;
@@ -585,14 +588,14 @@ const ::_pbi::TcParseTable<1, 2, 0, 39, 2> GetAllCommentsResponse::_table_ = {
   }},
   // no aux_entries
   {{
-    "\26\10\0\0\0\0\0\0"
-    "GetAllCommentsResponse"
+    "\33\10\0\0\0\0\0\0"
+    "stat.GetAllCommentsResponse"
     "comments"
   }},
 };
 
 PROTOBUF_NOINLINE void GetAllCommentsResponse::Clear() {
-// @@protoc_insertion_point(message_clear_start:GetAllCommentsResponse)
+// @@protoc_insertion_point(message_clear_start:stat.GetAllCommentsResponse)
   ::google::protobuf::internal::TSanWrite(&_impl_);
   ::uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
@@ -614,7 +617,7 @@ PROTOBUF_NOINLINE void GetAllCommentsResponse::Clear() {
             ::google::protobuf::io::EpsCopyOutputStream* stream) const {
           const GetAllCommentsResponse& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(serialize_to_array_start:GetAllCommentsResponse)
+          // @@protoc_insertion_point(serialize_to_array_start:stat.GetAllCommentsResponse)
           ::uint32_t cached_has_bits = 0;
           (void)cached_has_bits;
 
@@ -622,7 +625,7 @@ PROTOBUF_NOINLINE void GetAllCommentsResponse::Clear() {
           for (int i = 0, n = this_._internal_comments_size(); i < n; ++i) {
             const auto& s = this_._internal_comments().Get(i);
             ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
-                s.data(), static_cast<int>(s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "GetAllCommentsResponse.comments");
+                s.data(), static_cast<int>(s.length()), ::google::protobuf::internal::WireFormatLite::SERIALIZE, "stat.GetAllCommentsResponse.comments");
             target = stream->WriteString(1, s, target);
           }
 
@@ -638,7 +641,7 @@ PROTOBUF_NOINLINE void GetAllCommentsResponse::Clear() {
                 ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
                     this_._internal_metadata_.unknown_fields<::google::protobuf::UnknownFieldSet>(::google::protobuf::UnknownFieldSet::default_instance), target, stream);
           }
-          // @@protoc_insertion_point(serialize_to_array_end:GetAllCommentsResponse)
+          // @@protoc_insertion_point(serialize_to_array_end:stat.GetAllCommentsResponse)
           return target;
         }
 
@@ -649,7 +652,7 @@ PROTOBUF_NOINLINE void GetAllCommentsResponse::Clear() {
         ::size_t GetAllCommentsResponse::ByteSizeLong() const {
           const GetAllCommentsResponse& this_ = *this;
 #endif  // PROTOBUF_CUSTOM_VTABLE
-          // @@protoc_insertion_point(message_byte_size_start:GetAllCommentsResponse)
+          // @@protoc_insertion_point(message_byte_size_start:stat.GetAllCommentsResponse)
           ::size_t total_size = 0;
 
           ::uint32_t cached_has_bits = 0;
@@ -682,7 +685,7 @@ PROTOBUF_NOINLINE void GetAllCommentsResponse::Clear() {
 void GetAllCommentsResponse::MergeImpl(::google::protobuf::MessageLite& to_msg, const ::google::protobuf::MessageLite& from_msg) {
   auto* const _this = static_cast<GetAllCommentsResponse*>(&to_msg);
   auto& from = static_cast<const GetAllCommentsResponse&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:GetAllCommentsResponse)
+  // @@protoc_insertion_point(class_specific_merge_from_start:stat.GetAllCommentsResponse)
   ABSL_DCHECK_NE(&from, _this);
   ::uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -695,7 +698,7 @@ void GetAllCommentsResponse::MergeImpl(::google::protobuf::MessageLite& to_msg, 
 }
 
 void GetAllCommentsResponse::CopyFrom(const GetAllCommentsResponse& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:GetAllCommentsResponse)
+// @@protoc_insertion_point(class_specific_copy_from_start:stat.GetAllCommentsResponse)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -713,6 +716,7 @@ void GetAllCommentsResponse::InternalSwap(GetAllCommentsResponse* PROTOBUF_RESTR
   return ::google::protobuf::Message::GetMetadataImpl(GetClassData()->full());
 }
 // @@protoc_insertion_point(namespace_scope)
+}  // namespace stat
 namespace google {
 namespace protobuf {
 }  // namespace protobuf

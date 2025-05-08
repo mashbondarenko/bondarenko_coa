@@ -114,10 +114,38 @@ CMakeFiles/gateway.dir/src/PromoServiceProxyImpl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gateway.dir/src/PromoServiceProxyImpl.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/maria/Documents/GitHub/bondarenko_coa/gateway/src/PromoServiceProxyImpl.cpp -o CMakeFiles/gateway.dir/src/PromoServiceProxyImpl.cpp.s
 
+CMakeFiles/gateway.dir/src/ClickAndCommentService.cpp.o: CMakeFiles/gateway.dir/flags.make
+CMakeFiles/gateway.dir/src/ClickAndCommentService.cpp.o: /Users/maria/Documents/GitHub/bondarenko_coa/gateway/src/ClickAndCommentService.cpp
+CMakeFiles/gateway.dir/src/ClickAndCommentService.cpp.o: CMakeFiles/gateway.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/gateway.dir/src/ClickAndCommentService.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/src/ClickAndCommentService.cpp.o -MF CMakeFiles/gateway.dir/src/ClickAndCommentService.cpp.o.d -o CMakeFiles/gateway.dir/src/ClickAndCommentService.cpp.o -c /Users/maria/Documents/GitHub/bondarenko_coa/gateway/src/ClickAndCommentService.cpp
+
+CMakeFiles/gateway.dir/src/ClickAndCommentService.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gateway.dir/src/ClickAndCommentService.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/maria/Documents/GitHub/bondarenko_coa/gateway/src/ClickAndCommentService.cpp > CMakeFiles/gateway.dir/src/ClickAndCommentService.cpp.i
+
+CMakeFiles/gateway.dir/src/ClickAndCommentService.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gateway.dir/src/ClickAndCommentService.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/maria/Documents/GitHub/bondarenko_coa/gateway/src/ClickAndCommentService.cpp -o CMakeFiles/gateway.dir/src/ClickAndCommentService.cpp.s
+
+CMakeFiles/gateway.dir/src/KafkaProducer.cpp.o: CMakeFiles/gateway.dir/flags.make
+CMakeFiles/gateway.dir/src/KafkaProducer.cpp.o: /Users/maria/Documents/GitHub/bondarenko_coa/gateway/src/KafkaProducer.cpp
+CMakeFiles/gateway.dir/src/KafkaProducer.cpp.o: CMakeFiles/gateway.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/gateway.dir/src/KafkaProducer.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/src/KafkaProducer.cpp.o -MF CMakeFiles/gateway.dir/src/KafkaProducer.cpp.o.d -o CMakeFiles/gateway.dir/src/KafkaProducer.cpp.o -c /Users/maria/Documents/GitHub/bondarenko_coa/gateway/src/KafkaProducer.cpp
+
+CMakeFiles/gateway.dir/src/KafkaProducer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gateway.dir/src/KafkaProducer.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/maria/Documents/GitHub/bondarenko_coa/gateway/src/KafkaProducer.cpp > CMakeFiles/gateway.dir/src/KafkaProducer.cpp.i
+
+CMakeFiles/gateway.dir/src/KafkaProducer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gateway.dir/src/KafkaProducer.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/maria/Documents/GitHub/bondarenko_coa/gateway/src/KafkaProducer.cpp -o CMakeFiles/gateway.dir/src/KafkaProducer.cpp.s
+
 CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.cc.o: CMakeFiles/gateway.dir/flags.make
 CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.cc.o: /Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.cc
 CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.cc.o: CMakeFiles/gateway.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.cc.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.cc.o -MF CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.cc.o.d -o CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.cc.o -c /Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.cc
 
 CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.cc.i: cmake_force
@@ -131,7 +159,7 @@ CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generat
 CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.cc.o: CMakeFiles/gateway.dir/flags.make
 CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.cc.o: /Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.cc
 CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.cc.o: CMakeFiles/gateway.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.cc.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.cc.o -MF CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.cc.o.d -o CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.cc.o -c /Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.cc
 
 CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.cc.i: cmake_force
@@ -145,7 +173,7 @@ CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generat
 CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.pb.cc.o: CMakeFiles/gateway.dir/flags.make
 CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.pb.cc.o: /Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.pb.cc
 CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.pb.cc.o: CMakeFiles/gateway.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.pb.cc.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.pb.cc.o -MF CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.pb.cc.o.d -o CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.pb.cc.o -c /Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.pb.cc
 
 CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.pb.cc.i: cmake_force
@@ -159,7 +187,7 @@ CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generat
 CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.grpc.pb.cc.o: CMakeFiles/gateway.dir/flags.make
 CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.grpc.pb.cc.o: /Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.grpc.pb.cc
 CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.grpc.pb.cc.o: CMakeFiles/gateway.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.grpc.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.grpc.pb.cc.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.grpc.pb.cc.o -MF CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.grpc.pb.cc.o.d -o CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.grpc.pb.cc.o -c /Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.grpc.pb.cc
 
 CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.grpc.pb.cc.i: cmake_force
@@ -170,15 +198,47 @@ CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generat
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.grpc.pb.cc.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.grpc.pb.cc -o CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.grpc.pb.cc.s
 
+CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.pb.cc.o: CMakeFiles/gateway.dir/flags.make
+CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.pb.cc.o: /Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.pb.cc
+CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.pb.cc.o: CMakeFiles/gateway.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.pb.cc.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.pb.cc.o -MF CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.pb.cc.o.d -o CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.pb.cc.o -c /Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.pb.cc
+
+CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.pb.cc.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.pb.cc > CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.pb.cc.i
+
+CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.pb.cc.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.pb.cc -o CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.pb.cc.s
+
+CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.grpc.pb.cc.o: CMakeFiles/gateway.dir/flags.make
+CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.grpc.pb.cc.o: /Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.grpc.pb.cc
+CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.grpc.pb.cc.o: CMakeFiles/gateway.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.grpc.pb.cc.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.grpc.pb.cc.o -MF CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.grpc.pb.cc.o.d -o CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.grpc.pb.cc.o -c /Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.grpc.pb.cc
+
+CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.grpc.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.grpc.pb.cc.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.grpc.pb.cc > CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.grpc.pb.cc.i
+
+CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.grpc.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.grpc.pb.cc.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.grpc.pb.cc -o CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.grpc.pb.cc.s
+
 # Object files for target gateway
 gateway_OBJECTS = \
 "CMakeFiles/gateway.dir/src/main.cpp.o" \
 "CMakeFiles/gateway.dir/src/AuthServiceProxyImpl.cpp.o" \
 "CMakeFiles/gateway.dir/src/PromoServiceProxyImpl.cpp.o" \
+"CMakeFiles/gateway.dir/src/ClickAndCommentService.cpp.o" \
+"CMakeFiles/gateway.dir/src/KafkaProducer.cpp.o" \
 "CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.cc.o" \
 "CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.cc.o" \
 "CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.pb.cc.o" \
-"CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.grpc.pb.cc.o"
+"CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.grpc.pb.cc.o" \
+"CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.pb.cc.o" \
+"CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.grpc.pb.cc.o"
 
 # External object files for target gateway
 gateway_EXTERNAL_OBJECTS =
@@ -186,10 +246,14 @@ gateway_EXTERNAL_OBJECTS =
 gateway: CMakeFiles/gateway.dir/src/main.cpp.o
 gateway: CMakeFiles/gateway.dir/src/AuthServiceProxyImpl.cpp.o
 gateway: CMakeFiles/gateway.dir/src/PromoServiceProxyImpl.cpp.o
+gateway: CMakeFiles/gateway.dir/src/ClickAndCommentService.cpp.o
+gateway: CMakeFiles/gateway.dir/src/KafkaProducer.cpp.o
 gateway: CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.cc.o
 gateway: CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.grpc.pb.cc.o
 gateway: CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.pb.cc.o
 gateway: CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.grpc.pb.cc.o
+gateway: CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.pb.cc.o
+gateway: CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.grpc.pb.cc.o
 gateway: CMakeFiles/gateway.dir/build.make
 gateway: /opt/homebrew/lib/libgrpc++.1.71.0.dylib
 gateway: /opt/homebrew/lib/libprotobuf.29.3.0.dylib
@@ -285,11 +349,11 @@ gateway: /opt/homebrew/lib/libabsl_spinlock_wait.2407.0.0.dylib
 gateway: /opt/homebrew/lib/libabsl_throw_delegate.2407.0.0.dylib
 gateway: /opt/homebrew/lib/libabsl_raw_logging_internal.2407.0.0.dylib
 gateway: /opt/homebrew/lib/libabsl_log_severity.2407.0.0.dylib
-gateway: /opt/homebrew/lib/libssl.dylib
-gateway: /opt/homebrew/lib/libcrypto.dylib
+gateway: /opt/homebrew/Cellar/openssl@3/3.5.0/lib/libssl.dylib
+gateway: /opt/homebrew/Cellar/openssl@3/3.5.0/lib/libcrypto.dylib
 gateway: /opt/homebrew/lib/libaddress_sorting.46.0.0.dylib
 gateway: CMakeFiles/gateway.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable gateway"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable gateway"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gateway.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

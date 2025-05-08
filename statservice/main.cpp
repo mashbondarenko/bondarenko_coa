@@ -2,26 +2,25 @@
 #include <memory>
 #include <string>
 #include <grpcpp/grpcpp.h>
-#include "StatServiceImpl.h"
+#include "StatServiceProxyImpl.cpp"
 
 using grpc::Server;
 using grpc::ServerBuilder;
-
-void RunServer(const std::string& server_address, const std::string& db_conn_str) {
-    StatServiceImpl service(db_conn_str);
-
-    ServerBuilder builder;
-    builder.AddListeningPort(server_address, grpc::InsecureServerCredentials());
-    builder.RegisterService(&service);
-
-    std::unique_ptr<Server> server(builder.BuildAndStart());
-    std::cout << "Stat Service listening on " << server_address << std::endl;
-    server->Wait();
-}
+using grpc::InsecureServerCredentials;
 
 int main(int argc, char** argv) {
-    std::string server_address("0.0.0.0:50054");
-    std::string db_conn_str("host=localhost user=postgres password=postgres dbname=promodb");
-    RunServer(server_address, db_conn_str);
-    return 0;
+    const std::string kafka_brokers = "localhost:9092";
+  const std::string kafka_topic   = "user-registration";
+
+  CommentsServiceImpl service(kafka_brokers, kafka_topic);
+
+  grpc::ServerBuilder builder;
+  builder.AddListeningPort("0.0.0.0:6000", grpc::InsecureServerCredentials());
+  builder.RegisterService(&service);
+
+  std::unique_ptr<grpc::Server> server(builder.BuildAndStart());
+  std::cout << "CommentsService listening on port 6000" << std::endl;
+
+  server->Wait();
+  return 0;
 }
