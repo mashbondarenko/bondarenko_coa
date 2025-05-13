@@ -100,19 +100,19 @@ CMakeFiles/statservice.dir/KafkaConsumer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/statservice.dir/KafkaConsumer.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/maria/Documents/GitHub/bondarenko_coa/statservice/KafkaConsumer.cpp -o CMakeFiles/statservice.dir/KafkaConsumer.cpp.s
 
-CMakeFiles/statservice.dir/StatServiceProxyImpl.cpp.o: CMakeFiles/statservice.dir/flags.make
-CMakeFiles/statservice.dir/StatServiceProxyImpl.cpp.o: /Users/maria/Documents/GitHub/bondarenko_coa/statservice/StatServiceProxyImpl.cpp
-CMakeFiles/statservice.dir/StatServiceProxyImpl.cpp.o: CMakeFiles/statservice.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/maria/Documents/GitHub/bondarenko_coa/statservice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/statservice.dir/StatServiceProxyImpl.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/statservice.dir/StatServiceProxyImpl.cpp.o -MF CMakeFiles/statservice.dir/StatServiceProxyImpl.cpp.o.d -o CMakeFiles/statservice.dir/StatServiceProxyImpl.cpp.o -c /Users/maria/Documents/GitHub/bondarenko_coa/statservice/StatServiceProxyImpl.cpp
+CMakeFiles/statservice.dir/CommentsServiceImpl.cpp.o: CMakeFiles/statservice.dir/flags.make
+CMakeFiles/statservice.dir/CommentsServiceImpl.cpp.o: /Users/maria/Documents/GitHub/bondarenko_coa/statservice/CommentsServiceImpl.cpp
+CMakeFiles/statservice.dir/CommentsServiceImpl.cpp.o: CMakeFiles/statservice.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/maria/Documents/GitHub/bondarenko_coa/statservice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/statservice.dir/CommentsServiceImpl.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/statservice.dir/CommentsServiceImpl.cpp.o -MF CMakeFiles/statservice.dir/CommentsServiceImpl.cpp.o.d -o CMakeFiles/statservice.dir/CommentsServiceImpl.cpp.o -c /Users/maria/Documents/GitHub/bondarenko_coa/statservice/CommentsServiceImpl.cpp
 
-CMakeFiles/statservice.dir/StatServiceProxyImpl.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/statservice.dir/StatServiceProxyImpl.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/maria/Documents/GitHub/bondarenko_coa/statservice/StatServiceProxyImpl.cpp > CMakeFiles/statservice.dir/StatServiceProxyImpl.cpp.i
+CMakeFiles/statservice.dir/CommentsServiceImpl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/statservice.dir/CommentsServiceImpl.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/maria/Documents/GitHub/bondarenko_coa/statservice/CommentsServiceImpl.cpp > CMakeFiles/statservice.dir/CommentsServiceImpl.cpp.i
 
-CMakeFiles/statservice.dir/StatServiceProxyImpl.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/statservice.dir/StatServiceProxyImpl.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/maria/Documents/GitHub/bondarenko_coa/statservice/StatServiceProxyImpl.cpp -o CMakeFiles/statservice.dir/StatServiceProxyImpl.cpp.s
+CMakeFiles/statservice.dir/CommentsServiceImpl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/statservice.dir/CommentsServiceImpl.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/maria/Documents/GitHub/bondarenko_coa/statservice/CommentsServiceImpl.cpp -o CMakeFiles/statservice.dir/CommentsServiceImpl.cpp.s
 
 CMakeFiles/statservice.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.pb.cc.o: CMakeFiles/statservice.dir/flags.make
 CMakeFiles/statservice.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.pb.cc.o: /Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.pb.cc
@@ -146,7 +146,7 @@ CMakeFiles/statservice.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/gen
 statservice_OBJECTS = \
 "CMakeFiles/statservice.dir/main.cpp.o" \
 "CMakeFiles/statservice.dir/KafkaConsumer.cpp.o" \
-"CMakeFiles/statservice.dir/StatServiceProxyImpl.cpp.o" \
+"CMakeFiles/statservice.dir/CommentsServiceImpl.cpp.o" \
 "CMakeFiles/statservice.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.pb.cc.o" \
 "CMakeFiles/statservice.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.grpc.pb.cc.o"
 
@@ -155,7 +155,7 @@ statservice_EXTERNAL_OBJECTS =
 
 statservice: CMakeFiles/statservice.dir/main.cpp.o
 statservice: CMakeFiles/statservice.dir/KafkaConsumer.cpp.o
-statservice: CMakeFiles/statservice.dir/StatServiceProxyImpl.cpp.o
+statservice: CMakeFiles/statservice.dir/CommentsServiceImpl.cpp.o
 statservice: CMakeFiles/statservice.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.pb.cc.o
 statservice: CMakeFiles/statservice.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.grpc.pb.cc.o
 statservice: CMakeFiles/statservice.dir/build.make

@@ -1231,7 +1231,7 @@ CMakeFiles/statservice.dir/main.cpp.o: \
   /opt/homebrew/include/grpcpp/security/authorization_policy_provider.h \
   /opt/homebrew/include/grpcpp/server_posix.h \
   /opt/homebrew/include/grpcpp/version_info.h \
-  /Users/maria/Documents/GitHub/bondarenko_coa/statservice/StatServiceProxyImpl.cpp \
+  /Users/maria/Documents/GitHub/bondarenko_coa/statservice/CommentsServiceImpl.cpp \
   /Users/maria/Documents/GitHub/bondarenko_coa/statservice/../proto/generated/stat.grpc.pb.h \
   /Users/maria/Documents/GitHub/bondarenko_coa/statservice/../proto/generated/stat.pb.h \
   /opt/homebrew/include/google/protobuf/runtime_version.h \

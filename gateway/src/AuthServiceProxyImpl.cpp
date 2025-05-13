@@ -1,5 +1,5 @@
 #include "AuthServiceProxyImpl.h"
-#include "KafkaProducer.h"
+#include "KafkaProd.h"
 
 namespace gateway {
 
@@ -11,7 +11,7 @@ grpc::Status AuthServiceProxyImpl::RegisterUser(grpc::ServerContext* context,
     grpc::ClientContext client_context;
     grpc::Status status = stub_->RegisterUser(&client_context, *request, response);
  
-    KafkaProducer producer("localhost:9092", "user-registration");
+    KafkaProducer producer("localhost:9092", "user-register");
     std::string message =
     std::string("User ") +
     std::to_string(response->id()) +

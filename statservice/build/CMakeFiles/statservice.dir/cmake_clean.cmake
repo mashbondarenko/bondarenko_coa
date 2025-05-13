@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/statservice.dir/CommentsServiceImpl.cpp.o"
+  "CMakeFiles/statservice.dir/CommentsServiceImpl.cpp.o.d"
   "CMakeFiles/statservice.dir/KafkaConsumer.cpp.o"
   "CMakeFiles/statservice.dir/KafkaConsumer.cpp.o.d"
-  "CMakeFiles/statservice.dir/StatServiceProxyImpl.cpp.o"
-  "CMakeFiles/statservice.dir/StatServiceProxyImpl.cpp.o.d"
   "CMakeFiles/statservice.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.grpc.pb.cc.o"
   "CMakeFiles/statservice.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.grpc.pb.cc.o.d"
   "CMakeFiles/statservice.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.pb.cc.o"

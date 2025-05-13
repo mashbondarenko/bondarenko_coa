@@ -2,9 +2,9 @@
 #define CLICK_AND_COMMENT_SERVICE_H
 
 #include <string>
-#include "KafkaProducer.h"
+#include "KafkaProd.h"
 
-class ClickAndCommentService {
+class StatService {
 public:
     static void SendClickEvent(const std::string& user_id, const std::string& promo_id);
     static void SendCommentEvent(const std::string& user_id, const std::string& promo_id, const std::string& comment);

@@ -15,7 +15,7 @@ grpc::Status PromoServiceProxyImpl::ValidateToken(const std::string& token) {
     grpc::ClientContext authContext;
     grpc::Status authStatus = auth_stub_->GetProfile(&authContext, authReq, &dummyUser);
     if (!authStatus.ok()) {
-        return grpc::Status(grpc::StatusCode::UNAUTHENTICATED, "Недействительный токен");
+        return grpc::Status(grpc::StatusCode::UNAUTHENTICATED, "Invalid token");
     }
     return grpc::Status::OK;
 }

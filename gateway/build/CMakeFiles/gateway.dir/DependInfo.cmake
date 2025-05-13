@@ -15,9 +15,9 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.grpc.pb.cc" "CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.grpc.pb.cc.o" "gcc" "CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.grpc.pb.cc.o.d"
   "/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.pb.cc" "CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.pb.cc.o" "gcc" "CMakeFiles/gateway.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.pb.cc.o.d"
   "/Users/maria/Documents/GitHub/bondarenko_coa/gateway/src/AuthServiceProxyImpl.cpp" "CMakeFiles/gateway.dir/src/AuthServiceProxyImpl.cpp.o" "gcc" "CMakeFiles/gateway.dir/src/AuthServiceProxyImpl.cpp.o.d"
-  "/Users/maria/Documents/GitHub/bondarenko_coa/gateway/src/ClickAndCommentService.cpp" "CMakeFiles/gateway.dir/src/ClickAndCommentService.cpp.o" "gcc" "CMakeFiles/gateway.dir/src/ClickAndCommentService.cpp.o.d"
-  "/Users/maria/Documents/GitHub/bondarenko_coa/gateway/src/KafkaProducer.cpp" "CMakeFiles/gateway.dir/src/KafkaProducer.cpp.o" "gcc" "CMakeFiles/gateway.dir/src/KafkaProducer.cpp.o.d"
+  "/Users/maria/Documents/GitHub/bondarenko_coa/gateway/src/KafkaProd.cpp" "CMakeFiles/gateway.dir/src/KafkaProd.cpp.o" "gcc" "CMakeFiles/gateway.dir/src/KafkaProd.cpp.o.d"
   "/Users/maria/Documents/GitHub/bondarenko_coa/gateway/src/PromoServiceProxyImpl.cpp" "CMakeFiles/gateway.dir/src/PromoServiceProxyImpl.cpp.o" "gcc" "CMakeFiles/gateway.dir/src/PromoServiceProxyImpl.cpp.o.d"
+  "/Users/maria/Documents/GitHub/bondarenko_coa/gateway/src/StatService.cpp" "CMakeFiles/gateway.dir/src/StatService.cpp.o" "gcc" "CMakeFiles/gateway.dir/src/StatService.cpp.o.d"
   "/Users/maria/Documents/GitHub/bondarenko_coa/gateway/src/main.cpp" "CMakeFiles/gateway.dir/src/main.cpp.o" "gcc" "CMakeFiles/gateway.dir/src/main.cpp.o.d"
   )
 

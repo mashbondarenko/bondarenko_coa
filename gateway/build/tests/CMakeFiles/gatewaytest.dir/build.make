@@ -86,19 +86,19 @@ tests/CMakeFiles/gatewaytest.dir/gatewaytest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gatewaytest.dir/gatewaytest.cpp.s"
 	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/maria/Documents/GitHub/bondarenko_coa/gateway/tests/gatewaytest.cpp -o CMakeFiles/gatewaytest.dir/gatewaytest.cpp.s
 
-tests/CMakeFiles/gatewaytest.dir/KafkaConsumer.cpp.o: tests/CMakeFiles/gatewaytest.dir/flags.make
-tests/CMakeFiles/gatewaytest.dir/KafkaConsumer.cpp.o: /Users/maria/Documents/GitHub/bondarenko_coa/gateway/tests/KafkaConsumer.cpp
-tests/CMakeFiles/gatewaytest.dir/KafkaConsumer.cpp.o: tests/CMakeFiles/gatewaytest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tests/CMakeFiles/gatewaytest.dir/KafkaConsumer.cpp.o"
-	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/gatewaytest.dir/KafkaConsumer.cpp.o -MF CMakeFiles/gatewaytest.dir/KafkaConsumer.cpp.o.d -o CMakeFiles/gatewaytest.dir/KafkaConsumer.cpp.o -c /Users/maria/Documents/GitHub/bondarenko_coa/gateway/tests/KafkaConsumer.cpp
+tests/CMakeFiles/gatewaytest.dir/KafkaCons.cpp.o: tests/CMakeFiles/gatewaytest.dir/flags.make
+tests/CMakeFiles/gatewaytest.dir/KafkaCons.cpp.o: /Users/maria/Documents/GitHub/bondarenko_coa/gateway/tests/KafkaCons.cpp
+tests/CMakeFiles/gatewaytest.dir/KafkaCons.cpp.o: tests/CMakeFiles/gatewaytest.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tests/CMakeFiles/gatewaytest.dir/KafkaCons.cpp.o"
+	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/gatewaytest.dir/KafkaCons.cpp.o -MF CMakeFiles/gatewaytest.dir/KafkaCons.cpp.o.d -o CMakeFiles/gatewaytest.dir/KafkaCons.cpp.o -c /Users/maria/Documents/GitHub/bondarenko_coa/gateway/tests/KafkaCons.cpp
 
-tests/CMakeFiles/gatewaytest.dir/KafkaConsumer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gatewaytest.dir/KafkaConsumer.cpp.i"
-	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/maria/Documents/GitHub/bondarenko_coa/gateway/tests/KafkaConsumer.cpp > CMakeFiles/gatewaytest.dir/KafkaConsumer.cpp.i
+tests/CMakeFiles/gatewaytest.dir/KafkaCons.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gatewaytest.dir/KafkaCons.cpp.i"
+	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/maria/Documents/GitHub/bondarenko_coa/gateway/tests/KafkaCons.cpp > CMakeFiles/gatewaytest.dir/KafkaCons.cpp.i
 
-tests/CMakeFiles/gatewaytest.dir/KafkaConsumer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gatewaytest.dir/KafkaConsumer.cpp.s"
-	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/maria/Documents/GitHub/bondarenko_coa/gateway/tests/KafkaConsumer.cpp -o CMakeFiles/gatewaytest.dir/KafkaConsumer.cpp.s
+tests/CMakeFiles/gatewaytest.dir/KafkaCons.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gatewaytest.dir/KafkaCons.cpp.s"
+	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/maria/Documents/GitHub/bondarenko_coa/gateway/tests/KafkaCons.cpp -o CMakeFiles/gatewaytest.dir/KafkaCons.cpp.s
 
 tests/CMakeFiles/gatewaytest.dir/__/src/AuthServiceProxyImpl.cpp.o: tests/CMakeFiles/gatewaytest.dir/flags.make
 tests/CMakeFiles/gatewaytest.dir/__/src/AuthServiceProxyImpl.cpp.o: /Users/maria/Documents/GitHub/bondarenko_coa/gateway/src/AuthServiceProxyImpl.cpp
@@ -128,19 +128,19 @@ tests/CMakeFiles/gatewaytest.dir/__/src/PromoServiceProxyImpl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gatewaytest.dir/__/src/PromoServiceProxyImpl.cpp.s"
 	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/maria/Documents/GitHub/bondarenko_coa/gateway/src/PromoServiceProxyImpl.cpp -o CMakeFiles/gatewaytest.dir/__/src/PromoServiceProxyImpl.cpp.s
 
-tests/CMakeFiles/gatewaytest.dir/__/src/KafkaProducer.cpp.o: tests/CMakeFiles/gatewaytest.dir/flags.make
-tests/CMakeFiles/gatewaytest.dir/__/src/KafkaProducer.cpp.o: /Users/maria/Documents/GitHub/bondarenko_coa/gateway/src/KafkaProducer.cpp
-tests/CMakeFiles/gatewaytest.dir/__/src/KafkaProducer.cpp.o: tests/CMakeFiles/gatewaytest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object tests/CMakeFiles/gatewaytest.dir/__/src/KafkaProducer.cpp.o"
-	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/gatewaytest.dir/__/src/KafkaProducer.cpp.o -MF CMakeFiles/gatewaytest.dir/__/src/KafkaProducer.cpp.o.d -o CMakeFiles/gatewaytest.dir/__/src/KafkaProducer.cpp.o -c /Users/maria/Documents/GitHub/bondarenko_coa/gateway/src/KafkaProducer.cpp
+tests/CMakeFiles/gatewaytest.dir/__/src/KafkaProd.cpp.o: tests/CMakeFiles/gatewaytest.dir/flags.make
+tests/CMakeFiles/gatewaytest.dir/__/src/KafkaProd.cpp.o: /Users/maria/Documents/GitHub/bondarenko_coa/gateway/src/KafkaProd.cpp
+tests/CMakeFiles/gatewaytest.dir/__/src/KafkaProd.cpp.o: tests/CMakeFiles/gatewaytest.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object tests/CMakeFiles/gatewaytest.dir/__/src/KafkaProd.cpp.o"
+	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/gatewaytest.dir/__/src/KafkaProd.cpp.o -MF CMakeFiles/gatewaytest.dir/__/src/KafkaProd.cpp.o.d -o CMakeFiles/gatewaytest.dir/__/src/KafkaProd.cpp.o -c /Users/maria/Documents/GitHub/bondarenko_coa/gateway/src/KafkaProd.cpp
 
-tests/CMakeFiles/gatewaytest.dir/__/src/KafkaProducer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gatewaytest.dir/__/src/KafkaProducer.cpp.i"
-	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/maria/Documents/GitHub/bondarenko_coa/gateway/src/KafkaProducer.cpp > CMakeFiles/gatewaytest.dir/__/src/KafkaProducer.cpp.i
+tests/CMakeFiles/gatewaytest.dir/__/src/KafkaProd.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gatewaytest.dir/__/src/KafkaProd.cpp.i"
+	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/maria/Documents/GitHub/bondarenko_coa/gateway/src/KafkaProd.cpp > CMakeFiles/gatewaytest.dir/__/src/KafkaProd.cpp.i
 
-tests/CMakeFiles/gatewaytest.dir/__/src/KafkaProducer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gatewaytest.dir/__/src/KafkaProducer.cpp.s"
-	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/maria/Documents/GitHub/bondarenko_coa/gateway/src/KafkaProducer.cpp -o CMakeFiles/gatewaytest.dir/__/src/KafkaProducer.cpp.s
+tests/CMakeFiles/gatewaytest.dir/__/src/KafkaProd.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gatewaytest.dir/__/src/KafkaProd.cpp.s"
+	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/maria/Documents/GitHub/bondarenko_coa/gateway/src/KafkaProd.cpp -o CMakeFiles/gatewaytest.dir/__/src/KafkaProd.cpp.s
 
 tests/CMakeFiles/gatewaytest.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.pb.cc.o: tests/CMakeFiles/gatewaytest.dir/flags.make
 tests/CMakeFiles/gatewaytest.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.pb.cc.o: /Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.pb.cc
@@ -201,10 +201,10 @@ tests/CMakeFiles/gatewaytest.dir/Users/maria/Documents/GitHub/bondarenko_coa/pro
 # Object files for target gatewaytest
 gatewaytest_OBJECTS = \
 "CMakeFiles/gatewaytest.dir/gatewaytest.cpp.o" \
-"CMakeFiles/gatewaytest.dir/KafkaConsumer.cpp.o" \
+"CMakeFiles/gatewaytest.dir/KafkaCons.cpp.o" \
 "CMakeFiles/gatewaytest.dir/__/src/AuthServiceProxyImpl.cpp.o" \
 "CMakeFiles/gatewaytest.dir/__/src/PromoServiceProxyImpl.cpp.o" \
-"CMakeFiles/gatewaytest.dir/__/src/KafkaProducer.cpp.o" \
+"CMakeFiles/gatewaytest.dir/__/src/KafkaProd.cpp.o" \
 "CMakeFiles/gatewaytest.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.pb.cc.o" \
 "CMakeFiles/gatewaytest.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.grpc.pb.cc.o" \
 "CMakeFiles/gatewaytest.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.cc.o" \
@@ -214,10 +214,10 @@ gatewaytest_OBJECTS = \
 gatewaytest_EXTERNAL_OBJECTS =
 
 tests/gatewaytest: tests/CMakeFiles/gatewaytest.dir/gatewaytest.cpp.o
-tests/gatewaytest: tests/CMakeFiles/gatewaytest.dir/KafkaConsumer.cpp.o
+tests/gatewaytest: tests/CMakeFiles/gatewaytest.dir/KafkaCons.cpp.o
 tests/gatewaytest: tests/CMakeFiles/gatewaytest.dir/__/src/AuthServiceProxyImpl.cpp.o
 tests/gatewaytest: tests/CMakeFiles/gatewaytest.dir/__/src/PromoServiceProxyImpl.cpp.o
-tests/gatewaytest: tests/CMakeFiles/gatewaytest.dir/__/src/KafkaProducer.cpp.o
+tests/gatewaytest: tests/CMakeFiles/gatewaytest.dir/__/src/KafkaProd.cpp.o
 tests/gatewaytest: tests/CMakeFiles/gatewaytest.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.pb.cc.o
 tests/gatewaytest: tests/CMakeFiles/gatewaytest.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/auth.grpc.pb.cc.o
 tests/gatewaytest: tests/CMakeFiles/gatewaytest.dir/Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/promo.pb.cc.o

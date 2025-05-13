@@ -2,7 +2,7 @@
 #include <memory>
 #include <string>
 #include <grpcpp/grpcpp.h>
-#include "StatServiceProxyImpl.cpp"
+#include "CommentsServiceImpl.cpp"
 
 using grpc::Server;
 using grpc::ServerBuilder;
@@ -10,7 +10,7 @@ using grpc::InsecureServerCredentials;
 
 int main(int argc, char** argv) {
     const std::string kafka_brokers = "localhost:9092";
-  const std::string kafka_topic   = "user-registration";
+  const std::string kafka_topic   = "user-register";
 
   CommentsServiceImpl service(kafka_brokers, kafka_topic);
 

@@ -1453,9 +1453,9 @@ tests/CMakeFiles/gatewaytest.dir/gatewaytest.cpp.o: \
   /Users/maria/Documents/GitHub/bondarenko_coa/gateway/tests/../src/PromoServiceProxyImpl.h \
   /Users/maria/Documents/GitHub/bondarenko_coa/gateway/../proto/generated/promo.grpc.pb.h \
   /Users/maria/Documents/GitHub/bondarenko_coa/gateway/../proto/generated/promo.pb.h \
-  /Users/maria/Documents/GitHub/bondarenko_coa/gateway/tests/../src/KafkaProducer.h \
+  /Users/maria/Documents/GitHub/bondarenko_coa/gateway/tests/../src/KafkaProd.h \
   /opt/homebrew/opt/librdkafka/include/librdkafka/rdkafkacpp.h \
-  /Users/maria/Documents/GitHub/bondarenko_coa/gateway/tests/KafkaConsumer.cpp \
+  /Users/maria/Documents/GitHub/bondarenko_coa/gateway/tests/KafkaCons.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/thread \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__thread/formatter.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__thread/jthread.h \

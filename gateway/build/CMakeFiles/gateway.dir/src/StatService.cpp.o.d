@@ -1,6 +1,6 @@
-CMakeFiles/gateway.dir/src/KafkaProducer.cpp.o: \
-  /Users/maria/Documents/GitHub/bondarenko_coa/gateway/src/KafkaProducer.cpp \
-  /Users/maria/Documents/GitHub/bondarenko_coa/gateway/src/KafkaProducer.h \
+CMakeFiles/gateway.dir/src/StatService.cpp.o: \
+  /Users/maria/Documents/GitHub/bondarenko_coa/gateway/src/StatService.cpp \
+  /Users/maria/Documents/GitHub/bondarenko_coa/gateway/src/StatService.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/string \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/max.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/comp.h \
@@ -811,6 +811,7 @@ CMakeFiles/gateway.dir/src/KafkaProducer.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__bit/byteswap.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__bit/endian.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__bit/has_single_bit.h \
+  /Users/maria/Documents/GitHub/bondarenko_coa/gateway/src/KafkaProd.h \
   /opt/homebrew/opt/librdkafka/include/librdkafka/rdkafkacpp.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/list \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/functional \
@@ -975,4 +976,6 @@ CMakeFiles/gateway.dir/src/KafkaProducer.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__chrono/year_month_day.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__chrono/year_month_weekday.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__chrono/literals.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/forward_list
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/forward_list \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/iomanip \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/sstream

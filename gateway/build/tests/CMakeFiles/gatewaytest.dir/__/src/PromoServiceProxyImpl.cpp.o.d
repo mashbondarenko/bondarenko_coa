@@ -1409,5 +1409,5 @@ tests/CMakeFiles/gatewaytest.dir/__/src/PromoServiceProxyImpl.cpp.o: \
   /opt/homebrew/include/grpcpp/ports_undef.inc \
   /Users/maria/Documents/GitHub/bondarenko_coa/gateway/../proto/generated/auth.grpc.pb.h \
   /Users/maria/Documents/GitHub/bondarenko_coa/gateway/../proto/generated/auth.pb.h \
-  /Users/maria/Documents/GitHub/bondarenko_coa/gateway/src/KafkaProducer.h \
+  /Users/maria/Documents/GitHub/bondarenko_coa/gateway/src/KafkaProd.h \
   /opt/homebrew/opt/librdkafka/include/librdkafka/rdkafkacpp.h

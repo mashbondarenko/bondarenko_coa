@@ -11,10 +11,10 @@ set(GENERATED_DIR ${CMAKE_SOURCE_DIR}/../proto/generated)
 
 set(TEST_SOURCES
     gatewaytest.cpp
-    KafkaConsumer.cpp
+    KafkaCons.cpp
     ${CMAKE_SOURCE_DIR}/src/AuthServiceProxyImpl.cpp
     ${CMAKE_SOURCE_DIR}/src/PromoServiceProxyImpl.cpp
-    ${CMAKE_SOURCE_DIR}/src/KafkaProducer.cpp
+    ${CMAKE_SOURCE_DIR}/src/KafkaProd.cpp
     ${GENERATED_DIR}/auth.pb.cc
     ${GENERATED_DIR}/auth.grpc.pb.cc
     ${GENERATED_DIR}/promo.pb.cc

@@ -1,4 +1,4 @@
-#include "ClickAndCommentService.h"
+#include "StatService.h"
 #include <chrono>
 #include <iomanip>
 #include <iostream>
@@ -6,7 +6,7 @@
 #include <ctime>
 
 
-void ClickAndCommentService::SendClickEvent(const std::string& user_id, const std::string& promo_id) {
+void StatService::SendClickEvent(const std::string& user_id, const std::string& promo_id) {
 
     KafkaProducer producer("localhost:9092", "promo-click");
     auto now = std::chrono::system_clock::now();
@@ -26,7 +26,7 @@ timeStream << std::put_time(localTime, "%Y-%m-%d %H:%M:%S");
 
 }
 
-void ClickAndCommentService::SendCommentEvent(const std::string& user_id, const std::string& promo_id, const std::string& comment) {
+void StatService::SendCommentEvent(const std::string& user_id, const std::string& promo_id, const std::string& comment) {
     KafkaProducer producer("localhost:9092", "promo-comment");
     auto now = std::chrono::system_clock::now();
     std::time_t currentTime = std::chrono::system_clock::to_time_t(now);

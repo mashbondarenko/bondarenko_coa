@@ -5,7 +5,7 @@
 #include <grpcpp/grpcpp.h>
 #include "promo.grpc.pb.h"
 #include "auth.grpc.pb.h"
-#include "KafkaProducer.h"
+#include "KafkaProd.h"
 
 namespace gateway {
 

@@ -18,7 +18,7 @@ link_directories(/opt/homebrew/lib)
 set(SOURCES
 main.cpp
 KafkaConsumer.cpp 
-StatServiceProxyImpl.cpp 
+CommentsServiceImpl.cpp 
     ${GENERATED_DIR}/stat.pb.cc
     ${GENERATED_DIR}/stat.grpc.pb.cc
 )

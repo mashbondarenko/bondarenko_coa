@@ -1410,5 +1410,5 @@ CMakeFiles/gateway.dir/src/main.cpp.o: \
   /Users/maria/Documents/GitHub/bondarenko_coa/gateway/src/PromoServiceProxyImpl.h \
   /Users/maria/Documents/GitHub/bondarenko_coa/gateway/../proto/generated/promo.grpc.pb.h \
   /Users/maria/Documents/GitHub/bondarenko_coa/gateway/../proto/generated/promo.pb.h \
-  /Users/maria/Documents/GitHub/bondarenko_coa/gateway/src/KafkaProducer.h \
+  /Users/maria/Documents/GitHub/bondarenko_coa/gateway/src/KafkaProd.h \
   /opt/homebrew/opt/librdkafka/include/librdkafka/rdkafkacpp.h

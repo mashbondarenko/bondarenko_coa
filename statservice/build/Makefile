@@ -129,6 +129,30 @@ statservice/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/statservice.dir/build.make CMakeFiles/statservice.dir/build
 .PHONY : statservice/fast
 
+CommentsServiceImpl.o: CommentsServiceImpl.cpp.o
+.PHONY : CommentsServiceImpl.o
+
+# target to build an object file
+CommentsServiceImpl.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/statservice.dir/build.make CMakeFiles/statservice.dir/CommentsServiceImpl.cpp.o
+.PHONY : CommentsServiceImpl.cpp.o
+
+CommentsServiceImpl.i: CommentsServiceImpl.cpp.i
+.PHONY : CommentsServiceImpl.i
+
+# target to preprocess a source file
+CommentsServiceImpl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/statservice.dir/build.make CMakeFiles/statservice.dir/CommentsServiceImpl.cpp.i
+.PHONY : CommentsServiceImpl.cpp.i
+
+CommentsServiceImpl.s: CommentsServiceImpl.cpp.s
+.PHONY : CommentsServiceImpl.s
+
+# target to generate assembly for a file
+CommentsServiceImpl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/statservice.dir/build.make CMakeFiles/statservice.dir/CommentsServiceImpl.cpp.s
+.PHONY : CommentsServiceImpl.cpp.s
+
 KafkaConsumer.o: KafkaConsumer.cpp.o
 .PHONY : KafkaConsumer.o
 
@@ -152,30 +176,6 @@ KafkaConsumer.s: KafkaConsumer.cpp.s
 KafkaConsumer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/statservice.dir/build.make CMakeFiles/statservice.dir/KafkaConsumer.cpp.s
 .PHONY : KafkaConsumer.cpp.s
-
-StatServiceProxyImpl.o: StatServiceProxyImpl.cpp.o
-.PHONY : StatServiceProxyImpl.o
-
-# target to build an object file
-StatServiceProxyImpl.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/statservice.dir/build.make CMakeFiles/statservice.dir/StatServiceProxyImpl.cpp.o
-.PHONY : StatServiceProxyImpl.cpp.o
-
-StatServiceProxyImpl.i: StatServiceProxyImpl.cpp.i
-.PHONY : StatServiceProxyImpl.i
-
-# target to preprocess a source file
-StatServiceProxyImpl.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/statservice.dir/build.make CMakeFiles/statservice.dir/StatServiceProxyImpl.cpp.i
-.PHONY : StatServiceProxyImpl.cpp.i
-
-StatServiceProxyImpl.s: StatServiceProxyImpl.cpp.s
-.PHONY : StatServiceProxyImpl.s
-
-# target to generate assembly for a file
-StatServiceProxyImpl.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/statservice.dir/build.make CMakeFiles/statservice.dir/StatServiceProxyImpl.cpp.s
-.PHONY : StatServiceProxyImpl.cpp.s
 
 Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.grpc.pb.o: Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.grpc.pb.cc.o
 .PHONY : Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.grpc.pb.o
@@ -258,12 +258,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... statservice"
+	@echo "... CommentsServiceImpl.o"
+	@echo "... CommentsServiceImpl.i"
+	@echo "... CommentsServiceImpl.s"
 	@echo "... KafkaConsumer.o"
 	@echo "... KafkaConsumer.i"
 	@echo "... KafkaConsumer.s"
-	@echo "... StatServiceProxyImpl.o"
-	@echo "... StatServiceProxyImpl.i"
-	@echo "... StatServiceProxyImpl.s"
 	@echo "... Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.grpc.pb.o"
 	@echo "... Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.grpc.pb.i"
 	@echo "... Users/maria/Documents/GitHub/bondarenko_coa/proto/generated/stat.grpc.pb.s"
