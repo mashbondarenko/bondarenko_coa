@@ -15,8 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/gatewaytest.dir/__/src/KafkaProd.cpp.o.d"
   "CMakeFiles/gatewaytest.dir/__/src/PromoServiceProxyImpl.cpp.o"
   "CMakeFiles/gatewaytest.dir/__/src/PromoServiceProxyImpl.cpp.o.d"
-  "CMakeFiles/gatewaytest.dir/gatewaytest.cpp.o"
-  "CMakeFiles/gatewaytest.dir/gatewaytest.cpp.o.d"
+  "CMakeFiles/gatewaytest.dir/final.cpp.o"
+  "CMakeFiles/gatewaytest.dir/final.cpp.o.d"
   "gatewaytest"
   "gatewaytest.pdb"
 )

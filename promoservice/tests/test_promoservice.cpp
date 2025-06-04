@@ -18,6 +18,7 @@ protected:
     PromoServiceImpl* service_impl;
 };
 
+// Промокоды 1
 TEST_F(PromoServiceUnitTest, CreateAndGetPromoCodeDirectCall) {
     grpc::ServerContext context;
 
@@ -45,6 +46,7 @@ TEST_F(PromoServiceUnitTest, CreateAndGetPromoCodeDirectCall) {
     EXPECT_EQ(get_resp.title(), "Test Promo");
 }
 
+// Промокоды 2
 TEST_F(PromoServiceUnitTest, ListPromoCodesDirectCall) {
     grpc::ServerContext context;
 
@@ -74,6 +76,7 @@ TEST_F(PromoServiceUnitTest, ListPromoCodesDirectCall) {
     EXPECT_GE(list_resp.promo_codes_size(), promoCount);
 }
 
+// Промокоды 3
 TEST_F(PromoServiceUnitTest, UpdatePromoCodeDirectCall) {
     grpc::ServerContext context;
     
@@ -111,7 +114,9 @@ TEST_F(PromoServiceUnitTest, UpdatePromoCodeDirectCall) {
     status = service_impl->GetPromoCodeById(&context, &get_req, &get_resp);
     EXPECT_TRUE(status.ok());
     EXPECT_EQ(get_resp.title(), "Updated Title");
-}TEST_F(PromoServiceUnitTest, DeletePromoCodeDirectCall) {
+}
+
+TEST_F(PromoServiceUnitTest, DeletePromoCodeDirectCall) {
     grpc::ServerContext context;
     
     promo::CreatePromoCodeRequest create_req;

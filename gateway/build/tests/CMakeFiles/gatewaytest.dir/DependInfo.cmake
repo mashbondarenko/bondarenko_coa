@@ -16,7 +16,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/maria/Documents/GitHub/bondarenko_coa/gateway/src/AuthServiceProxyImpl.cpp" "tests/CMakeFiles/gatewaytest.dir/__/src/AuthServiceProxyImpl.cpp.o" "gcc" "tests/CMakeFiles/gatewaytest.dir/__/src/AuthServiceProxyImpl.cpp.o.d"
   "/Users/maria/Documents/GitHub/bondarenko_coa/gateway/src/KafkaProd.cpp" "tests/CMakeFiles/gatewaytest.dir/__/src/KafkaProd.cpp.o" "gcc" "tests/CMakeFiles/gatewaytest.dir/__/src/KafkaProd.cpp.o.d"
   "/Users/maria/Documents/GitHub/bondarenko_coa/gateway/src/PromoServiceProxyImpl.cpp" "tests/CMakeFiles/gatewaytest.dir/__/src/PromoServiceProxyImpl.cpp.o" "gcc" "tests/CMakeFiles/gatewaytest.dir/__/src/PromoServiceProxyImpl.cpp.o.d"
-  "/Users/maria/Documents/GitHub/bondarenko_coa/gateway/tests/gatewaytest.cpp" "tests/CMakeFiles/gatewaytest.dir/gatewaytest.cpp.o" "gcc" "tests/CMakeFiles/gatewaytest.dir/gatewaytest.cpp.o.d"
+  "/Users/maria/Documents/GitHub/bondarenko_coa/gateway/tests/final.cpp" "tests/CMakeFiles/gatewaytest.dir/final.cpp.o" "gcc" "tests/CMakeFiles/gatewaytest.dir/final.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

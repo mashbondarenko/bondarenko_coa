@@ -9987,8 +9987,8 @@ tests/CMakeFiles/gatewaytest.dir/__/src/PromoServiceProxyImpl.cpp.o
  /opt/homebrew/include/grpcpp/version_info.h
  /opt/homebrew/opt/librdkafka/include/librdkafka/rdkafkacpp.h
 
-tests/CMakeFiles/gatewaytest.dir/gatewaytest.cpp.o
- /Users/maria/Documents/GitHub/bondarenko_coa/gateway/tests/gatewaytest.cpp
+tests/CMakeFiles/gatewaytest.dir/final.cpp.o
+ /Users/maria/Documents/GitHub/bondarenko_coa/gateway/tests/final.cpp
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/Availability.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityInternal.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/AvailabilityInternalLegacy.h

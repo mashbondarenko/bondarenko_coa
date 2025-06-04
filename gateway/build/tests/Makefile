@@ -322,29 +322,29 @@ __/src/PromoServiceProxyImpl.cpp.s:
 	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/gatewaytest.dir/build.make tests/CMakeFiles/gatewaytest.dir/__/src/PromoServiceProxyImpl.cpp.s
 .PHONY : __/src/PromoServiceProxyImpl.cpp.s
 
-gatewaytest.o: gatewaytest.cpp.o
-.PHONY : gatewaytest.o
+final.o: final.cpp.o
+.PHONY : final.o
 
 # target to build an object file
-gatewaytest.cpp.o:
-	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/gatewaytest.dir/build.make tests/CMakeFiles/gatewaytest.dir/gatewaytest.cpp.o
-.PHONY : gatewaytest.cpp.o
+final.cpp.o:
+	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/gatewaytest.dir/build.make tests/CMakeFiles/gatewaytest.dir/final.cpp.o
+.PHONY : final.cpp.o
 
-gatewaytest.i: gatewaytest.cpp.i
-.PHONY : gatewaytest.i
+final.i: final.cpp.i
+.PHONY : final.i
 
 # target to preprocess a source file
-gatewaytest.cpp.i:
-	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/gatewaytest.dir/build.make tests/CMakeFiles/gatewaytest.dir/gatewaytest.cpp.i
-.PHONY : gatewaytest.cpp.i
+final.cpp.i:
+	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/gatewaytest.dir/build.make tests/CMakeFiles/gatewaytest.dir/final.cpp.i
+.PHONY : final.cpp.i
 
-gatewaytest.s: gatewaytest.cpp.s
-.PHONY : gatewaytest.s
+final.s: final.cpp.s
+.PHONY : final.s
 
 # target to generate assembly for a file
-gatewaytest.cpp.s:
-	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/gatewaytest.dir/build.make tests/CMakeFiles/gatewaytest.dir/gatewaytest.cpp.s
-.PHONY : gatewaytest.cpp.s
+final.cpp.s:
+	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/gatewaytest.dir/build.make tests/CMakeFiles/gatewaytest.dir/final.cpp.s
+.PHONY : final.cpp.s
 
 # Help Target
 help:
@@ -379,9 +379,9 @@ help:
 	@echo "... __/src/PromoServiceProxyImpl.o"
 	@echo "... __/src/PromoServiceProxyImpl.i"
 	@echo "... __/src/PromoServiceProxyImpl.s"
-	@echo "... gatewaytest.o"
-	@echo "... gatewaytest.i"
-	@echo "... gatewaytest.s"
+	@echo "... final.o"
+	@echo "... final.i"
+	@echo "... final.s"
 .PHONY : help
 
 

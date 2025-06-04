@@ -21,7 +21,7 @@ void RunServer(const std::string& server_address, const std::string& db_conn_str
 
 int main(int argc, char** argv) {
     std::string server_address("0.0.0.0:50053");
-    std::string db_conn_str("host=localhost user=postgres password=postgres dbname=promodb");
+    std::string db_conn_str("host=localhost user=maria password=postgres dbname=promodb");
     RunServer(server_address, db_conn_str);
     return 0;
 }

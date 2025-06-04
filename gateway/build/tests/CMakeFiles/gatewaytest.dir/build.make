@@ -72,19 +72,19 @@ include tests/CMakeFiles/gatewaytest.dir/flags.make
 tests/CMakeFiles/gatewaytest.dir/codegen:
 .PHONY : tests/CMakeFiles/gatewaytest.dir/codegen
 
-tests/CMakeFiles/gatewaytest.dir/gatewaytest.cpp.o: tests/CMakeFiles/gatewaytest.dir/flags.make
-tests/CMakeFiles/gatewaytest.dir/gatewaytest.cpp.o: /Users/maria/Documents/GitHub/bondarenko_coa/gateway/tests/gatewaytest.cpp
-tests/CMakeFiles/gatewaytest.dir/gatewaytest.cpp.o: tests/CMakeFiles/gatewaytest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/gatewaytest.dir/gatewaytest.cpp.o"
-	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/gatewaytest.dir/gatewaytest.cpp.o -MF CMakeFiles/gatewaytest.dir/gatewaytest.cpp.o.d -o CMakeFiles/gatewaytest.dir/gatewaytest.cpp.o -c /Users/maria/Documents/GitHub/bondarenko_coa/gateway/tests/gatewaytest.cpp
+tests/CMakeFiles/gatewaytest.dir/final.cpp.o: tests/CMakeFiles/gatewaytest.dir/flags.make
+tests/CMakeFiles/gatewaytest.dir/final.cpp.o: /Users/maria/Documents/GitHub/bondarenko_coa/gateway/tests/final.cpp
+tests/CMakeFiles/gatewaytest.dir/final.cpp.o: tests/CMakeFiles/gatewaytest.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/gatewaytest.dir/final.cpp.o"
+	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/gatewaytest.dir/final.cpp.o -MF CMakeFiles/gatewaytest.dir/final.cpp.o.d -o CMakeFiles/gatewaytest.dir/final.cpp.o -c /Users/maria/Documents/GitHub/bondarenko_coa/gateway/tests/final.cpp
 
-tests/CMakeFiles/gatewaytest.dir/gatewaytest.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gatewaytest.dir/gatewaytest.cpp.i"
-	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/maria/Documents/GitHub/bondarenko_coa/gateway/tests/gatewaytest.cpp > CMakeFiles/gatewaytest.dir/gatewaytest.cpp.i
+tests/CMakeFiles/gatewaytest.dir/final.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gatewaytest.dir/final.cpp.i"
+	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/maria/Documents/GitHub/bondarenko_coa/gateway/tests/final.cpp > CMakeFiles/gatewaytest.dir/final.cpp.i
 
-tests/CMakeFiles/gatewaytest.dir/gatewaytest.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gatewaytest.dir/gatewaytest.cpp.s"
-	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/maria/Documents/GitHub/bondarenko_coa/gateway/tests/gatewaytest.cpp -o CMakeFiles/gatewaytest.dir/gatewaytest.cpp.s
+tests/CMakeFiles/gatewaytest.dir/final.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gatewaytest.dir/final.cpp.s"
+	cd /Users/maria/Documents/GitHub/bondarenko_coa/gateway/build/tests && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/maria/Documents/GitHub/bondarenko_coa/gateway/tests/final.cpp -o CMakeFiles/gatewaytest.dir/final.cpp.s
 
 tests/CMakeFiles/gatewaytest.dir/KafkaCons.cpp.o: tests/CMakeFiles/gatewaytest.dir/flags.make
 tests/CMakeFiles/gatewaytest.dir/KafkaCons.cpp.o: /Users/maria/Documents/GitHub/bondarenko_coa/gateway/tests/KafkaCons.cpp
@@ -200,7 +200,7 @@ tests/CMakeFiles/gatewaytest.dir/Users/maria/Documents/GitHub/bondarenko_coa/pro
 
 # Object files for target gatewaytest
 gatewaytest_OBJECTS = \
-"CMakeFiles/gatewaytest.dir/gatewaytest.cpp.o" \
+"CMakeFiles/gatewaytest.dir/final.cpp.o" \
 "CMakeFiles/gatewaytest.dir/KafkaCons.cpp.o" \
 "CMakeFiles/gatewaytest.dir/__/src/AuthServiceProxyImpl.cpp.o" \
 "CMakeFiles/gatewaytest.dir/__/src/PromoServiceProxyImpl.cpp.o" \
@@ -213,7 +213,7 @@ gatewaytest_OBJECTS = \
 # External object files for target gatewaytest
 gatewaytest_EXTERNAL_OBJECTS =
 
-tests/gatewaytest: tests/CMakeFiles/gatewaytest.dir/gatewaytest.cpp.o
+tests/gatewaytest: tests/CMakeFiles/gatewaytest.dir/final.cpp.o
 tests/gatewaytest: tests/CMakeFiles/gatewaytest.dir/KafkaCons.cpp.o
 tests/gatewaytest: tests/CMakeFiles/gatewaytest.dir/__/src/AuthServiceProxyImpl.cpp.o
 tests/gatewaytest: tests/CMakeFiles/gatewaytest.dir/__/src/PromoServiceProxyImpl.cpp.o
